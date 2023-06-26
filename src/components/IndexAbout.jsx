@@ -14,7 +14,7 @@ const IndexAbout = () => {
             <div className='border-2 mt-3 w-12 border-pink-300'></div>
 
             <div>
-                <p className='text-2xl pb-3'>Best Digital Agency In The World</p>
+                <p className='text-2xl pb-3 pt-1'>Best Digital Agency In The World</p>
                 <p className='text-sm max-w-xl text-justify pb-4'>
                 We provide marketing services to startups and small businesses to looking 
                 for a partner of their digital media, design & development, lead generation 

@@ -8,7 +8,7 @@ import banner5 from '../assets/banner-images/banner5.jpg'
 const IndexBody = () => {
   return (
     <div className=''>
-        {/* <img src={banner5} className='w-full h-96 top-0'/> */}
+        <img src={banner5} className='w-full h-96 top-0'/>
         <div className='flex flex-row py-12'>
             <div className='bg-black bg-opacity-10 px-4 py-10 mx-6 hover:scale-110 duration-500'>
                 <p className='text-3xl font-semibold'>Email Marketing</p>

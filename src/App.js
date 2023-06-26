@@ -8,7 +8,7 @@ import WhatWeDo from './components/WhatWeDo';
 function App() {
   return (
     <div>
-      <Home/>
+      {/* <Home/> */}
       <NavBar/>
       <IndexBody/>
       <IndexAbout/>
