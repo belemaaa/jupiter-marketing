@@ -1,5 +1,6 @@
 import React from 'react'
 import banner1 from '../assets/banner-images/banner1.jpg'
+import aboutUsImage from '../assets/aboutUsImage.jpg'
 
 const IndexAbout = () => {
   return (
@@ -27,7 +28,7 @@ const IndexAbout = () => {
             </div>
         </div>
 
-        <img src={banner1} className='w-1/2 mx-8 mt-6'/>
+        <img src={aboutUsImage} className='w-1/2 mx-8 mt-6'/>
     </div>
   )
 }
