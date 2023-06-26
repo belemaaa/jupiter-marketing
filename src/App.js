@@ -1,4 +1,5 @@
 import './App.css';
+import IndexAbout from './components/IndexAbout';
 import IndexBody from './components/IndexBody';
 import NavBar from './components/NavBar';
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <NavBar/>
       <IndexBody/>
+      <IndexAbout/>
     </div>
   );
 }
