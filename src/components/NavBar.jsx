@@ -5,7 +5,7 @@ import {BsCircle} from 'react-icons/bs'
 const NavBar = () => {
   return (
     <div className=''>
-        <div className='bg-white flex items-center justify-between'>
+        <div className='bg-black bg-opacity-5 flex items-center justify-between '>
             <div className='flex justify-start'>
                 <img src={logo} className='w-60 ml-8 pt-5 rounded-sm shadow-2xl'/>
             </div>
@@ -70,7 +70,7 @@ const NavBar = () => {
             </div>
         </div>
 
-        <div className='border border-gray-500 mx-8 mt-5'></div>
+        {/* <div className='border border-gray-500 mx-8 mt-5'></div> */}
     </div>
   )
 }
