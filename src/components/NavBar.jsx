@@ -12,42 +12,57 @@ const NavBar = () => {
         <div>
             <ul className='flex mt-5 font-semibold'>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>Home</a>
+                    <a href=''>
+                        Home
+                    </a>
                 </li>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>About Us</a>
+                    <a href=''>
+                        About Us
+                    </a>
                 </li>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>Services</a>
+                    <a href=''>
+                        Services
+                    </a>
                 </li>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>Project</a>
+                    <a href=''>
+                        Project
+                    </a>
                 </li>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>Team</a>
+                    <a href=''>
+                        Team
+                    </a>
                 </li>
                 <li className='mx-5 cursor-pointer hover:border-b-4 border-b-gray-500 pb-3 hover:scale-105 duration-200'>
-                    <a>Contact Us</a>
+                    <a href=''>
+                        Contact Us
+                    </a>
                 </li>
             </ul>
         </div>
 
         <div className='flex'>
-            <div className='border-l mt-4 h-20 border-gray-500'></div>
+            <div className='border-l-4 mt-4 h-20 border-gray-500'></div>
             <ul className='mt-5 mr-10'>
-                <li className='mb-1 ml-3'>
-                    <a className='flex'>
-                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/> Digital Branding
+                <li className='mb-1 ml-3 hover:underline cursor-pointer'>
+                    <a href='' className='flex hover:text-blue-500 hover:scale-105 duration-150'>
+                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/>
+                         Digital Branding
                     </a>
                 </li>
-                <li className='mb-1 '>
-                    <a className='flex'>
-                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/> Web Solution
+                <li className='mb-1 ml-3 hover:underline cursor-pointer'>
+                    <a href='' className='flex hover:text-blue-500 hover:scale-105 duration-150'>
+                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/>
+                        Web Solution
                     </a>
                 </li>
-                <li className=''>
-                    <a className='flex'>
-                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/> Creative Solution
+                <li className='ml-3 hover:underline cursor-pointer'>
+                    <a href='' className='flex hover:text-blue-500 hover:scale-105 duration-150'>
+                        <BsCircle size={10} className='text-black font-bold mr-2 mt-2'/> 
+                        Creative Solution
                     </a>
                 </li>
             </ul>
