@@ -5,9 +5,9 @@ import {BsCircle} from 'react-icons/bs'
 const NavBar = () => {
   return (
     <div className='w-full'>
-        <div className='bg-black bg-opacity-60 flex items-center justify-between '>
+        <div className='bg-black bg-opacity-50 flex items-center justify-between '>
             <div className='flex justify-start'>
-                <img src={logo} className='w-60 h-24 ml-8 shadow-2xl'/>
+                <img src={logo} className='w-60 h-20 ml-8 shadow-2xl'/>
             </div>
 
             <div className='text-white'>
