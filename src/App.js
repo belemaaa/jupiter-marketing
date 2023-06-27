@@ -1,4 +1,5 @@
 import './App.css';
+import ContactNav from './components/ContactNav';
 import Home from './components/Home';
 import IndexAbout from './components/IndexAbout';
 import IndexBody from './components/IndexBody';
@@ -9,6 +10,7 @@ function App() {
   return (
     <div>
       {/* <Home/> */}
+      <ContactNav/>
       <NavBar/>
       <IndexBody/>
       <IndexAbout/>
