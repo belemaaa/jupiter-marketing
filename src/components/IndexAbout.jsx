@@ -19,11 +19,12 @@ const IndexAbout = () => {
                 We provide marketing services to startups and small businesses to looking 
                 for a partner of their digital media, design & development, lead generation 
                 and communications requirents. We work with you, not for you. 
-                Although we have a great resources.
+                We have great resources that can help scale your business.
                 </p>
                 <p className='text-sm max-w-xl text-justify pt-4 pb-8'>
                 We are an experienced and talented team of passionate consultants who live
-                and breathe search engine marketing. We are an experienced and talented team of passionate.
+                and breathe search engine marketing. We are an experienced and talented team of consultants
+                who are here to bear the burdens of your business.
                 </p>
             </div>
             <a href='' className='text-orange-800 underline'>Read More</a>
