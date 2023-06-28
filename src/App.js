@@ -9,9 +9,9 @@ import WhatWeDo from './components/WhatWeDo';
 function App() {
   return (
     <div>
-      {/* <Home/> */}
       <ContactNav/>
       <NavBar/>
+      <Home/>
       <IndexBody/>
       <IndexAbout/>
       <WhatWeDo/>
