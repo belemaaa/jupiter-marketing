@@ -121,17 +121,17 @@ const Footer = () => {
         </div>
 
         <div className='border-b border-gray-500 mx-24'></div>
-        <div className='flex flex-row'>
-            <div className='flex ml-24'>
+        <div className='flex flex-row items-center justify-center'>
+            <div className='flex mr-52'>
                 <p className='text-white flex flex-row py-3 text-sm'>
                     <LiaCopyright size={15} className='text-white mr-1 mt-0.5'/>
                     Jupiter Marketing Services. All Rights Reserved, 2023
                 </p>
             </div>
 
-            <div className='flex items-center justify-end mt-0'>
-                <a href='' className=' text-gray-700 bg-white py-2 px-2 
-                hover:bg-black duration-500'>
+            <div className='flex items-center justify-end ml-96 my-1'>
+                <a href='' className=' text-gray-700 bg-white py-0 px-3 mr-24
+                hover:bg-black hover:text-white duration-500 shadow-xl'>
                     Site Map
                 </a>
             </div>
