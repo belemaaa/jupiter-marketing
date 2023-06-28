@@ -12,7 +12,7 @@ const Home = () => {
         <div className='absolute top-52 ml-20'>
           <p className='font-thin text-white text-6xl'>We Help You Grow</p>
           <p className='font-thin text-white text-6xl pt-2'>Your Business</p>
-          <p className='flex text-white mt-8 bg-gray-800 rounded-3xl w-fit py-4 px-4 ml-2
+          <p className='flex text-white mt-12 bg-gray-800 rounded-3xl w-fit py-4 px-4 ml-2
           hover:scale-110 duration-700'>
             Call
             <BsTelephoneFill size={20} className='text-white ml-2 mr-3'/>

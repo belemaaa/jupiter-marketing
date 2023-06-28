@@ -38,10 +38,10 @@ const MeetOurTeam = () => {
             </div>
 
             <div className='flex items-center justify-center mt-5 flex-col'>
-               <a href='' className='flex text-gray-600 font-bold mt-5 mb-1 hover:text-black duration-500'>
+               <a href='' className='flex text-white bg-gray-800 py-2 px-4 hover:bg-black duration-500 mt-3 mb-3'>
                VIEW ALL
                </a>
-               <div className='w-20 border-b-4 border-b-gray-800'></div>
+               {/* <div className='w-20 border-b-4 border-b-gray-800'></div> */}
             </div>
         </div>
     </div>

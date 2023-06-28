@@ -3,11 +3,12 @@ import {FaFacebookF} from 'react-icons/fa'
 import {IoLogoTwitter} from 'react-icons/io'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {RxDotFilled} from 'react-icons/rx'
+import {LiaCopyright} from 'react-icons/lia'
 
 const Footer = () => {
   return (
-    <div className='bg-gray-700 flex flex-col'>
-        <div className='flex flex-row mx-24 text-white py-12'>
+    <div className='bg-gray-700 flex flex-col pb-4'>
+        <div className='flex flex-row mx-24 text-white pt-12 pb-8'>
             <div className='flex flex-col mr-8'>
                 <p className='text-2xl pb-2'>Quick Links</p>
                 <div className='border border-gray-500 w-60'></div>
@@ -118,6 +119,24 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
+
+        <div className='border-b border-gray-500 mx-24'></div>
+        <div className='flex flex-row'>
+            <div className='flex ml-24'>
+                <p className='text-white flex flex-row py-3 text-sm'>
+                    <LiaCopyright size={15} className='text-white mr-1 mt-0.5'/>
+                    Jupiter Marketing Services. All Rights Reserved, 2023
+                </p>
+            </div>
+
+            <div className='flex items-center justify-end mt-0'>
+                <a href='' className=' text-gray-700 bg-white py-2 px-2 
+                hover:bg-black duration-500'>
+                    Site Map
+                </a>
+            </div>
+        </div>
+        
     </div>
   )
 }
