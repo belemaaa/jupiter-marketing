@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className='w-full h-20'>
         <div className='flex items-center justify-between bg-black bg-opacity-10'>
             <div className='flex justify-start'>
-                <img src={logo} className='w-40 ml-20 h-20  shadow-2xl mb-2'/>
+                <img src={logo} className='w-44 ml-16 h-20  shadow-2xl mb-2'/>
             </div>
 
             <div className='text-black'>
