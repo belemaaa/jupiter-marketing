@@ -9,10 +9,10 @@ const IndexBody = () => {
   return (
     <div className='bg-black bg-opacity-10'>
         {/* <img src={banner5} className='w-full h-96 top-0'/> */}
-        <div className='flex flex-row py-12'>
+        <div className='flex flex-row py-16'>
             <div className='bg-gray-400 px-4 py-10 mx-6 hover:scale-110 duration-500 shadow-xl'>
                 <p className='text-3xl font-semibold'>Email Marketing</p>
-                <p className='max-w-sm pt-3 text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
+                <p className='max-w-sm pt-3 text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
                     nobis enim necessitatibus temporibus et eligendi nisi
                 </p>
             </div>
@@ -26,7 +26,7 @@ const IndexBody = () => {
 
             <div className='mx-6 bg-gray-400 px-4 py-10 hover:scale-110 duration-500 shadow-xl'>
                 <p className='text-3xl font-semibold'>Keyword Research</p>
-                <p className='max-w-sm pt-3 text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
+                <p className='max-w-sm pt-3 text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
                     nobis enim necessitatibus temporibus et eligendi nisi
                 </p>
             </div>

@@ -1,4 +1,5 @@
 import './App.css';
+import CompletedProjects from './components/CompletedProjects';
 import ContactNav from './components/ContactNav';
 import Home from './components/Home';
 import IndexAbout from './components/IndexAbout';
@@ -15,6 +16,7 @@ function App() {
       <IndexBody/>
       <IndexAbout/>
       <WhatWeDo/>
+      <CompletedProjects/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import {BsArrowRightCircle} from 'react-icons/bs'
 import creativeSolutions from '../assets/creativeSolutions.jpg'
+import digitalMarketing from '../assets/digitalMarketing.jpg'
 
 const WhatWeDo = () => {
   return (
@@ -12,7 +13,7 @@ const WhatWeDo = () => {
         <div className='flex flex-col items-center justify-center mx-8'>
             <div className='flex flex-row pt-8 pb-3 mb-3'>
                 <div className=''>
-                    <img src={creativeSolutions} className='brightness-50 hover:scale-110 duration-500 mx-8 w-72 h-40'/>
+                    <img src={digitalMarketing} className='brightness-50 hover:scale-110 duration-500 mx-8 w-72 h-40'/>
                     <div className='absolute -top-80 left-52 bottom-0 flex items-center justify-center'>
                         <a className=' text-2xl text-white border-b-4 border-white font-semibold
                         flex flex-row'>
@@ -53,7 +54,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-24 left-52 bottom-0 flex items-center justify-center'>
                             <a className=' text-2xl text-white border-b-4 border-white font-semibold
                             flex flex-row pb-2'>
-                                Digital Branding
+                                Marketing
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
@@ -64,7 +65,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-24 left-44 bottom-0 flex items-center justify-between'>
                             <a className=' text-2xl text-white border-b-4 border-white font-semibold
                             flex flex-row ml-96 pb-2'>
-                                Digital Branding
+                                Paid Media
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
@@ -75,7 +76,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-24 -right-24 left-60 bottom-0 flex items-center justify-center'>
                             <a className=' text-2xl text-white border-b-4 border-white font-semibold
                             flex flex-row ml-96 pb-2'>
-                                Digital Branding
+                                Data Science
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
@@ -91,7 +92,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-96 left-52 bottom-0 flex items-center justify-center'>
                             <a className=' text-2xl text-white border-b-4 border-white pb-2 font-semibold
                             flex flex-row'>
-                                Digital Branding
+                                Management
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
@@ -102,7 +103,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-96 left-44 bottom-0 flex items-center justify-between'>
                             <a className=' text-2xl text-white border-b-4 border-white pb-2 font-semibold
                             flex flex-row ml-96'>
-                                Digital Branding
+                                Social Media
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
@@ -113,7 +114,7 @@ const WhatWeDo = () => {
                         <div className='absolute top-96 -right-24 left-60 bottom-0 flex items-center justify-center'>
                             <a className=' text-2xl text-white border-b-4 border-white font-semibold
                             flex flex-row ml-96 pb-2'>
-                                Digital Branding
+                                UI & UX Design
                                 <BsArrowRightCircle size={20} className='text-white mt-2 ml-2 hover:rotate-90 duration-200'/>
                             </a>
                         </div>
