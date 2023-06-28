@@ -27,7 +27,7 @@ const IndexAbout = () => {
                 who are here to bear the burdens of your business.
                 </p>
             </div>
-            <a href='' className='text-orange-800 underline'>Read More</a>
+            <a href='' className='text-white bg-orange-700 py-2 px-3 hover:bg-black duration-500'>Read More</a>
         </div>
 
         <img src={aboutUsImage} className='w-1/2 mx-8 mt-6'/>

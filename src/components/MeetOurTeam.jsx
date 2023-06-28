@@ -38,7 +38,7 @@ const MeetOurTeam = () => {
             </div>
 
             <div className='flex items-center justify-center mt-5 flex-col'>
-               <a href='' className='flex text-gray-600 font-bold mt-5 mb-1'>
+               <a href='' className='flex text-gray-600 font-bold mt-5 mb-1 hover:text-black duration-500'>
                VIEW ALL
                </a>
                <div className='w-20 border-b-4 border-b-gray-800'></div>

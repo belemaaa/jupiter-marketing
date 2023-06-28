@@ -33,7 +33,7 @@ const CompletedProjects = () => {
         </div>
 
         <div className='flex items-center justify-end mt-5'>
-          <a href='' className='flex text-blue-500 mt-5 mr-20 underline'>
+          <a href='' className='flex text-white bg-gray-700 py-2 px-3 hover:bg-black duration-500 mt-5 mr-20'>
             All Projects
           </a>
         </div>
