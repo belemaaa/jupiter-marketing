@@ -1,6 +1,7 @@
 import './App.css';
 import CompletedProjects from './components/CompletedProjects';
 import ContactNav from './components/ContactNav';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import IndexAbout from './components/IndexAbout';
 import IndexBody from './components/IndexBody';
@@ -19,6 +20,7 @@ function App() {
       <WhatWeDo/>
       <CompletedProjects/>
       <MeetOurTeam/>
+      <Footer/>
     </div>
   );
 }
