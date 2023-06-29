@@ -5,10 +5,10 @@ import banner5 from '../assets/banner-images/banner5.jpg'
 
 const NavBar = () => {
   return (
-    <div className='h-14 md:h-20 w-screen overflow-hidden'>
+    <div className='h-16 md:h-20 w-screen overflow-hidden'>
         <div className='flex items-center justify-between bg-black bg-opacity-10'>
             <div className='flex justify-start'>
-                <img src={logo} className='w-60 mr-4 md:w-44 md:ml-16 md:h-20 shadow-2xl mb-16 md:mb-2'/>
+                <img src={logo} className='w-52 h-16 mr-4 md:w-44 md:ml-16 md:h-20 shadow-2xl mb-16 md:mb-2'/>
             </div>
 
             <div className='text-black'>
@@ -47,22 +47,23 @@ const NavBar = () => {
             </div>
 
             <div className='flex text-gray-600'>
-                <div className='hidden md:border-l-4 mb-16 h-16 ml-16 md:mt-2 md:mb-1 md:h-16 border-gray-500'></div>
-                <ul className='-mt-14 md:mt-1 md:mr-10 mr-2'>
+                <div className='hidden md:border-l-4 ml-16 md:mt-2 md:mb-1 md:h-16 border-gray-500'></div>
+                
+                <ul className='-mt-14 md:mt-1 md:mr-10 mr-1'>
                     <li className='mb-0 ml-3 hover:underline cursor-pointer'>
-                        <a href='' className='flex hover:text-black hover:scale-105 duration-150'>
+                        <a href='' className='flex text-sm md:text-base hover:text-black hover:scale-105 duration-150'>
                             <BsCircle size={10} className='text-black font-bold mr-2 mt-1 md:mt-2'/>
                             Digital Branding
                         </a>
                     </li>
                     <li className='mb-0 ml-3 hover:underline cursor-pointer'>
-                        <a href='' className='flex hover:text-black hover:scale-105 duration-150'>
+                        <a href='' className='flex text-sm md:text-base hover:text-black hover:scale-105 duration-150'>
                             <BsCircle size={10} className='text-black font-bold mr-2 mt-1 md:mt-2'/>
                             Web Solution
                         </a>
                     </li>
-                    <li className='ml-3 hover:underline cursor-pointer'>
-                        <a href='' className='flex hover:text-black hover:scale-105 duration-150'>
+                    <li className='ml-3 mb-2 md:mb-2 hover:underline cursor-pointer'>
+                        <a href='' className='flex text-sm md:text-base hover:text-black hover:scale-105 duration-150'>
                             <BsCircle size={10} className='text-black font-bold mr-2 mt-1 md:mt-2'/> 
                             Creative Solution
                         </a>
