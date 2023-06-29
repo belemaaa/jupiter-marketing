@@ -36,8 +36,8 @@ const ContactNav = () => {
         {nav ? <FaTimes size={25}/> : <BsThreeDotsVertical size={25}/>}
       </div>
       {nav && (
-        <ul className='flex flex-col justify-center items-center absolute w-3/4 h-3/4
-         bg-gray-700 text-white top-0'>
+        <ul className='flex flex-col justify-center items-center absolute w-52 h-1/2
+         bg-white text-gray-700 top-0 right-0'>
           {navLinks.map(({id, link}) => (
             <li key={id} className='py-4 hover:border-b-4 border-b-gray-500 hover:scale-110
             duration-500'>

@@ -14,7 +14,7 @@ function App() {
     <div>
       <ContactNav/>
       <NavBar/> 
-      {/* <Home/> */}
+      <Home/>
       <IndexBody/>
       <IndexAbout/>
       <WhatWeDo/>
