@@ -4,7 +4,7 @@ import aboutUsImage from '../assets/aboutUsImage.jpg'
 
 const IndexAbout = () => {
   return (
-    <div className='flex mt-4'>
+    <div className='flex mt-4 w-screen overflow-hidden'>
         <div className='w-1/2 justify-start ml-24 mt-12'>
             <div>
                 <p className='text-5xl pb-3 text-orange-700 font-bold'>ABOUT US</p>

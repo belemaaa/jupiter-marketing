@@ -7,7 +7,7 @@ import {LiaCopyright} from 'react-icons/lia'
 
 const Footer = () => {
   return (
-    <div className='bg-gray-700 flex flex-col pb-4'>
+    <div className='bg-gray-700 flex flex-col pb-4 w-screen overflow-hidden'>
         <div className='flex flex-row mx-24 text-white pt-12 pb-8'>
             <div className='flex flex-col mr-8'>
                 <p className='text-2xl pb-2'>Quick Links</p>

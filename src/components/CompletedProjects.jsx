@@ -5,7 +5,7 @@ import recentProject3 from '../assets/recent-image4.jpg'
 
 const CompletedProjects = () => {
   return (
-    <div className='flex flex-col mt-16 relative bg-black bg-opacity-10'>
+    <div className='flex flex-col mt-16 relative bg-black bg-opacity-10 w-screen overflow-hidden'>
       <div className='pt-12 pb-4'>
         <div className='flex items-center justify-center flex-col mb-4'>
               <p className='text-orange-700 text-4xl font-bold mb-2'>

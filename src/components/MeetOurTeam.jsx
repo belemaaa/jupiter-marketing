@@ -6,7 +6,7 @@ import ourTeam4 from '../assets/team/ourTeam4.jpg'
 
 const MeetOurTeam = () => {
   return (
-    <div className=''>
+    <div className='w-screen overflow-hidden'>
         <div className='pt-12 pb-6'>
             <div>
                 <p className='text-orange-700 text-5xl font-light mb-2 ml-12'>

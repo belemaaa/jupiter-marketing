@@ -6,7 +6,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 
 const ContactNav = () => {
   return (
-    <div className='flex bg-gray-700 flex-row items-center justify-between'>
+    <div className='flex bg-gray-700 flex-row items-center justify-between w-screen overflow-hidden'>
         <div>
             <p className='text-white font-semibold text-xs md:text-sm py-3 ml-10 md:ml-72
             '>MON - SAT: 8:00AM - 8:00PM</p>
