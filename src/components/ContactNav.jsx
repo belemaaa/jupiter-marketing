@@ -6,15 +6,16 @@ import {MdOutlineEmail} from 'react-icons/md'
 
 const ContactNav = () => {
   return (
-    <div className='bg-gray-700 flex flex-row items-center justify-between'>
+    <div className='flex bg-gray-700 flex-row items-center justify-between'>
         <div>
-            <p className='text-white font-semibold text-sm py-3 ml-72'>MON - SAT: 8:00AM - 8:00PM</p>
+            <p className='text-white font-semibold text-xs md:text-sm py-3 ml-10 md:ml-72
+            '>MON - SAT: 8:00AM - 8:00PM</p>
         </div>
-        <div className='flex py-3 items-end justify-end mr-72'>
-            <FaFacebookF size={15} className='text-white mr-3'/>
-            <IoLogoTwitter size={15} className='text-white mx-3'/>
-            <FaLinkedinIn size={15} className='text-white mx-3'/>
-            <MdOutlineEmail size={18} className='text-white mx-3 '/>
+        <div className='flex py-3 items-end justify-end mr-4 md:mr-72'>
+            <FaFacebookF size={15} className='text-white mr-2 md:mr-3'/>
+            <IoLogoTwitter size={15} className='text-white mr-2 md:mx-3'/>
+            <FaLinkedinIn size={15} className='text-white mr-2 md:mx-3'/>
+            <MdOutlineEmail size={19} className='text-white mr-2 md:mx-3 pt-1 md:pt-0'/>
         </div>
     </div>
   )
