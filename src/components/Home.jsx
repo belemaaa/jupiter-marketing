@@ -11,7 +11,7 @@ const Home = () => {
 
         <div className='absolute top-44 md:top-52 ml-5 md:ml-20'>
           <p className='md:font-thin text-white text-3xl md:text-6xl'>We Help You Grow</p>
-          <p className='md:font-thin text-white text-3xl mdLtext-6xl pt-2'>Your Business</p>
+          <p className='md:font-thin text-white text-3xl md:text-6xl pt-2'>Your Business</p>
           <p className='flex text-sm md:text-base text-white mt-4 md:mt-12 bg-gray-800 rounded-lg md:rounded-3xl
           w-fit py-2 md:py-4 px-1 md:px-4 md:ml-2
           hover:scale-110 duration-700'>

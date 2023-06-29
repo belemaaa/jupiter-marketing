@@ -47,8 +47,8 @@ const NavBar = () => {
             </div>
 
             <div className='flex text-gray-600'>
-                <div className='hidden md:border-l-4 ml-16 md:mt-2 md:mb-1 md:h-16 border-gray-500'></div>
-                
+                <div className='hidden md:flex border-l-4 ml-16 md:mt-2 md:mb-1 md:h-16 border-gray-500'></div>
+
                 <ul className='-mt-14 md:mt-1 md:mr-10 mr-1'>
                     <li className='mb-0 ml-3 hover:underline cursor-pointer'>
                         <a href='' className='flex text-sm md:text-base hover:text-black hover:scale-105 duration-150'>
