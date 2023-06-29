@@ -7,7 +7,7 @@ import {BsTelephoneFill} from 'react-icons/bs'
 const Home = () => {
   return (
     <div className='w-screen overflow-hidden'>
-        <img src={banner52} className='mt-0 w-screen h-96 brightness-50'/>
+        <img src={banner52} className=' w-screen h-96 brightness-50'/>
 
         <div className='absolute top-52 ml-20'>
           <p className='font-thin text-white text-6xl'>We Help You Grow</p>
