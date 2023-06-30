@@ -9,7 +9,7 @@ const MeetOurTeam = () => {
     <div className='w-screen overflow-hidden'>
         <div className='pt-12 pb-6'>
             <div>
-                <p className='text-orange-700 text-5xl font-light mb-2 ml-12'>
+                <p className='text-orange-700 text-5xl font-light mb-2 md:ml-12 text-center md:text-start'>
                     MEET OUR TEAM
                 </p>
             </div>
@@ -18,16 +18,16 @@ const MeetOurTeam = () => {
                 <div className='border mt-2 w-32 border-gray-800'></div>
             </div>
 
-            <div className='flex flex-row mx-12 mt-8'>
-                <div className='mr-6'>
+            <div className='flex flex-col md:flex-row mx-12 mt-8'>
+                <div className='mr-6 mb-4 md:mb-0'>
                     <img src={ourTeam4} className='w-80'/>
                     <p className='text-center mt-2 font-semibold'>Manager/CEO</p>
                 </div>
-                <div className='mr-6'>
+                <div className='mr-6 mb-4 md:mb-0'>
                     <img src={ourTeam1}  className='w-80'/>
                     <p className='text-center mt-2 font-semibold'>Product Designer</p>
                 </div>
-                <div className='mr-6'>
+                <div className='mr-6 mb-4 md:mb-0'>
                     <img src={ourTeam2}  className='w-80'/>
                     <p className='text-center mt-2 font-semibold'>Lead Developer</p>
                 </div>
