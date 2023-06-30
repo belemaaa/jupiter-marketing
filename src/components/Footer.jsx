@@ -8,7 +8,7 @@ import {LiaCopyright} from 'react-icons/lia'
 const Footer = () => {
   return (
     <div className='bg-gray-700 flex flex-col pb-4 w-screen overflow-hidden'>
-        <div className='flex flex-row mx-24 text-white pt-12 pb-8'>
+        <div className='flex flex-col md:flex-row ml-8 md:mx-24 text-white pt-12 pb-8'>
             <div className='flex flex-col mr-8'>
                 <p className='text-2xl pb-2'>Quick Links</p>
                 <div className='border border-gray-500 w-60'></div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='flex flex-col mx-8'>
+            <div className='flex flex-col md:mx-8 my-6 md:my-0'>
                 <p className='text-2xl pb-2'>Our Services</p>
                 <div className='border border-gray-500 w-60'></div>
                 <ul className='mt-4 text-gray-300'>
@@ -71,7 +71,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='flex flex-col mx-8'>
+            <div className='flex flex-col md:mx-8 mb-6 md:mb-0'>
                 <p className='text-2xl pb-2'>Social Links</p>
                 <div className='border border-gray-500 w-60'></div>
                 <ul className='mt-4 text-gray-300'>
@@ -96,7 +96,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='flex flex-col mx-8'>
+            <div className='flex flex-col md:mx-8'>
                 <p className='text-2xl pb-2'>Location</p>
                 <div className='border border-gray-500 w-60'></div>
                 <ul className='mt-4 text-gray-300'>
@@ -120,17 +120,17 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='border-b border-gray-500 mx-24'></div>
-        <div className='flex flex-row items-center justify-center'>
-            <div className='flex mr-52'>
+        <div className='border-b border-gray-500 md:mx-24'></div>
+        <div className='flex flex-col md:flex-row items-center justify-center'>
+            <div className='flex md:mr-52'>
                 <p className='text-white flex flex-row py-3 text-sm'>
                     <LiaCopyright size={15} className='text-white mr-1 mt-0.5'/>
                     Jupiter Marketing Services. All Rights Reserved, 2023
                 </p>
             </div>
 
-            <div className='flex items-center justify-end ml-96 my-1'>
-                <a href='' className=' text-gray-700 bg-white py-0 px-3 mr-24
+            <div className='md:flex items-center justify-end ml-72 my-1'>
+                <a href='' className=' text-gray-700 bg-white py-0 px-3 md:mr-24
                 hover:bg-black hover:text-white duration-500 shadow-xl'>
                     Site Map
                 </a>
