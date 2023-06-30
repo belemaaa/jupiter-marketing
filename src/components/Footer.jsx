@@ -129,7 +129,7 @@ const Footer = () => {
                 </p>
             </div>
 
-            <div className='md:flex items-center justify-end ml-72 my-1'>
+            <div className='md:flex items-center justify-end ml-72 md:ml-96 my-1'>
                 <a href='' className=' text-gray-700 bg-white py-0 px-3 md:mr-24
                 hover:bg-black hover:text-white duration-500 shadow-xl'>
                     Site Map

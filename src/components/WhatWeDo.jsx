@@ -11,66 +11,68 @@ const WhatWeDo = () => {
         </div>
 
          <div className='flex items-center justify-center flex-row mt-4'>
-            <div className='flex flex-col mx-8'>
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+            <div className='flex flex-col mx-2 md:mx-8'>
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
-                    Digital Branding
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    Digital <br className='md:hidden'/>Branding
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Marketing
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Management
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
             </div>
 
 
-            <div className='flex flex-col mx-8'>
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+            <div className='flex flex-col mx-2 mt-1 md:mt-0 md:mx-8'>
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
-                    Creative Solution
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    Creative <br className='md:hidden'/> Solution
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Paid Media
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='py-5 md:pt-0 md:pb-3 md:py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
-                    Social Media
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    Social <br className='md:hidden'/> Media
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
             </div>
 
-            <div className='flex flex-col mx-8'>
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+            <div className='hidden md:flex flex-col md:mx-8'>
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Web Solution
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='mb-4 py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Data Science
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-white
+                <a href='' className='py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     UI & UX Design
-                    <BsArrowRightCircle size={20} className='text-white ml-1 mt-1' />
+                    <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
             </div>
+
+            
 
          </div>
     </div>
