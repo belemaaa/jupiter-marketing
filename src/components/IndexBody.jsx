@@ -10,22 +10,22 @@ const IndexBody = () => {
     <div className='bg-black bg-opacity-10 w-screen overflow-hidden'>
         {/* <img src={banner5} className='w-full h-96 top-0'/> */}
         
-        <div className='flex flex-col md:flex-row py-10 md:py-16 '>
-            <div className='bg-gray-400 mb-8 md:mb-0 rounded-xl md:rounded-none px-4 py-10 mx-6 hover:scale-110 duration-500 shadow-xl'>
+        <div className='flex flex-col md:flex-row md:py-16 '>
+            <div className='bg-gray-400 md:mb-0 md:rounded-none px-4 py-10 hover:scale-110 duration-500 md:shadow-xl'>
                 <p className='text-3xl font-semibold'>Email Marketing</p>
                 <p className='max-w-sm pt-3 text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
                     nobis enim necessitatibus temporibus et eligendi nisi
                 </p>
             </div>
 
-            <div className='mx-6 bg-black bg-opacity-10 mb-8 md:mb-0 rounded-xl md:rounded-none px-4 py-10 hover:scale-110 duration-500 shadow-xl'>
+            <div className=' bg-black bg-opacity-10 md:mb-0 md:rounded-none px-4 py-10 hover:scale-110 duration-500 md:shadow-xl'>
                 <p className='text-3xl font-semibold'>Market Analysis</p>
                 <p className='max-w-sm pt-3 text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
                     nobis enim necessitatibus temporibus et eligendi nisi
                 </p>
             </div>
 
-            <div className='mx-6 bg-gray-400 rounded-xl md:rounded-none px-4 py-10 hover:scale-110 duration-500 shadow-xl'>
+            <div className=' bg-gray-400 md:rounded-none px-4 py-10 md:hover:scale-110 duration-500 md:shadow-xl'>
                 <p className='text-3xl font-semibold'>Keyword Research</p>
                 <p className='max-w-sm pt-3 text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in laboriosam placeat, 
                     nobis enim necessitatibus temporibus et eligendi nisi

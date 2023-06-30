@@ -32,7 +32,7 @@ const ContactNav = () => {
           <MdOutlineEmail size={19} className='text-white md:mx-3 pt-1 md:pt-0'/>
       </div>
 
-      <div onClick={() => setNav(!nav)} className='md:hidden text-gray-500 mr-2 z-10 duration-500' >
+      <div onClick={() => setNav(!nav)} className='md:hidden text-white mr-2 z-10 duration-500' >
         {nav ? <FaTimes size={25}/> : <BsThreeDotsVertical size={25}/>}
       </div>
 
