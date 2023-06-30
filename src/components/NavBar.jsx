@@ -5,10 +5,10 @@ import banner5 from '../assets/banner-images/banner5.jpg'
 
 const NavBar = () => {
   return (
-    <div className='h-16 md:h-20 w-screen overflow-hidden'>
+    <div className='h-20 md:h-20 w-screen overflow-hidden'>
         <div className='flex items-center justify-between bg-black bg-opacity-10'>
             <div className='flex justify-start'>
-                <img src={logo} className='w-52 h-16 mr-4 md:w-44 md:ml-16 md:h-20 shadow-2xl mb-16 md:mb-2'/>
+                <img src={logo} className='w-28 md:w-44 h-16 md:h-20 mt-2 md:mt-0 ml-6 mr-4 md:mr-0 md:ml-16 shadow-2xl mb-16 md:mb-2'/>
             </div>
 
             <div className='text-black'>
