@@ -45,7 +45,7 @@ const WhatWeDo = () => {
                     <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />
                 </a>
 
-                <a href='' className='py-5 md:pt-0 md:pb-3 md:py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
+                <a href='' className='py-5 md:py-8 text-xl bg-black bg-opacity-25 px-5 flex flex-row text-black
                 hover:scale-105 duration-200'>
                     Social <br className='md:hidden'/> Media
                     <BsArrowRightCircle size={20} className='text-black ml-1 mt-1' />

@@ -2,6 +2,9 @@ import React from 'react'
 import logo from '../assets/jupiter-logo.jpg'
 import {BsCircle} from 'react-icons/bs'
 import banner5 from '../assets/banner-images/banner5.jpg'
+import AboutUs from './AboutUs'
+import {Link} from 'react-router-dom';
+
 
 const NavBar = () => {
   return (
@@ -14,14 +17,14 @@ const NavBar = () => {
             <div className='text-black'>
                 <ul className='hidden md:flex mt-1 font-semibold'>
                     <li className='ml-10 md:mx-5 cursor-pointer hover:border-b-4 border-gray-500 pb-3 hover:scale-105 duration-200'>
-                        <a href=''>
+                        <Link to="/">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li className='mx-5 cursor-pointer hover:border-b-4 border-gray-500 pb-3 hover:scale-105 duration-200'>
-                        <a href=''>
+                        <Link to="/aboutUs">
                             About Us
-                        </a>
+                        </Link>
                     </li>
                     <li className='mx-5 cursor-pointer hover:border-b-4 border-gray-500 pb-3 hover:scale-105 duration-200'>
                         <a href=''>

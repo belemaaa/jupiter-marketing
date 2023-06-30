@@ -8,20 +8,27 @@ import IndexBody from './components/IndexBody';
 import MeetOurTeam from './components/MeetOurTeam';
 import NavBar from './components/NavBar';
 import WhatWeDo from './components/WhatWeDo';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <ContactNav/>
-      <NavBar/> 
-      <Home/>
-      <IndexBody/>
-      <IndexAbout/>
-      <WhatWeDo/>
-      <CompletedProjects/> 
-      <MeetOurTeam/>
+    <Router>
+      <NavBar/>
+
+      <Routes>
+        <Route path='/' exact element={<Home/>} />
+
+        <Route path='/aboutUs' exact element={<IndexAbout/>} />
+      </Routes>
+
       <Footer/>
-    </div>
+    </Router>
   );
 }
 
