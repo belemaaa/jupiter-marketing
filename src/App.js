@@ -1,8 +1,10 @@
 import './App.css';
+import AboutUs from './components/AboutUs';
 import CompletedProjects from './components/CompletedProjects';
 import ContactNav from './components/ContactNav';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import Index from './components/Index';
 import IndexAbout from './components/IndexAbout';
 import IndexBody from './components/IndexBody';
 import MeetOurTeam from './components/MeetOurTeam';
@@ -19,15 +21,12 @@ import {
 function App() {
   return (
     <Router>
-      <NavBar/>
-
+      
       <Routes>
-        <Route path='/' exact element={<Home/>} />
-
-        <Route path='/aboutUs' exact element={<IndexAbout/>} />
+        <Route path='/' element={<Index/>} />
+        <Route path='/aboutUs' element={<AboutUs/>} />
       </Routes>
 
-      <Footer/>
     </Router>
   );
 }

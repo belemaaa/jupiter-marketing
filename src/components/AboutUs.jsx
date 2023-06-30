@@ -3,13 +3,14 @@ import ContactNav from './ContactNav'
 import IndexAbout from './IndexAbout'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import AboutFull from './AboutFull'
 
 const AboutUs = () => {
   return (
     <div>
         <ContactNav/>
         <NavBar/>
-        <IndexAbout/>
+        <AboutFull/>
         <Footer/>
     </div>
   )
