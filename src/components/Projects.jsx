@@ -20,8 +20,8 @@ const Projects = () => {
         <NavBar/>
 
         <div className='flex flex-col bg-black bg-opacity-5 pt-6 pb-12'>
-            <div className='mt-12 md:mt-20'>
-                <p className='text-orange-700 text-3xl md:text-4xl font-bold mb-2 text-center'>
+            <div className='mt-12 md:mt-16'>
+                <p className='text-orange-700 text-3xl md:text-5xl font-bold mb-2 text-center'>
                     Our Completed <br className='md:hidden'/> Projects
                 </p>
                 <p className='text-gray-700 font-bold text-center'>
@@ -29,21 +29,21 @@ const Projects = () => {
                 </p>
             </div>
 
-            <div className='flex flex-col md:flex-row items-center justify-center mt-10 md:mt-0 md:my-10'>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-6'>
+            <div className='flex flex-col md:flex-row items-center justify-center mt-10 md:my-10'>
+                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={creativeProject1} className='shadow-xl rounded-2xl'/>
                         <p className='text-center text-gray-500 font-bold text-lg mt-4'>INSURANCE</p>
                     </a>
 
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-6'>
+                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={creativeProject2} className='shadow-xl rounded-2xl'/>
                         <p className='text-center text-gray-500 font-bold text-lg mt-4'>BEE</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-6'>
+                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={digitalProject2} className='shadow-xl rounded-2xl'/>
                         <p className='text-center text-gray-500 font-bold text-lg mt-4'>INDUSTRIAL SERVICE</p>
