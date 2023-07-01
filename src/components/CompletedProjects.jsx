@@ -2,6 +2,7 @@ import React from 'react'
 import recentProject1 from '../assets/recent-project1.jpg'
 import recentProject2 from '../assets/recent-image3.jpg'
 import recentProject3 from '../assets/recent-image4.jpg'
+import { Link } from 'react-router-dom'
 
 const CompletedProjects = () => {
   return (
@@ -33,9 +34,9 @@ const CompletedProjects = () => {
         </div>
 
         <div className='flex items-center justify-center md:justify-end mt-3 md:mt-5'>
-          <a href='' className='flex text-white bg-gray-700 py-2 px-3 hover:bg-black duration-500 mt-5 md:mr-20'>
+          <Link to='/projects' className='flex text-white bg-gray-700 py-2 px-3 hover:bg-black duration-500 mt-5 md:mr-20'>
             All Projects
-          </a>
+          </Link>
         </div>
         {/* <div className='flex items-center justify-end'>
           <div className='w-32 mr-20 border-b border-b-orange-800'></div>

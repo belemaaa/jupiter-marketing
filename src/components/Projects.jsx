@@ -19,58 +19,59 @@ const Projects = () => {
         <ContactNav/>
         <NavBar/>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col bg-black bg-opacity-5 pt-6 pb-12'>
             <div className='mt-20'>
-                <p className='text-orange-700 text-3xl md:text-4xl font-bold mb-2 text-center'>
+                <p className='text-black text-3xl md:text-4xl font-bold mb-2 text-center'>
                     Our Completed Projects
                 </p>
-                <p className=' text-center'>
+                <p className='text-gray-700 font-bold text-center'>
                     Have a look at some of our recent projects:
                 </p>
             </div>
 
-            <div className='flex flex-col items-center justify-center py-8'>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={creativeProject1} className=''/>
-                    <p></p>
+            <div className='flex flex-row items-center justify-center my-10'>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={creativeProject1} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>Insurance</p>
+
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={creativeProject2}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={creativeProject2} className='shadow-xl rounded-2xl'/>
+                    <p className='mt-4 text-center text-lg text-gray-500'>Bee</p>
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={digitalProject2}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={digitalProject2} className='shadow-xl rounded-2xl'/>
+                    <p className='mt-4 text-center text-lg text-gray-500'>Industrial Service</p>
                 </div>
             </div>
 
-            <div className='flex flex-row items-center justify-center py-8'>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={digitalProject1} className=''/>
-                    <p></p>
+            <div className='flex flex-row items-center justify-center my-10'>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={digitalProject1} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>Architect Digital Studio</p>
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={ourProject1}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={ourProject1} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>S E O</p>
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={ourProject2}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={ourProject2} className='shadow-xl rounded-2xl'/>
+                    <p className='mt-4 text-center text-lg text-gray-500'>Digital Create</p>
                 </div>
             </div>
 
-            <div className='flex flex-row items-center justify-center py-8'>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={ourProject3} className=''/>
-                    <p></p>
+            <div className='flex flex-row items-center justify-center my-10'>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={ourProject3} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>Content Creator</p>
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={webProject1}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={webProject1} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>Selling.</p>
                 </div>
-                <div className='mx-6 w-96 shadow-2xl'>
-                    <img src={webProject2}/>
-                    <p></p>
+                <div className='mx-8 w-96 hover:scale-110 duration-700'>
+                    <img src={webProject2} className='shadow-xl rounded-2xl'/>
+                    <p className='text-center text-gray-500 text-lg mt-4'>Relief</p>
                 </div>
             </div>
         </div>
