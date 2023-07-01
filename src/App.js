@@ -9,6 +9,7 @@ import IndexAbout from './components/IndexAbout';
 import IndexBody from './components/IndexBody';
 import MeetOurTeam from './components/MeetOurTeam';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 import WhatWeDo from './components/WhatWeDo';
 import {
   BrowserRouter as Router,
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Index/>} />
         <Route path='/aboutUs' element={<AboutUs/>} />
+        <Route path='/projects' element={<Projects/>} />
       </Routes>
 
     </Router>
