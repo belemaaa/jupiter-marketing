@@ -10,12 +10,12 @@ const Projects = () => {
         <NavBar/>
 
         <div className='flex flex-col'>
-            <div>
-                <p className='text-orange-700 text-3xl md:text-4xl font-bold mb-2 text-center'>
+            <div className='mt-20'>
+                <p className='text-black text-3xl md:text-4xl font-bold mb-2 text-center'>
                     Our Completed Projects
                 </p>
-                <p className='text-gray-800 text-2xl md:text-3xl font-bold'>
-                    Recent Projects
+                <p className=' text-center'>
+                    Have a look at some of our recent projects amongst others:
                 </p>
             </div>
         </div>

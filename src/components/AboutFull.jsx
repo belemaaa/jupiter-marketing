@@ -54,10 +54,11 @@ const AboutFull = () => {
 
         <div className='bg-black bg-opacity-5 mt-20'>
             <div className='py-12'>
-                <div className=' ml-24'>
-                    <p className='text-4xl pb-3 text-orange-700 font-bold'>Why Choose Us?</p>
+                <div className='ml-4 md:ml-24'>
+                    <p className='text-2xl md:text-4xl pb-3 text-orange-700 font-bold'>Why Choose Us?</p>
+                    <div className='border-b border-gray-500 mr-6'></div>
                 </div>
-                <div className='ml-24 mr-4'>
+                <div className='mx-4 md:mx-0 md:ml-24 mr-4 mt-6'>
                     <p>
                     As a leading digital marketing company, Jupiter Marketing is the ultimate choice for businesses 
                     looking to thrive in the online world. Our team of seasoned professionals possesses a deep understanding 
