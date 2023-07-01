@@ -21,9 +21,8 @@ import {
 function App() {
   return (
     <Router>
-      
       <Routes>
-        <Route path='/' element={<Index/>} />
+        <Route path='/' exact element={<Index/>} />
         <Route path='/aboutUs' element={<AboutUs/>} />
       </Routes>
 

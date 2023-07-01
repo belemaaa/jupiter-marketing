@@ -5,13 +5,14 @@ import {FaLinkedinIn} from 'react-icons/fa'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsThreeDotsVertical} from 'react-icons/bs'
 import {FaTimes} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const ContactNav = () => {
 
   const [nav, setNav] = useState(false)
   const navLinks=[
-    {id:1, link:'Home'},
-    {id:2, link:'About Us'},
+    {id:1, link:'Home', href:'/'},
+    {id:2, link:'About Us', href: '/aboutUs'},
     {id:3, link:'Services'},
     {id:4, link:'Project'},
     {id:5, link:'Team'},
@@ -39,10 +40,10 @@ const ContactNav = () => {
       {nav && (
         <ul className='flex flex-col justify-center items-center absolute w-3/4 h-3/4
          bg-white text-gray-700 top-12 right-0'>
-          {navLinks.map(({id, link}) => (
+          {navLinks.map(({id, link, href}) => (
             <li key={id} className='py-4 hover:border-b-4 border-b-gray-500 hover:scale-110
             duration-500'>
-              <a className='px-1 cursor-pointer'>{link}</a>
+              <Link to={href} className='px-1 cursor-pointer'>{link}</Link>
             </li>
           ))}
         </ul>

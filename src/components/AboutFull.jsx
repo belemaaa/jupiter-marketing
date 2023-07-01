@@ -4,11 +4,11 @@ import aboutUsImage from '../assets/aboutUsImage.jpg'
 const AboutFull = () => {
   return (
 
-    <div className='flex mt-16 w-screen overflow-hidden mb-32 flex-col'>
+    <div className='flex mt-16 w-screen overflow-hidden mb-16 md:mb-32 flex-col'>
         <div className='flex flex-col md:flex-row '>
-            <div className='md:w-1/2 md:justify-start mx-6 md:ml-24 mt-12'>
+            <div className='md:w-1/2 md:justify-start mx-6 md:ml-24 mt-6 md:mt-12'>
                 <div>
-                    <p className='text-5xl pb-3 text-orange-700 font-bold'>ABOUT US</p>
+                    <p className='text-5xl pb-3 text-orange-700 font-bold'>About Us</p>
                     <p className='text-black text-2xl md:text-3xl font-semibold'>Leading The Way in Creative <br/> Digital Agency</p>
                 </div>
 
@@ -34,9 +34,9 @@ const AboutFull = () => {
                 </div>
             </div>
 
-            <img src={aboutUsImage} className='md:w-1/2 mx-6 md:mx-8 mt-6'/>
+            <img src={aboutUsImage} className='md:w-1/2 mx-6 md:mx-8 mt-1 md:mt-6'/>
         </div>
-        <p className='ml-24 mr-4 mt-5'>
+        <p className='md:ml-24 mr-4 mt-5 mx-6 md:mx-0'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias voluptates,
             at omnis, ratione ad accusantium necessitatibus vitae quam dolores iusto harum quia
             numquam illo facere! Ut excepturi optio laudantium labore, exercitationem suscipit
