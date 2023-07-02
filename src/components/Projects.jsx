@@ -95,6 +95,7 @@ const Projects = () => {
         </div>
 
         <Footer/>
+        {/* comment */}
     </div>
   )
 }
