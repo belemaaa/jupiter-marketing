@@ -11,21 +11,34 @@ const ContactNav = () => {
 
   const [nav, setNav] = useState(false)
   const navLinks=[
-    {id:1, link:'Home', href:'/'},
-    {id:2, link:'About Us', href: '/aboutUs'},
-    {id:3, link:'Services'},
-    {id:4, link:'Project', href:'/projects'},
-    {id:5, link:'Team', href:'/team'},
-    {id:6, link:'Contact Us'},
+    {
+      id:1, link:'Home', href:'/'
+    },
+    {
+      id:2, link:'About Us', href: '/aboutUs'
+    },
+    {
+      id:3, link:'Services'
+    },
+    {
+      id:4, link:'Project', href:'/projects'
+    },
+    {
+      id:5, link:'Team', href:'/team'
+    },
+    {
+      id:6, link:'Contact Us'
+    },
   ]
  
   return (
     <div className='flex bg-gray-700 flex-row items-center justify-between w-screen overflow-hidden transition-all'>
 
       <div>
-        <p className='text-white font-semibold text-sm md:text-sm py-4 md:py-3 ml-4 md:ml-72
-        '>MON - SAT: 8:00AM - 8:00PM</p>
+        <p className='text-white font-semibold text-sm md:text-sm py-4 md:py-3 ml-4 md:ml-72'>
+          MON - SAT: 8:00AM - 8:00PM</p>
       </div>
+
       <div className='flex mb-1 md:mb-0 py-3 items-end justify-end mr-3 ml-12 md:ml-0 md:mr-72'>
           <FaFacebookF size={15} className='text-white mr-2 md:mr-3'/>
           <IoLogoTwitter size={15} className='text-white mr-2 md:mx-3'/>
