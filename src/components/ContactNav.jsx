@@ -15,7 +15,7 @@ const ContactNav = () => {
     {id:2, link:'About Us', href: '/aboutUs'},
     {id:3, link:'Services'},
     {id:4, link:'Project', href:'/projects'},
-    {id:5, link:'Team'},
+    {id:5, link:'Team', href:'/team'},
     {id:6, link:'Contact Us'},
   ]
  
