@@ -33,10 +33,10 @@ const ContactNav = () => {
  
   return (
     <div className='flex bg-gray-700 flex-row items-center justify-between w-screen overflow-hidden transition-all'>
-
       <div>
         <p className='text-white font-semibold text-sm md:text-sm py-4 md:py-3 ml-4 md:ml-72'>
-          MON - SAT: 8:00AM - 8:00PM</p>
+          MON - SAT: 8:00AM - 8:00PM
+        </p>
       </div>
 
       <div className='flex mb-1 md:mb-0 py-3 items-end justify-end mr-3 ml-12 md:ml-0 md:mr-72'>
