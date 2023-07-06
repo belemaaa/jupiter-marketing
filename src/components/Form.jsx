@@ -27,32 +27,61 @@ const Form = () => {
         setFormData({});
     }
     return (
-        <div>
-            <div className='text-black'>
-                <p>
-                    Want to Know More?? Drop Us A Mail
-                </p>
+        <div className='flex flex-col items-center justify-center'>
+            <div className='border border-gray-500 mt-16 rounded-lg'>
+                <div className='px-12'>
+                    <div className=''>
+                        <p className='mt-16 text-black font-semibold text-2xl text-center'>
+                            Want to Know More?? 
+                        </p>
+                        <p className=' text-black font-semibold text-2xl text-center'>
+                            Drop Us A Mail
+                        </p>
+                    </div>
+                    <div className='mt-6'>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <label className='text-gray-700 font-semibold'>First Name:</label> <br/>
+                            <input 
+                            type="text" 
+                            name="f_name"  
+                            className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                            required/>
+                            <br/>
+
+                            <label className='text-gray-700 font-semibold'>Last Name:</label> <br/>
+                            <input 
+                            type="text" 
+                            name="f_name"  
+                            className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                            required/>
+                            <br/>
+
+                            <label className='text-gray-700 font-semibold'>Email:</label> <br/>
+                            <input 
+                            type="email" 
+                            name="email"  
+                            className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                            required/>
+                            <br/>
+
+                            <label className='text-gray-700 font-semibold'>Contact Number:</label> <br/>
+                            <input 
+                            type="phone" 
+                            name="phone"  
+                            className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                            required/>
+                            <br/> 
+                            <label>Message</label>
+                            <textarea name="message" required/>
+                            <br/>
+                            <input type="submit" value="Send" onClick={sendBtn} />
+                        </form>
+                    </div>
+
+                </div>
+
             </div>
-            <div>
-                <form ref={form} onSubmit={sendEmail}>
-                    <label>First Name</label>
-                    <input type="text" name="f_name" className='' required/>
-                    <br/>
-                    <label>Last Name</label>
-                    <input type="text" name="l_name" required/>
-                    <br/>
-                    <label>Email </label>
-                    <input type="email" name="email" required/>
-                    <br/>
-                    <label>Contact Number</label>
-                    <input type="phone" name="phone" required/>
-                    <br/> 
-                    <label>Message</label>
-                    <textarea name="message" required/>
-                    <br/>
-                    <input type="submit" value="Send" onClick={sendBtn} />
-                </form>
-            </div>
+          
         </div>
     )
 }
