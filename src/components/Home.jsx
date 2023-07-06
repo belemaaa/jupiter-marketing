@@ -1,13 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import banner52 from '../assets/banner-images/banner52.jpg'
 import banner1 from '../assets/banner-images/banner1.jpg'
 import banner3 from '../assets/banner-images/banner3.jpg'
 import {BsTelephoneFill} from 'react-icons/bs'
 
 const Home = () => {
+
+  // const[imgBrightness, setImgBrightness] = useState(50)
+  // const handleClick = () => {
+  //   setImgBrightness(100);
+  // };
+  
+
   return (
     <div className='w-screen overflow-hidden'>
-        <img src={banner52} className=' w-screen h-80 md:h-96 md:brightness-50'/>
+        <img src={banner52} className=' w-screen h-80 md:h-96 brightness-80'/>
 
         <div className='absolute top-52 ml-5 md:ml-20'>
           <p className='font-thin text-white text-3xl md:text-6xl'>We Help You <br className='md:hidden'/> Grow</p>
