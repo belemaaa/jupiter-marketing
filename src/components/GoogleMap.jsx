@@ -4,18 +4,26 @@ import {RxDotFilled} from 'react-icons/rx'
 const GoogleMap = () => {
   return (
     <div className=''>
-      <div className='flex items-center justify-center flex-col mt-16'> 
+      <div className='flex items-center justify-center text-justify flex-col mt-16'> 
         <p className='text-gray-700 text-4xl font-semibold'>Contact Us</p>
-        <p className='mt-2 mb-1 font-semibold'>
+
+        <p className='mt-2 mb-1 flex flex-row'>
+          <RxDotFilled size={20} className='text-black -mr-1'/>
           352/71 Second Street, King Street, Kingston, United Kingdom
         </p>
-        <p className='mb-1 font-semibold'>
+
+        <p className='mb-1 flex flex-row'>
+          <RxDotFilled size={20} className='text-black -mr-1'/>
           Phone : +44 123456789
         </p>
-        <p className='mb-1 font-semibold'>
+
+        <p className='mb-1 flex flex-row'>
+          <RxDotFilled size={20} className='text-black -mr-1'/>
           Email : me@jupiter.com
         </p>
-        <p className='mb-1 font-semibold'>
+
+        <p className='mb-1 flex flex-row'>
+          <RxDotFilled size={20} className='text-black'/>
           Fax : +44 123456789
         </p>
       </div>
