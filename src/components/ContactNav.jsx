@@ -27,14 +27,16 @@ const ContactNav = () => {
       id:5, link:'Team', href:'/team'
     },
     {
-      id:6, link:'Contact Us'
+      id:6, link:'Contact Us', href:'/contact'
     },
   ]
  
   return (
-    <div className='flex bg-gray-700 flex-row items-center justify-between w-screen overflow-hidden transition-all'>
+    <div className='flex bg-gray-700 flex-row items-center justify-between 
+    w-screen overflow-hidden transition-all'>
       <div>
-        <p className='text-white font-semibold text-sm md:text-sm py-4 md:py-3 ml-4 md:ml-72'>
+        <p className='text-white font-semibold text-sm md:text-sm 
+        py-4 md:py-3 ml-4 md:ml-72'>
           MON - SAT: 8:00AM - 8:00PM
         </p>
       </div>

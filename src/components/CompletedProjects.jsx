@@ -12,24 +12,32 @@ const CompletedProjects = () => {
               <p className='text-orange-700 text-3xl md:text-4xl font-bold mb-2 text-center'>
                 OUR COMPLETED <br className='md:hidden'/> PROJECTS
               </p>
-              <p className='text-gray-800 text-2xl md:text-3xl font-bold'>Recent Projects</p>
+              <p className='text-gray-800 text-2xl md:text-3xl font-bold'>
+                Recent Projects
+              </p>
               <div className='border-2 mt-3 w-12 border-pink-300 '></div>
         </div>
 
         <div className='mx-12 flex flex-col md:flex-row items-center justify-between'>
           <div className='mb-4 md:mb-0'>
             <img src={recentProject1} className='w-96 hover:scale-110 duration-500'/>
-            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>ARCHITECTURE</p>
+            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>
+              ARCHITECTURE
+            </p>
           </div>
 
           <div className='mb-4 md:mb-0'>
             <img src={recentProject2} className='w-96 hover:scale-110 duration-500'/>
-            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>DEVELOPMENT</p>
+            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>
+              DEVELOPMENT
+            </p>
           </div>
 
           <div className='mb-4 md:mb-0'>
             <img src={recentProject3} className='w-96 hover:scale-110 duration-500'/>
-            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>DESIGN</p>
+            <p className='text-center mt-4 text-2xl font-bold text-gray-800'>
+              DESIGN
+            </p>
           </div>
         </div>
 

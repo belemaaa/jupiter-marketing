@@ -42,9 +42,9 @@ const NavBar = () => {
                         </Link>
                     </li>
                     <li className='mx-5 cursor-pointer hover:border-b-4 border-gray-500 pb-3 hover:scale-105 duration-200'>
-                        <a href=''>
+                        <Link to='/contact'>
                             Contact Us
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
