@@ -51,8 +51,8 @@ const ContactNav = () => {
       </div>
 
       {nav && (
-        <ul className='flex flex-col justify-center items-center absolute w-3/4 h-3/4
-         bg-white text-gray-700 top-12 right-0'>
+        <ul className='flex flex-col justify-center items-center absolute w-60 h-96
+         bg-white scroll-smooth text-gray-700 top-12 right-0'>
           {navLinks.map(({id, link, href}) => (
             <li key={id} className='py-4 hover:border-b-4 border-b-gray-500 hover:scale-110
             duration-500'>
