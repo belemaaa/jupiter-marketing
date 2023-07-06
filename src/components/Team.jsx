@@ -19,18 +19,18 @@ import ourTeam13 from '../assets/team/ourTeam13.jpg'
 
 const Team = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <ContactNav/>
         <NavBar/>
         <div className='flex flex-col py-16'>
             <div className=''>
-                <p className=' text-gray-800 text-3xl md:text-5xl font-bold mb-2 ml-12 mt-6'>
+                <p className=' text-gray-800 text-3xl md:text-5xl font-bold mb-2 ml-8 md:ml-12 mt-6'>
                     OUR TEAM
                 </p>
-                <div className='border-b border-b-black ml-12 mr-24'></div>
+                <div className='border-b border-b-black ml-8 md:ml-12 mr-24'></div>
             </div>
 
-            <div className='mx-12 mt-6'>
+            <div className='mx-8 md:mx-12 mt-6'>
                 <p className='text-justify text-gray-700'>
                     Our team is a dynamic and highly motivated group of individuals working together towards a common goal. 
                     We are a diverse blend of talents, each bringing our unique skills and experiences to the table. 
@@ -47,57 +47,89 @@ const Team = () => {
             </div>
 
             <div className='flex flex-col items-center justify-center mt-8'>
-                <p className='text-3xl font-bold text-gray-800'>OUR EXPERTS</p>
+                <p className='text-2xl md:text-3xl font-bold text-gray-800'>OUR EXPERTS</p>
                 <div className='border-2 mt-3 w-12 border-gray-500 '></div>
             </div>
 
             <div className='mx-12 mt-6 flex flex-col'>
-                <div className='flex flex-row'>
-                    <div className='mr-4'>
+                <div className='flex flex-col md:flex-row'>
+                    <div className='md:mr-4 mb-5 md:mb-0'>
                         <img src={ourTeam4}/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>MANAGER/CEO</p>
+                        <p className='text-center mt-2 md:mt-4 font-bold 
+                        text-black text-lg'>
+                            MANAGER/CEO
+                        </p>
                     </div>
-                    <div className='mx-4'>
+                    <div className='md:mb-0 mb-5 md:mx-4'>
                         <img src={ourTeam1}/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>PRODUCT DESIGNER</p>
+                        <p className='text-center mt-2 md:mt-4 font-bold 
+                        text-black text-lg'>
+                            PRODUCT DESIGNER
+                        </p>
                     </div>
-                    <div className='mx-4'>
+                    <div className='md:mb-0 mb-5 md:mx-4'>
                         <img src={ourTeam2}/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>LEAD DEVELOPER</p>
+                        <p className='text-center mt-2 md:mt-4 font-bold 
+                        text-black text-lg'>
+                            LEAD DEVELOPER
+                        </p>
                     </div>
-                    <div className='ml-4'>
+                    <div className='md:mb-0 mb-5 md:ml-4'>
                         <img src={ourTeam3} className=''/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>MARKETING MANAGER</p>
+                        <p className='text-center mt-2 md:mt-4 font-bold 
+                        text-black text-lg'>
+                            MARKETING MANAGER
+                        </p>
                     </div>
                 </div>
 
-                <div className='flex flex-row my-12'>
-                    <div className='mr-4'>
+
+                <div className='flex flex-col md:flex-row md:my-12'>
+                    <div className='mb-5 md:mb-0 md:mr-4'>
                         <img src={ourTeam5} className='w-96'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>DATA ANALYST</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            DATA ANALYST
+                        </p>
                     </div>
-                    <div className='mx-4'>
+                    <div className='mb-5 md:mb-0 md:mx-4'>
                         <img src={ourTeam6} className='w-96'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>DIGITAL MARKETER</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            DIGITAL MARKETER
+                        </p>
                     </div>
-                    <div className='mx-4'>
+                    <div className='md:mb-0 mb-5 md:mx-4'>
                         <img src={ourTeam7} className='w-96'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>CONSULTANT</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            CONSULTANT
+                        </p>
                     </div>
-                    <div className='ml-4'>
+                    <div className='md:mb-0 mb-5 md:ml-4'>
                         <img src={ourTeam9} className='w-96 h-48'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>SOFTWARE ENGINEER</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            SOFTWARE ENGINEER
+                        </p>
                     </div>
                 </div>
 
-                <div className='flex flex-row mb-12 items-center justify-center'>
-                    <div className='mx-4'>
+
+                <div className='flex flex-col md:flex-row mb-12 items-center justify-center'>
+                    <div className='md:mb-0 mb-5 md:mx-4'>
                         <img src={ourTeam11} className='w-96 h-60'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>FRONTEND DEVELOPER</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            FRONTEND DEVELOPER
+                        </p>
                     </div>
-                    <div className='mx-4'>
+                    <div className='md:mb-0 mb-5 md:mx-4'>
                         <img src={ourTeam12} className='w-96 h-60'/>
-                        <p className='text-center mt-4 font-bold text-black text-lg'>DIRECTOR</p>
+                        <p className='text-center mt-4 font-bold 
+                        text-black text-lg'>
+                            DIRECTOR
+                        </p>
                     </div>
                 </div>
             </div>
