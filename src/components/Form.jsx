@@ -3,15 +3,18 @@ import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const form = useRef();
+    const[formData, setFormData] = useState({})
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setFormData({});
 
     emailjs.sendForm(
         'service_ayw69hn', 
         'template_gzizp4p', 
         form.current, 
-        '5NCZedujgHkFIVD1X')
+        '5NCZedujgHkFIVD1X'
+        )
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -19,13 +22,6 @@ const Form = () => {
       });
     }
 
-    // function clears form data on submission and returns alert message
-    const[formData, setFormData] = useState({})
-    const sendBtn = () =>{
-        alert("Message sent successfully")
-        form.current.reset();
-        setFormData({});
-    }
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='border border-gray-500 my-16 rounded-lg'>
@@ -64,7 +60,7 @@ const Form = () => {
 
                             <label className='text-gray-700 font-semibold'>
                                 Email:
-                                </label> 
+                            </label> 
                             <br/>
                             <input 
                             type="email" 
@@ -75,7 +71,7 @@ const Form = () => {
 
                             <label className='text-gray-700 font-semibold'>
                                 Contact Number:
-                                </label> 
+                            </label> 
                             <br/>
                             <input 
                             type="phone" 
@@ -97,7 +93,10 @@ const Form = () => {
                             <input 
                             type="submit" 
                             value="Send" 
-                            onClick={sendBtn} />
+                            // onClick={sendBtn}
+                            className='flex mx-40 bg-gray-700 
+                            hover:bg-black text-white font-semibold py-2 px-4 mb-3'
+                            />
                         </form>
                     </div>
 
