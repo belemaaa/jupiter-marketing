@@ -10,8 +10,8 @@ const Contact = () => {
     <div>
         <ContactNav/>
         <NavBar/>
-        <GoogleMap/>
         <Form/>
+        <GoogleMap/>
         <Footer/>
     </div>
   )

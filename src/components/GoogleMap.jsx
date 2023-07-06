@@ -3,9 +3,9 @@ import {RxDotFilled} from 'react-icons/rx'
 
 const GoogleMap = () => {
   return (
-    <div className=''>
-      <div className='flex items-center justify-center text-justify flex-col mt-16'> 
-        <p className='text-gray-700 text-4xl font-semibold'>Contact Us</p>
+    <div className='mb-24'>
+      <div className='flex items-center justify-center text-justify flex-col'> 
+        <p className='text-black text-4xl font-semibold'>Contact Us</p>
 
         <p className='mt-2 mb-1 flex flex-row'>
           <RxDotFilled size={20} className='text-black -mr-1'/>
