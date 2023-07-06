@@ -2,16 +2,14 @@ import React from 'react'
 import ContactNav from './ContactNav'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import Form from './Form'
 
 const Contact = () => {
   return (
     <div>
         <ContactNav/>
         <NavBar/>
-        <div>
-
-        </div>
-
+        <Form/>
         <Footer/>
     </div>
   )
