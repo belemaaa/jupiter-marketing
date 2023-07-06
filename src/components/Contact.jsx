@@ -3,6 +3,7 @@ import ContactNav from './ContactNav'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import Form from './Form'
+import GoogleMap from './GoogleMap'
 
 const Contact = () => {
   return (
@@ -10,6 +11,7 @@ const Contact = () => {
         <ContactNav/>
         <NavBar/>
         <Form/>
+        <GoogleMap/>
         <Footer/>
     </div>
   )
