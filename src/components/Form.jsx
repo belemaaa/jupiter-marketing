@@ -27,19 +27,19 @@ const Form = () => {
     }
 
     return (
-        <div className='flex flex-row'>
-            <div className='flex flex-col items-start justify-start'>
-                <div className='border border-gray-500 mt-20 mb-16 ml-24 rounded-lg'>
-                    <div className='px-12'>
-                        <div>
-                            <p className='mt-16 text-black font-semibold text-2xl text-center'>
+        <div className='flex flex-row overflow-hidden'>
+            <div className='flex flex-col md:items-start md:justify-start'>
+                <div className='border border-gray-500 ml-4 w-96 md:w-fit mt-20 mb-16 md:ml-24 rounded-lg'>
+                    <div className='md:px-12'>
+                        <div className='flex flex-col items-center justify-center'>
+                            <p className='mt-16 text-black font-semibold text-2xl'>
                                 Want to Know More?? 
                             </p>
-                            <p className=' text-black font-semibold text-2xl text-center'>
+                            <p className=' text-black font-semibold text-2xl'>
                                 Drop Us A Mail
                             </p>
                         </div>
-                        <div className='mt-6'>
+                        <div className='mt-6 mx-8 md:mx-0'>
                             <form ref={form} onSubmit={sendEmail}>
                                 <label className='text-gray-700 font-semibold'>
                                     First Name:
@@ -48,7 +48,7 @@ const Form = () => {
                                 <input 
                                 type="text" 
                                 name="f_name"  
-                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
                                 required/>
                                 <br/>
 
@@ -59,7 +59,7 @@ const Form = () => {
                                 <input 
                                 type="text" 
                                 name="f_name"  
-                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
                                 required/>
                                 <br/>
 
@@ -70,7 +70,7 @@ const Form = () => {
                                 <input 
                                 type="email" 
                                 name="email"  
-                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
                                 required/>
                                 <br/>
 
@@ -81,7 +81,7 @@ const Form = () => {
                                 <input 
                                 type="phone" 
                                 name="phone"  
-                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 text-black mb-6' 
+                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
                                 required/>
                                 <br/> 
 
@@ -91,7 +91,7 @@ const Form = () => {
                                 <br/>
                                 <textarea
                                 name="message" 
-                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-96 h-44 text-black mb-6' 
+                                className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 h-44 text-black mb-6' 
                                 required/>
                                 <br/>
 
@@ -99,7 +99,7 @@ const Form = () => {
                                 type="submit" 
                                 value="Send" 
                                 // onClick={sendBtn}
-                                className='flex mx-40 bg-gray-700 
+                                className='flex mx-32 md:mx-40 bg-gray-700 
                                 hover:bg-black text-white font-semibold py-2 px-4 mb-3'
                                 />
                             </form>
@@ -111,8 +111,8 @@ const Form = () => {
           
             </div>
 
-            <div className='mt-52 ml-20'>
-                <img src={banner3} className='w-5/6 h-3/4 rounded-full drop-shadow-2xl'/>
+            <div className='hidden md:flex mt-52 ml-20'>
+                <img src={banner3} className='hidden md:flex w-5/6 h-3/4 rounded-full drop-shadow-2xl'/>
             </div>
         </div>
        
