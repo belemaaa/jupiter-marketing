@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' exact element={<Index/>} />
+        <Route path='/jupiter-marketing' exact element={<Index/>} />
         <Route path='/aboutUs' element={<AboutUs/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/team' element={<Team/>} />

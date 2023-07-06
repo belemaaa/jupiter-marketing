@@ -17,7 +17,7 @@ const NavBar = () => {
             <div className='text-black'>
                 <ul className='hidden md:flex mt-1 font-semibold'>
                     <li className='ml-10 md:mx-5 cursor-pointer hover:border-b-4 border-gray-500 pb-3 hover:scale-105 duration-200'>
-                        <Link to="/">
+                        <Link to="/jupiter-marketing">
                             Home
                         </Link>
                     </li>

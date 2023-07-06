@@ -12,7 +12,7 @@ const ContactNav = () => {
   const [nav, setNav] = useState(false)
   const navLinks=[
     {
-      id:1, link:'Home', href:'/'
+      id:1, link:'Home', href:'/jupiter-marketing'
     },
     {
       id:2, link:'About Us', href: '/aboutUs'
