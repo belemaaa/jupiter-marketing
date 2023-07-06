@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className='w-screen overflow-hidden'>
-        <img src={banner52} className=' w-screen h-80 md:h-96 brightness-80'/>
+        <img src={banner52} className=' w-screen h-80 md:h-96 brightness-80 md:brightness-50'/>
 
         <div className='absolute top-52 ml-5 md:ml-20'>
           <p className='font-thin text-white text-3xl md:text-6xl'>We Help You <br className='md:hidden'/> Grow</p>

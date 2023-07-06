@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Form = () => {
@@ -18,6 +18,14 @@ const Form = () => {
           console.log(error.text);
       });
     }
+
+    // function clears form data on submission and returns alert message
+    const[formData, setFormData] = useState({})
+    const sendBtn = () =>{
+        alert("Message sent successfully")
+        form.current.reset();
+        setFormData({});
+    }
     return (
         <div>
             <div className='text-black'>
@@ -28,16 +36,21 @@ const Form = () => {
             <div>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>First Name</label>
-                    <input type="text" name="f_name" required/>
+                    <input type="text" name="f_name" className='' required/>
+                    <br/>
                     <label>Last Name</label>
                     <input type="text" name="l_name" required/>
-                    <label>Email</label>
+                    <br/>
+                    <label>Email </label>
                     <input type="email" name="email" required/>
+                    <br/>
                     <label>Contact Number</label>
                     <input type="phone" name="phone" required/>
+                    <br/> 
                     <label>Message</label>
                     <textarea name="message" required/>
-                    <input type="submit" value="Send" />
+                    <br/>
+                    <input type="submit" value="Send" onClick={sendBtn} />
                 </form>
             </div>
         </div>
