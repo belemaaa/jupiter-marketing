@@ -7,7 +7,6 @@ const Form = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setFormData({});
 
     emailjs.sendForm(
         'service_ayw69hn', 
@@ -17,6 +16,10 @@ const Form = () => {
         )
       .then((result) => {
           console.log(result.text);
+          // Reset form fields after successful submission
+          form.current.reset();
+          setFormData({});
+
       }, (error) => {
           console.log(error.text);
       });
