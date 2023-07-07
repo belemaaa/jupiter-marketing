@@ -54,10 +54,43 @@ const Index = () => {
               className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
             </div>
 
-            <div>
-              
+            <div className='absolute bottom-4 right-0 left-0'>
+              <div className='flex items-center justify-center gap-2'>
+                {slides.map((_, i) => (
+                  <div
+                  className={'transition-all w-3 h-3 bg-white rounded-full'}>       
+                  </div>
+                ))}
+
+              </div>
             </div>
             
+          </div>
+
+          <div className='flex flex-row mt-6'>
+            <div className='p-4'>
+              <p className='text-3xl font-semibold'>Email Marketing</p>
+              <p className='max-w-sm'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div className='p-4'>
+              <p className='text-3xl font-semibold'>Email Marketing</p>
+              <p className='max-w-sm'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div className='p-4'>
+              <p className='text-3xl font-semibold'>Email Marketing</p>
+              <p className='max-w-sm'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
         </div>
         
