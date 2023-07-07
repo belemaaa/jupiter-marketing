@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
 import NavBar from './NavBar'
 import banner1 from '../assets/banner-images/banner1.jpg'
-import banner2 from '../assets/banner-images/banner2.jpg'
 import banner3 from '../assets/banner-images/banner3.jpg'
-import banner4 from '../assets/banner-images/banner4.jpg'
 import banner5 from '../assets/banner-images/banner5.jpg'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {AiOutlineArrowLeft} from 'react-icons/ai'
@@ -12,24 +10,28 @@ import {AiOutlineArrowLeft} from 'react-icons/ai'
 const Index = () => {
 
   const slides = [
-    {
-      image:{banner1}
-    },
-    {
-      image:{banner2}
-    },
-    {
-      image:{banner3}
-    },
-    {
-      image:{banner4}
-    },
-    {
-      image:{banner5}
-    },
+    banner1,
+    banner3,
+    banner5
   ]
   
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [index, setIndex] = useState(0)
+  const nextImage = () =>{
+    setIndex((prevIndex) =>
+    (prevIndex + 1) % slides.length    
+    )
+  }
+
+  const prevImage = () =>{
+    setIndex((prevIndex) => {
+      if (prevIndex === 0){
+        return slides.length - 1
+      }
+      else{
+        return prevIndex - 1
+      }
+    })
+  }
   
 
   return (
@@ -38,13 +40,16 @@ const Index = () => {
 
         <div className='relative flex flex-col'>
           <div className='flex flex-row'>
-            <AiOutlineArrowLeft/>
-            <AiOutlineArrowRight/>
+            <AiOutlineArrowLeft onClick={prevImage}/>
 
-            {slides.map(({index, image}) => (
+            <img src={slides[index]} className='w-44'/>
+
+            <AiOutlineArrowRight onClick={nextImage}/>
+
+            {/* {slides.map(({index, image}) => (
               <>
               </>
-            ))}
+            ))} */}
             
           </div>
         </div>
