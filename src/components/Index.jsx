@@ -69,7 +69,7 @@ const Index = () => {
             
           </div>
 
-          <div className='flex flex-col md:flex-row -mt-10 md:mt-6'>
+          <div className='flex flex-col md:flex-row -mt-10 md:-mt-10'>
             <div className='p-3'>
               <p className='text-3xl font-semibold'>Email Marketing</p>
               <p className='max-w-lg'>
@@ -129,8 +129,40 @@ const Index = () => {
                 <Link to='/aboutUs' className='text-blue-600 underline'>Read More</Link>
               </div>
 
-              <img src={aboutUsImage} className='md:w-1/2 mx-6 md:mx-8 mt-6'/>
+              <img src={aboutUsImage} className='md:w-1/2 mx-3 md:mx-8 mt-6'/>
             </div>
+          </div>
+
+          <div className='flex flex-col mt-16 relative'>
+            <div className='flex items-start justify-start m-3'>
+              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2'>WHAT WE DO</p>
+            </div>
+
+            <div className='border-2 m-4 w-12 border-pink-300'></div>
+
+            <div className='flex flex-col -mt-3'>
+              <div className='flex flex-row'>
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800'>
+                  Digital Branding
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 md:ml-52'>
+                  Creative Solution
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 md:ml-52'>
+                  Web Solution
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link>                   
+              </div>
+            </div>
+
+              
           </div>
 
           
