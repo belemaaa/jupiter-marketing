@@ -56,7 +56,7 @@ const Index = () => {
               className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
             </div>
 
-            <div className='absolute bottom-96 top-[350px] md:top-[400px] right-0 left-0'>
+            <div className='absolute md:bottom-96 top-[350px] md:top-[400px] right-0 left-0'>
               <div className='flex items-center justify-center gap-2'>
                 {slides.map((_, i) => (
                   <div
@@ -69,8 +69,8 @@ const Index = () => {
             
           </div>
 
-          <div className='flex flex-row mt-6'>
-            <div className='p-4'>
+          <div className='flex flex-col md:flex-row -mt-10 md:mt-6'>
+            <div className='p-3'>
               <p className='text-3xl font-semibold'>Email Marketing</p>
               <p className='max-w-lg'>
                 Risus commodo maecenas accumsan lacus vel facilisis. 
@@ -78,7 +78,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className='p-4'>
+            <div className='p-3'>
               <p className='text-3xl font-semibold'>Market Analysis</p>
               <p className='max-w-lg'>
                 Risus commodo maecenas accumsan lacus vel facilisis. 
@@ -86,7 +86,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className='p-4'>
+            <div className='p-3'>
               <p className='text-3xl font-semibold'>Keyword Research</p>
               <p className='max-w-lg'>
                 Risus commodo maecenas accumsan lacus vel facilisis. 
@@ -97,16 +97,23 @@ const Index = () => {
 
           <div className=''>
             <div className='flex mt-4 flex-col md:flex-row'>
-              <div className='md:w-1/2 md:justify-start mx-6 md:ml-24 mt-12'>
+              <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-10 md:mt-12'>
                 <div>
-                  <p className='text-5xl pb-3 text-orange-700 font-bold'>ABOUT US</p>
-                  <p className='text-black text-2xl md:text-3xl font-semibold'>Leading The Way in Creative <br/> Digital Agency</p>
+                  <p className='text-2xl md:text-5xl pb-3 text-orange-700 
+                  font-extrabold md:font-bold'>
+                    ABOUT US
+                  </p>
+                  <p className='text-black text-4xl mt-2 md:mt-0
+                   md:text-3xl font-semibold'>
+                    Leading The Way In Creative <br className='hidden md:flex'/> 
+                    Digital <br className='md:hidden'/> Agency
+                  </p>
                 </div>
 
                 <div className='border-2 mt-3 w-12 border-pink-300'></div>
 
                 <div>
-                  <p className='text-xl md:text-2xl pb-3 pt-1'>Best Digital Agency In The World</p>
+                  <p className='text-xl md:text-2xl pb-3 pt-2 md:pt-1'>Best Digital Agency In The World</p>
                   <p className='text-base md:text-sm max-w-xl md:text-justify'>
                   We provide marketing services to startups and small businesses to looking 
                   for a partner of their digital media, design & development, lead generation 
