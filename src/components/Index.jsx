@@ -1,25 +1,54 @@
-import React from 'react'
-import ContactNav from './ContactNav'
+import React, {useState} from 'react'
 import NavBar from './NavBar'
-import Home from './Home'
-import IndexBody from './IndexBody'
-import IndexAbout from './IndexAbout'
-import WhatWeDo from './WhatWeDo'
-import CompletedProjects from './CompletedProjects'
-import MeetOurTeam from './MeetOurTeam'
-import Footer from './Footer'
+import banner1 from '../assets/banner-images/banner1.jpg'
+import banner2 from '../assets/banner-images/banner2.jpg'
+import banner3 from '../assets/banner-images/banner3.jpg'
+import banner4 from '../assets/banner-images/banner4.jpg'
+import banner5 from '../assets/banner-images/banner5.jpg'
+import {AiOutlineArrowRight} from 'react-icons/ai'
+import {AiOutlineArrowLeft} from 'react-icons/ai'
+
 
 const Index = () => {
+
+  const slides = [
+    {
+      image:{banner1}
+    },
+    {
+      image:{banner2}
+    },
+    {
+      image:{banner3}
+    },
+    {
+      image:{banner4}
+    },
+    {
+      image:{banner5}
+    },
+  ]
+  
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+
   return (
     <div>
         <NavBar/>
-        {/* <Home/> 
-        <IndexBody/>
-        <IndexAbout/>
-        <WhatWeDo/>
-        <CompletedProjects/>
-        <MeetOurTeam/>
-        <Footer/> */}
+
+        <div className='relative flex flex-col'>
+          <div className='flex flex-row'>
+            <AiOutlineArrowLeft/>
+            <AiOutlineArrowRight/>
+
+            {slides.map(({index, image}) => (
+              <>
+              </>
+            ))}
+            
+          </div>
+        </div>
+        
     </div>
   )
 }
