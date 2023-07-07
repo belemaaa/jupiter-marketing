@@ -3,8 +3,8 @@ import NavBar from './NavBar'
 import banner1 from '../assets/banner-images/banner1.jpg'
 import banner3 from '../assets/banner-images/banner3.jpg'
 import banner5 from '../assets/banner-images/banner5.jpg'
-import {AiOutlineArrowRight} from 'react-icons/ai'
-import {AiOutlineArrowLeft} from 'react-icons/ai'
+import {IoIosArrowForward} from 'react-icons/io'
+import {IoIosArrowBack} from 'react-icons/io'
 
 
 const Index = () => {
@@ -35,21 +35,28 @@ const Index = () => {
   
 
   return (
-    <div>
+    <div className='overflow-hidden'>
         <NavBar/>
 
         <div className='relative flex flex-col'>
-          <div className='flex flex-row'>
-            <AiOutlineArrowLeft onClick={prevImage}/>
+          <div className=''>
+            <img src={slides[index]} 
+            className='w-screen h-[70vh] transition-transform ease-out duration-700'/>
 
-            <img src={slides[index]} className='w-44'/>
+            <div className='absolute inset-0 flex items-center justify-between p-4'>
+              <IoIosArrowBack 
+              size={40} 
+              onClick={prevImage}
+              className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
+              <IoIosArrowForward 
+              size={40} 
+              onClick={nextImage}
+              className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
+            </div>
 
-            <AiOutlineArrowRight onClick={nextImage}/>
-
-            {/* {slides.map(({index, image}) => (
-              <>
-              </>
-            ))} */}
+            <div>
+              
+            </div>
             
           </div>
         </div>
