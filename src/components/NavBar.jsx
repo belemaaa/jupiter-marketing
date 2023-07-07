@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from '../assets/jupiter-logo.jpg'
 import {BsCircle} from 'react-icons/bs'
 import banner5 from '../assets/banner-images/banner5.jpg'
 import AboutUs from './AboutUs'
 import {Link} from 'react-router-dom';
+import { FaTimes, FaBars } from 'react-icons/fa'
 
 
 const NavBar = () => {
-    const navLinks = [
+    const [nav, setNav] = useState(false)
+    const navLinks1 = [
         {
             id:1, link:'Home', href:'/jupiter-marketing'
         },
@@ -17,16 +19,17 @@ const NavBar = () => {
         {
             id:3, link:'Services', href:'/services'
         },
+    ]
+    const navLinks2 = [
         {
-            id:4, link:'Projects', href:'/projects'
+            id:1, link:'Projects', href:'/projects'
         },
         {
-            id:5, link:'Team', href:'/team'
+            id:2, link:'Team', href:'/team'
         },
         {
-            id:6, link:'Contact Us', href:'/contact'
+            id:3, link:'Contact Us', href:'/contact'
         }
-
     ]
     const navServices = [
         {
@@ -41,9 +44,20 @@ const NavBar = () => {
     ]
   return (
     <div className='flex flex-col overflow-hidden'>
-        <div className='hidden md:flex items-end justify-end'>
+        <div className='hidden md:flex items-end justify-end flex-row'>
             <ul className='flex items-end justify-end mt-5'>
-                {navLinks.map(({id, link, href}) => (
+                {navLinks1.map(({id, link, href}) => (
+                    <li
+                     key={id}
+                     className='px-4 text-blue-500'>
+                        <Link to={href}>
+                            {link}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+            <ul className='flex items-end justify-end mt-5 ml-16'>
+                {navLinks2.map(({id, link, href}) => (
                     <li
                      key={id}
                      className='px-4 text-blue-500'>
@@ -56,11 +70,54 @@ const NavBar = () => {
         </div>
 
         <div className='flex flex-row'>
-            <div className='md:ml-4'>
-                <img src={logo} className='w-screen md:w-full'/>
+            <div className='mt-4 md:mt-0 ml-4 md:ml-4'>
+                <img src={logo} className='w-60 md:w-full'/>
             </div>
 
-            <div className='hidden md:flex ml-96 items-end justify-end mt-4'>
+            <div onClick={() => setNav(!nav)} 
+            className='md:hidden ml-32 mr-4 mt-8'>
+                { nav ? <FaTimes size={30}/> : <FaBars size={30}/> }
+            </div>
+            {nav && (
+                <>
+                <ul className='md:hidden absolute left-0 top-32 ml-4'>
+                    {navLinks1.map(({id, link, href}) => (
+                        <li key={id}
+                        className='text-blue-500 py-2'>
+                            <Link to={href}>
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+
+                <ul className='md:hidden absolute left-0 top-64 ml-8'>
+                    {navServices.map(({id, link, href}) => (
+                        <li 
+                        key={id}
+                        className='text-blue-500 underline'>
+                            <Link to={href} className='flex flex-row'>
+                                <BsCircle size={7} className='text-black mr-3 mt-2'/>
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+
+                <ul className='md:hidden absolute left-0 top-80 mt-6 ml-4'>
+                    {navLinks2.map(({id, link, href}) => (
+                        <li key={id}
+                        className='text-blue-500 py-2'>
+                            <Link to={href}>
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                </>
+            )}
+
+            <div className='hidden md:flex ml-72 items-end justify-end mt-4'>
                 <ul className='ml-96'>
                     {navServices.map(({id, link, href}) => (
                         <li 
