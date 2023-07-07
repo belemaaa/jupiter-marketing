@@ -12,15 +12,14 @@ import Footer from './Footer'
 const Index = () => {
   return (
     <div>
-        <ContactNav/>
         <NavBar/>
-        <Home/> 
+        {/* <Home/> 
         <IndexBody/>
         <IndexAbout/>
         <WhatWeDo/>
         <CompletedProjects/>
         <MeetOurTeam/>
-        <Footer/>
+        <Footer/> */}
     </div>
   )
 }
