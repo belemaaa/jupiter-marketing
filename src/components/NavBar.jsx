@@ -49,7 +49,7 @@ const NavBar = () => {
                 {navLinks1.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-blue-500'>
+                     className='px-4 text-blue-500 cursor-pointer hover:text-blue-700'>
                         <Link to={href}>
                             {link}
                         </Link>
@@ -60,7 +60,7 @@ const NavBar = () => {
                 {navLinks2.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-blue-500'>
+                     className='px-4 text-blue-500 cursor-pointer hover:text-blue-700'>
                         <Link to={href}>
                             {link}
                         </Link>
@@ -76,7 +76,7 @@ const NavBar = () => {
             </div>
 
             <div onClick={() => setNav(!nav)} 
-            className='md:hidden ml-32 mr-4 mt-8'>
+            className='md:hidden ml-40 mt-6'>
                 { nav ? <FaTimes size={30}/> : <FaBars size={30}/> }
             </div>
             {nav && (
@@ -84,7 +84,7 @@ const NavBar = () => {
                 <ul className='md:hidden absolute left-0 top-32 ml-4'>
                     {navLinks1.map(({id, link, href}) => (
                         <li key={id}
-                        className='text-blue-500 py-2'>
+                        className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
                             <Link to={href}>
                                 {link}
                             </Link>
@@ -96,7 +96,7 @@ const NavBar = () => {
                     {navServices.map(({id, link, href}) => (
                         <li 
                         key={id}
-                        className='text-blue-500 underline'>
+                        className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
                             <Link to={href} className='flex flex-row'>
                                 <BsCircle size={7} className='text-black mr-3 mt-2'/>
                                 {link}
@@ -108,7 +108,7 @@ const NavBar = () => {
                 <ul className='md:hidden absolute left-0 top-80 mt-6 ml-4'>
                     {navLinks2.map(({id, link, href}) => (
                         <li key={id}
-                        className='text-blue-500 py-2'>
+                        className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
                             <Link to={href}>
                                 {link}
                             </Link>
@@ -123,7 +123,7 @@ const NavBar = () => {
                     {navServices.map(({id, link, href}) => (
                         <li 
                         key={id}
-                        className='text-blue-500 underline'>
+                        className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
                             <Link to={href} className='flex flex-row'>
                                 <BsCircle size={7} className='text-black mr-3 mt-2'/>
                                 {link}
