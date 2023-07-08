@@ -7,6 +7,11 @@ import {IoIosArrowForward} from 'react-icons/io'
 import {IoIosArrowBack} from 'react-icons/io'
 import aboutUsImage from '../assets/aboutUsImage.jpg'
 import { Link } from 'react-router-dom'
+import recentProject1 from '../assets/recent-project1.jpg'
+import recentProject2 from '../assets/recent-image3.jpg'
+import recentProject3 from '../assets/recent-image4.jpg'
+import creativeProject1 from '../assets/projects/creativeProject1.jpg'
+import creativeProject2 from '../assets/projects/creativeProject2.jpg'
 
 
 const Index = () => {
@@ -209,8 +214,41 @@ const Index = () => {
                 </Link>                   
               </div>
             </div>
+          </div>
 
-              
+          <div>
+            <div className='flex flex-col'>
+              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2 mt-10
+              ml-3'>
+                OUR COMPLETED PROJECTS
+              </p>
+              <p className='text-black text-4xl font-bold mt-3 ml-3'>
+                Recent Projects
+              </p>
+              <div className='border-2 m-3 w-12 border-pink-300'></div>
+            </div>
+
+            <div className='flex flex-row'>
+                <div className='m-3'>
+                  <img src={recentProject1} className='w-96'/>
+                  <p>Architecture</p>
+                </div>
+
+                <div className='m-3'>
+                  <img src={recentProject2} className='w-96'/>
+                  <p>Development</p>
+                </div>
+
+                <div className='m-3'>
+                  <img src={recentProject3} className='w-96'/>
+                  <p>Architecture</p>
+                </div>
+
+                <div className='m-3'>
+                  <img src={creativeProject1} className='h-60 w-96'/>
+                  <p>Development</p>
+                </div>
+            </div>
           </div>
 
           
