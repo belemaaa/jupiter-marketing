@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom'
 const Index = () => {
 
   const slides = [
-    banner1,
     banner3,
+    banner1,
     banner5
   ]
   
@@ -46,12 +46,11 @@ const Index = () => {
             className='w-screen h-96 md:h-[75vh] mt-2 md:mt-0 transition-transform ease-out duration-700'/>
 
             <div className='relative inset-0 -top-60 flex items-center justify-between p-4'>
-              <IoIosArrowBack 
-              size={40} 
+              <IoIosArrowBack size={40} 
               onClick={prevImage}
               className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
-              <IoIosArrowForward 
-              size={40} 
+
+              <IoIosArrowForward size={40} 
               onClick={nextImage}
               className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
             </div>
@@ -129,13 +128,15 @@ const Index = () => {
                 <Link to='/aboutUs' className='text-blue-600 underline'>Read More</Link>
               </div>
 
-              <img src={aboutUsImage} className='md:w-1/2 mx-3 md:mx-8 mt-6'/>
+              <img src={aboutUsImage} className='md:w-1/2 mx-3 md:mx-8 mt-10'/>
             </div>
           </div>
 
           <div className='flex flex-col mt-16 relative'>
             <div className='flex items-start justify-start m-3'>
-              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2'>WHAT WE DO</p>
+              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2'>
+                WHAT WE DO
+              </p>
             </div>
 
             <div className='border-2 m-4 w-12 border-pink-300'></div>
@@ -143,20 +144,67 @@ const Index = () => {
             <div className='flex flex-col -mt-3'>
               <div className='flex flex-row'>
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800'>
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800
+                font-semibold'>
                   Digital Branding
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 md:ml-52'>
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                md:ml-[200px] font-semibold'>
                   Creative Solution
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 md:ml-52'>
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                md:ml-[202px] font-semibold'>
                   Web Solution
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link>                   
+              </div>
+
+              <div className='flex flex-row'>
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 font-semibold'>
+                  Marketing
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                md:ml-[260px] font-semibold'>
+                  Paid Media
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                md:ml-[260px] font-semibold'>
+                  Data Science
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link>                   
+              </div>
+
+              <div className='flex flex-row'>
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 font-semibold'>
+                  Management
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline 
+                hover:text-blue-800 md:ml-[228px] font-semibold'>
+                  Social Media
+                  <IoIosArrowForward className='mt-1 ml-1'/>
+                </Link> 
+
+                <Link to='' 
+                className='flex flex-row text-xl text-blue-600 m-4 underline 
+                hover:text-blue-800 md:ml-[248px] font-semibold'>
+                  UI & UX Design
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link>                   
               </div>
