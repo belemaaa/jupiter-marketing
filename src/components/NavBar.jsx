@@ -44,7 +44,7 @@ const NavBar = () => {
     ]
   return (
     <div className='flex flex-col overflow-hidden'>
-        <div className='hidden md:flex items-end justify-end flex-row'>
+        <div className='hidden md:flex items-end justify-end flex-row bg-black bg-opacity-5'>
             <ul className='flex items-end justify-end mt-5'>
                 {navLinks1.map(({id, link, href}) => (
                     <li

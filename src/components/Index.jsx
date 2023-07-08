@@ -142,67 +142,67 @@ const Index = () => {
             <div className='border-2 m-4 w-12 border-pink-300'></div>
 
             <div className='flex flex-col -mt-3'>
-              <div className='flex flex-row'>
+              <div className='flex flex-col md:flex-row'>
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800
                 font-semibold'>
                   Digital Branding
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
                 md:ml-[200px] font-semibold'>
                   Creative Solution
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
                 md:ml-[202px] font-semibold'>
                   Web Solution
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link>                   
               </div>
 
-              <div className='flex flex-row'>
+              <div className='flex flex-col md:flex-row mt-6 md:mt-0'>
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 font-semibold'>
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 font-semibold'>
                   Marketing
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
                 md:ml-[260px] font-semibold'>
                   Paid Media
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
                 md:ml-[260px] font-semibold'>
                   Data Science
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link>                   
               </div>
 
-              <div className='flex flex-row'>
+              <div className='flex flex-col md:flex-row  mt-6 md:mt-0'>
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline hover:text-blue-800 font-semibold'>
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 font-semibold'>
                   Management
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline 
                 hover:text-blue-800 md:ml-[228px] font-semibold'>
                   Social Media
                   <IoIosArrowForward className='mt-1 ml-1'/>
                 </Link> 
 
                 <Link to='' 
-                className='flex flex-row text-xl text-blue-600 m-4 underline 
+                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline 
                 hover:text-blue-800 md:ml-[248px] font-semibold'>
                   UI & UX Design
                   <IoIosArrowForward className='mt-1 ml-1'/>
