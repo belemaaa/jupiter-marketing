@@ -222,31 +222,51 @@ const Index = () => {
               ml-3'>
                 OUR COMPLETED PROJECTS
               </p>
-              <p className='text-black text-4xl font-bold mt-3 ml-3'>
-                Recent Projects
-              </p>
+
+              <div className='flex flex-row mt-3'>
+                <p className='text-black text-4xl font-bold ml-3'>
+                  Recent Projects
+                </p>
+                <div className='ml-96 '>
+                  <Link to='' 
+                  className='ml-96 underline px-2 inline-block
+                  text-blue-600 hover:text-blue-800 border border-black
+                  bg-black bg-opacity-5 py-1 font-semibold'>
+                    All Projects
+                  </Link>
+                </div>
+              </div>
+            
               <div className='border-2 m-3 w-12 border-pink-300'></div>
             </div>
 
             <div className='flex flex-row'>
                 <div className='m-3'>
-                  <img src={recentProject1} className='w-96'/>
-                  <p>Architecture</p>
+                  <img src={recentProject1} className='w-96 shadow-lg'/>
+                  <p className='text-center font-semibold text-2xl mt-2'>
+                    Architecture
+                  </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject2} className='w-96'/>
-                  <p>Development</p>
+                  <img src={recentProject2} className='w-96 shadow-lg'/>
+                  <p className='text-center font-semibold text-2xl mt-2'>
+                    Development
+                  </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject3} className='w-96'/>
-                  <p>Architecture</p>
+                  <img src={recentProject3} className='w-96 shadow-lg'/>
+                  <p className='text-center font-semibold text-2xl mt-2'>
+                    Architecture
+                  </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={creativeProject1} className='h-60 w-96'/>
-                  <p>Development</p>
+                  <img src={creativeProject1} className='h-52 w-96 shadow-lg'/>
+                  <p className='text-center font-semibold text-2xl mt-2'>
+                    Development
+                  </p>
                 </div>
             </div>
           </div>
