@@ -218,7 +218,7 @@ const Index = () => {
 
           <div>
             <div className='flex flex-col'>
-              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2 mt-10
+              <p className='text-orange-700 text-2xl md:text-4xl font-extrabold mb-2 mt-10
               ml-3'>
                 OUR COMPLETED PROJECTS
               </p>
@@ -266,6 +266,7 @@ const Index = () => {
                   <img src={creativeProject1} className='h-52 w-96 shadow-lg'/>
                   <p className='text-center font-semibold text-2xl mt-2'>
                     Development
+                    {/* development */}
                   </p>
                 </div>
             </div>
