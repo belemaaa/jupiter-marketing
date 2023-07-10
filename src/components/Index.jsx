@@ -288,18 +288,18 @@ const Index = () => {
           <div>
             <div className='pt-12 pb-6'>
               <div>
-                  <p className='text-orange-700 text-5xl font-semibold m-3'>
+                  <p className='text-orange-700 text-3xl md:text-5xl font-semibold m-3'>
                       MEET OUR TEAM
                   </p>
               </div>
               
               <div className='flex flex-col'>
-                  <p className='text-3xl font-bold m-3'>Our Experts</p>
+                  <p className='text-3xl font-bold mt-2 ml-3 md:m-3'>Our Experts</p>
               </div>
 
               <div className='flex flex-col md:flex-row m-3'>
                 <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
-                <div className='md:ml-96'>
+                <div className='md:ml-96 mt-4 md:mt-0'>
                     <Link to='' 
                     className='md:ml-96 underline px-2 inline-block
                     text-blue-600 hover:text-blue-800 border border-black
@@ -309,18 +309,18 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col md:flex-row mx-3 mt-8'>
-                  <div className='mr-6 mb-4 md:mb-0'>
+              <div className='flex flex-col md:flex-row md:mx-3 mt-8 items-center justify-center'>
+                  <div className='md:mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam4} className='w-80'/>
                       <p className='text-xl text-center mt-2 font-semibold'>Architecture</p>
                       <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
-                  <div className='text-xl mr-6 mb-4 md:mb-0'>
+                  <div className='text-xl md:mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam1}  className='w-80'/>
                       <p className='text-center mt-2 font-semibold'>Development</p>
                       <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
-                  <div className='text-xl mr-6 mb-4 md:mb-0'>
+                  <div className='text-xl md:mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam2}  className='w-80'/>
                       <p className='text-center mt-2 font-semibold'>Development</p>
                       <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
