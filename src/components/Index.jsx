@@ -292,39 +292,44 @@ const Index = () => {
                       MEET OUR TEAM
                   </p>
               </div>
+              
               <div className='flex flex-col'>
                   <p className='text-3xl font-bold m-3'>Our Experts</p>
-                  <div className='border-b-4 mr-80 m-4 w-12 border-pink-200'></div>
+              </div>
+
+              <div className='flex flex-col md:flex-row m-3'>
+                <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
+                <div className='md:ml-96'>
+                    <Link to='' 
+                    className='md:ml-96 underline px-2 inline-block
+                    text-blue-600 hover:text-blue-800 border border-black
+                    bg-black bg-opacity-5 py-1 font-semibold'>
+                      View All
+                    </Link>
+                </div>
               </div>
 
               <div className='flex flex-col md:flex-row mx-3 mt-8'>
                   <div className='mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam4} className='w-80'/>
                       <p className='text-xl text-center mt-2 font-semibold'>Architecture</p>
-                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
                   <div className='text-xl mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam1}  className='w-80'/>
                       <p className='text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
                   <div className='text-xl mr-6 mb-4 md:mb-0'>
                       <img src={ourTeam2}  className='w-80'/>
                       <p className='text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
                   <div>
                       <img src={ourTeam3}  className='w-80'/>
                       <p className='text-xl text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                   </div>
-              </div>
-
-              <div className='flex items-center justify-center mt-5 flex-col'>
-                <Link to='/team' className='flex text-white bg-gray-800 py-2 px-4 hover:bg-black duration-500 mt-3 mb-3'>
-                VIEW ALL
-                </Link>
-                {/* <div className='w-20 border-b-4 border-b-gray-800'></div> */}
               </div>
             </div>
           </div>
