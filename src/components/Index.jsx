@@ -3,15 +3,20 @@ import NavBar from './NavBar'
 import banner1 from '../assets/banner-images/banner1.jpg'
 import banner3 from '../assets/banner-images/banner3.jpg'
 import banner5 from '../assets/banner-images/banner5.jpg'
-import {IoIosArrowForward} from 'react-icons/io'
-import {IoIosArrowBack} from 'react-icons/io'
-import aboutUsImage from '../assets/aboutUsImage.jpg'
-import { Link } from 'react-router-dom'
 import recentProject1 from '../assets/recent-project1.jpg'
 import recentProject2 from '../assets/recent-image3.jpg'
 import recentProject3 from '../assets/recent-image4.jpg'
 import creativeProject1 from '../assets/projects/creativeProject1.jpg'
 import creativeProject2 from '../assets/projects/creativeProject2.jpg'
+import ourTeam1 from '../assets/team/ourTeam1.jpg'
+import ourTeam2 from '../assets/team/ourTeam2.jpg'
+import ourTeam3 from '../assets/team/ourTeam3.jpg'
+import ourTeam4 from '../assets/team/ourTeam4.jpg'
+import aboutUsImage from '../assets/aboutUsImage.jpg'
+import {IoIosArrowForward} from 'react-icons/io'
+import {IoIosArrowBack} from 'react-icons/io'
+import { Link } from 'react-router-dom'
+
 
 
 const Index = () => {
@@ -39,6 +44,12 @@ const Index = () => {
       }
     })
   }
+
+  const slidesDots = () =>{
+    setIndex((prevIndex) => {
+      return (prevIndex + 1) % slides.length
+    })
+  }
   
 
   return (
@@ -63,7 +74,7 @@ const Index = () => {
             <div className='absolute md:bottom-96 top-[350px] md:top-[400px] right-0 left-0'>
               <div className='flex items-center justify-center gap-2'>
                 {slides.map((_, i) => (
-                  <div
+                  <div onClick={slidesDots}
                   className={'transition-all w-3 h-3 bg-white rounded-full'}>       
                   </div>
                 ))}
@@ -223,52 +234,98 @@ const Index = () => {
                 OUR COMPLETED PROJECTS
               </p>
 
-              <div className='flex flex-row mt-3'>
+              <div className='mt-3'>
                 <p className='text-black text-4xl font-bold ml-3'>
                   Recent Projects
                 </p>
-                <div className='ml-96 '>
+              </div>
+            
+            <div className='flex flex-col md:flex-row '>
+              <div className='border-b-4 mr-80 m-3 w-12 border-pink-200'></div>
+              <div className='md:ml-96 m-3'>
                   <Link to='' 
-                  className='ml-96 underline px-2 inline-block
+                  className='md:ml-96 underline px-2 inline-block
                   text-blue-600 hover:text-blue-800 border border-black
                   bg-black bg-opacity-5 py-1 font-semibold'>
                     All Projects
                   </Link>
-                </div>
               </div>
-            
-              <div className='border-2 m-3 w-12 border-pink-300'></div>
+            </div>
             </div>
 
-            <div className='flex flex-row'>
+            <div className='flex flex-col md:flex-row items-center justify-center'>
                 <div className='m-3'>
-                  <img src={recentProject1} className='w-96 shadow-lg'/>
+                  <img src={recentProject1} className='w-80 shadow-lg'/>
                   <p className='text-center font-semibold text-2xl mt-2'>
                     Architecture
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject2} className='w-96 shadow-lg'/>
+                  <img src={recentProject2} className='w-80 shadow-lg'/>
                   <p className='text-center font-semibold text-2xl mt-2'>
                     Development
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject3} className='w-96 shadow-lg'/>
+                  <img src={recentProject3} className='w-80 shadow-lg'/>
                   <p className='text-center font-semibold text-2xl mt-2'>
                     Architecture
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={creativeProject1} className='h-52 w-96 shadow-lg'/>
+                  <img src={creativeProject1} className='h-52 w-80 shadow-lg'/>
                   <p className='text-center font-semibold text-2xl mt-2'>
                     Development
                     {/* development */}
                   </p>
                 </div>
+            </div>
+          </div>
+
+          <div>
+            <div className='pt-12 pb-6'>
+              <div>
+                  <p className='text-orange-700 text-5xl font-semibold m-3'>
+                      MEET OUR TEAM
+                  </p>
+              </div>
+              <div className='flex flex-col'>
+                  <p className='text-3xl font-bold m-3'>Our Experts</p>
+                  <div className='border-b-4 mr-80 m-4 w-12 border-pink-200'></div>
+              </div>
+
+              <div className='flex flex-col md:flex-row mx-3 mt-8'>
+                  <div className='mr-6 mb-4 md:mb-0'>
+                      <img src={ourTeam4} className='w-80'/>
+                      <p className='text-xl text-center mt-2 font-semibold'>Architecture</p>
+                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                  </div>
+                  <div className='text-xl mr-6 mb-4 md:mb-0'>
+                      <img src={ourTeam1}  className='w-80'/>
+                      <p className='text-center mt-2 font-semibold'>Development</p>
+                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                  </div>
+                  <div className='text-xl mr-6 mb-4 md:mb-0'>
+                      <img src={ourTeam2}  className='w-80'/>
+                      <p className='text-center mt-2 font-semibold'>Development</p>
+                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                  </div>
+                  <div>
+                      <img src={ourTeam3}  className='w-80'/>
+                      <p className='text-xl text-center mt-2 font-semibold'>Development</p>
+                      <p className='text-center mt-2 font-semibold'>Product Designer</p>
+                  </div>
+              </div>
+
+              <div className='flex items-center justify-center mt-5 flex-col'>
+                <Link to='/team' className='flex text-white bg-gray-800 py-2 px-4 hover:bg-black duration-500 mt-3 mb-3'>
+                VIEW ALL
+                </Link>
+                {/* <div className='w-20 border-b-4 border-b-gray-800'></div> */}
+              </div>
             </div>
           </div>
 
