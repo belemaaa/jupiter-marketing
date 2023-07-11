@@ -19,8 +19,8 @@ const Projects = () => {
         <NavBar/>
 
         <div className='flex flex-col pt-6 pb-12'>
-            <div className='mt-1 md:mt-8'>
-                <p className='text-orange-600 text-4xl md:text-4xl font-bold m-3'>
+            <div className='mt-1 md:mt-5'>
+                <p className='text-orange-600 text-4xl md:text-5xl font-bold m-3'>
                     OUR COMPLETED <br className='md:hidden'/> 
                     PROJECTS
                 </p>

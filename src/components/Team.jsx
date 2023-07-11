@@ -23,7 +23,7 @@ const Team = () => {
         <NavBar/>
 
         <div className='flex flex-col pt-6 pb-12'>
-            <div className='mt-1 md:mt-12'>
+            <div className='mt-1 md:mt-4'>
                 <p className='text-orange-600 text-5xl md:text-5xl font-bold m-3'>
                     OUR TEAM
                 </p>
@@ -34,7 +34,7 @@ const Team = () => {
 
             <div className='flex flex-col md:flex-row items-center 
             justify-center mt-10 md:my-10'>
-                <div className='ml-3 mr-8 w-96 md:w-96 mb-6 md:mb-0'>
+                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={ourTeam4} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -44,7 +44,7 @@ const Team = () => {
                     </a>
 
                 </div>
-                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-0'>
+                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={ourTeam1} className='shadow-xl '/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -53,7 +53,7 @@ const Team = () => {
                         <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                     </a>
                 </div>
-                <div className='mr-3 ml-8 w-96 md:w-96 mb-6 md:mb-0'>
+                <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-0'>
                     <a href=''>
                         <img src={ourTeam2} className='shadow-xl '/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -66,7 +66,7 @@ const Team = () => {
 
             <div className='flex flex-col md:flex-row items-center 
             justify-center md:my-10'>
-                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam3} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -75,7 +75,7 @@ const Team = () => {
                         <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam5} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -84,7 +84,7 @@ const Team = () => {
                         <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam6} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -96,7 +96,7 @@ const Team = () => {
             </div>
 
             <div className='flex flex-col md:flex-row items-center justify-center'>
-                <div className='mx-12 w-96 md:w-96 mb-6 md:mb-6'>
+                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam7} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -105,7 +105,7 @@ const Team = () => {
                         <p className='text-sm text-center mt-2 font-semibold'>CEO</p>
                     </a>
                 </div>
-                <div className='mx-12 w-96 md:w-96 mb-6 md:mb-6'>
+                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam11} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>
@@ -114,7 +114,7 @@ const Team = () => {
                         <p className='text-sm text-center mt-2 font-semibold'>Software Engineer</p>
                     </a>
                 </div>
-                <div className='mx-12 w-96 md:w-96 md:mb-6'>
+                <div className='md:ml-8 md:mr-3 w-96 md:w-96 md:mb-6'>
                     <a href=''>
                         <img src={ourTeam12} className='shadow-xl'/>
                         <p className='text-center text-black font-bold text-xl mt-5'>

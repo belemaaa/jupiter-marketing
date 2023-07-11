@@ -80,42 +80,42 @@ const NavBar = () => {
                 { nav ? <FaTimes size={30}/> : <FaBars size={30}/> }
             </div>
             {nav && (
-                <>
-                <ul className='md:hidden absolute left-0 top-32 ml-4'>
-                    {navLinks1.map(({id, link, href}) => (
-                        <li key={id}
-                        className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
-                            <Link to={href}>
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                <div className='bg-black'>
+                    <ul className='md:hidden absolute left-0 top-32 ml-4 bg-black'>
+                        {navLinks1.map(({id, link, href}) => (
+                            <li key={id}
+                            className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
+                                <Link to={href}>
+                                    {link}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
 
-                <ul className='md:hidden absolute left-0 top-64 ml-8'>
-                    {navServices.map(({id, link, href}) => (
-                        <li 
-                        key={id}
-                        className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
-                            <Link to={href} className='flex flex-row'>
-                                <BsCircle size={7} className='text-black mr-3 mt-2'/>
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                    <ul className='md:hidden absolute left-0 top-64 ml-8'>
+                        {navServices.map(({id, link, href}) => (
+                            <li 
+                            key={id}
+                            className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
+                                <Link to={href} className='flex flex-row'>
+                                    <BsCircle size={7} className='text-black mr-3 mt-2'/>
+                                    {link}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
 
-                <ul className='md:hidden absolute left-0 top-80 mt-6 ml-4'>
-                    {navLinks2.map(({id, link, href}) => (
-                        <li key={id}
-                        className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
-                            <Link to={href}>
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                </>
+                    <ul className='md:hidden absolute left-0 top-80 mt-6 ml-4'>
+                        {navLinks2.map(({id, link, href}) => (
+                            <li key={id}
+                            className='text-blue-500 py-2 cursor-pointer hover:text-blue-700'>
+                                <Link to={href}>
+                                    {link}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             )}
 
             <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
