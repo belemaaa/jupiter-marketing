@@ -19,123 +19,115 @@ import ourTeam13 from '../assets/team/ourTeam13.jpg'
 
 const Team = () => {
   return (
-    <div className='overflow-hidden'>
-        <ContactNav/>
+    <div className='flex flex-col'>
         <NavBar/>
-        <div className='flex flex-col py-16'>
-            <div className=''>
-                <p className=' text-gray-800 text-3xl md:text-5xl font-bold mb-2 ml-8 md:ml-12 mt-6'>
+
+        <div className='flex flex-col pt-6 pb-12'>
+            <div className='mt-1 md:mt-12'>
+                <p className='text-orange-600 text-5xl md:text-5xl font-bold m-3'>
                     OUR TEAM
                 </p>
-                <div className='border-b border-b-black ml-8 md:ml-12 mr-24'></div>
-            </div>
-
-            <div className='mx-8 md:mx-12 mt-6'>
-                <p className='text-justify text-gray-700'>
-                    Our team is a dynamic and highly motivated group of individuals working together towards a common goal. 
-                    We are a diverse blend of talents, each bringing our unique skills and experiences to the table. 
-                    Collaboration and open communication are at the heart of our team's success, 
-                    as we believe that the best ideas emerge when everyone's voice is heard. 
-                    We embrace challenges with enthusiasm and a solution-oriented mindset, 
-                    consistently pushing the boundaries of what is possible. Our commitment 
-                    to excellence and continuous improvement drives us to deliver exceptional results. 
-                    Together, we form a cohesive unit that thrives on mutual respect, trust, and support. 
-                    With a shared vision and unwavering dedication, we tackle projects head-on, overcoming 
-                    obstacles and achieving remarkable outcomes. Our team is not just a group of individuals, 
-                    but a tight-knit community that fosters growth, innovation, and success.
+                <p className='text-black font-semibold text-3xl m-3'>
+                    Our Experts
                 </p>
             </div>
 
-            <div className='flex flex-col items-center justify-center mt-8'>
-                <p className='text-2xl md:text-3xl font-bold text-gray-800'>OUR EXPERTS</p>
-                <div className='border-2 mt-3 w-12 border-gray-500 '></div>
+            <div className='flex flex-col md:flex-row items-center 
+            justify-center mt-10 md:my-10'>
+                <div className='ml-3 mr-8 w-96 md:w-96 mb-6 md:mb-0'>
+                    <a href=''>
+                        <img src={ourTeam4} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Architecture
+                        </p>
+                        <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
+                    </a>
+
+                </div>
+                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-0'>
+                    <a href=''>
+                        <img src={ourTeam1} className='shadow-xl '/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Development
+                        </p>
+                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                    </a>
+                </div>
+                <div className='mr-3 ml-8 w-96 md:w-96 mb-6 md:mb-0'>
+                    <a href=''>
+                        <img src={ourTeam2} className='shadow-xl '/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Management
+                        </p>
+                        <p className='text-sm text-center mt-2 font-semibold'>CTO</p>
+                    </a>
+                </div>
             </div>
 
-            <div className='mx-12 mt-6 flex flex-col'>
-                <div className='flex flex-col md:flex-row'>
-                    <div className='md:mr-4 mb-5 md:mb-0'>
-                        <img src={ourTeam4}/>
-                        <p className='text-center mt-2 md:mt-4 font-bold 
-                        text-black text-lg'>
-                            MANAGER/CEO
+            <div className='flex flex-col md:flex-row items-center 
+            justify-center md:my-10'>
+                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam3} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Architecture
                         </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:mx-4'>
-                        <img src={ourTeam1}/>
-                        <p className='text-center mt-2 md:mt-4 font-bold 
-                        text-black text-lg'>
-                            PRODUCT DESIGNER
-                        </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:mx-4'>
-                        <img src={ourTeam2}/>
-                        <p className='text-center mt-2 md:mt-4 font-bold 
-                        text-black text-lg'>
-                            LEAD DEVELOPER
-                        </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:ml-4'>
-                        <img src={ourTeam3} className=''/>
-                        <p className='text-center mt-2 md:mt-4 font-bold 
-                        text-black text-lg'>
-                            MARKETING MANAGER
-                        </p>
-                    </div>
+                        <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
+                    </a>
                 </div>
-
-
-                <div className='flex flex-col md:flex-row md:my-12'>
-                    <div className='mb-5 md:mb-0 md:mr-4'>
-                        <img src={ourTeam5} className='w-96'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            DATA ANALYST
+                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam5} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Development
                         </p>
-                    </div>
-                    <div className='mb-5 md:mb-0 md:mx-4'>
-                        <img src={ourTeam6} className='w-96'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            DIGITAL MARKETER
-                        </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:mx-4'>
-                        <img src={ourTeam7} className='w-96'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            CONSULTANT
-                        </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:ml-4'>
-                        <img src={ourTeam9} className='w-96 h-48'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            SOFTWARE ENGINEER
-                        </p>
-                    </div>
+                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                    </a>
                 </div>
-
-
-                <div className='flex flex-col md:flex-row mb-12 items-center justify-center'>
-                    <div className='md:mb-0 mb-5 md:mx-4'>
-                        <img src={ourTeam11} className='w-96 h-60'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            FRONTEND DEVELOPER
+                <div className='mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam6} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Development
                         </p>
-                    </div>
-                    <div className='md:mb-0 mb-5 md:mx-4'>
-                        <img src={ourTeam12} className='w-96 h-60'/>
-                        <p className='text-center mt-4 font-bold 
-                        text-black text-lg'>
-                            DIRECTOR
+                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                    </a>
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row items-center justify-center'>
+                <div className='mx-12 w-96 md:w-96 mb-6 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam7} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Management
                         </p>
-                    </div>
+                        <p className='text-sm text-center mt-2 font-semibold'>CEO</p>
+                    </a>
+                </div>
+                <div className='mx-12 w-96 md:w-96 mb-6 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam11} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Development
+                        </p>
+                        <p className='text-sm text-center mt-2 font-semibold'>Software Engineer</p>
+                    </a>
+                </div>
+                <div className='mx-12 w-96 md:w-96 md:mb-6'>
+                    <a href=''>
+                        <img src={ourTeam12} className='shadow-xl'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>
+                            Development
+                        </p>
+                        <p className='text-sm text-center mt-2 font-semibold'>Digital Marketer</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <Footer/>
 
+        <Footer/>
+        {/* comment */}
     </div>
   )
 }
