@@ -8,10 +8,9 @@ import GoogleMap from './GoogleMap'
 const Contact = () => {
   return (
     <div>
-        <ContactNav/>
         <NavBar/>
-        <Form/>
         <GoogleMap/>
+        <Form/>
         <Footer/>
     </div>
   )
