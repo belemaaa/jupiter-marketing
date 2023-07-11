@@ -14,11 +14,6 @@ import ourTeam4 from '../assets/team/ourTeam4.jpg'
 import aboutUsImage from '../assets/aboutUsImage.jpg'
 import {IoIosArrowForward} from 'react-icons/io'
 import {IoIosArrowBack} from 'react-icons/io'
-import {FaFacebookF} from 'react-icons/fa'
-import {IoLogoTwitter} from 'react-icons/io'
-import {FaLinkedinIn} from 'react-icons/fa'
-import {RxDotFilled} from 'react-icons/rx'
-import {LiaCopyright} from 'react-icons/lia'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 
@@ -64,7 +59,7 @@ const Index = () => {
         <div className='relative flex flex-col'>
           <div className=''>
             <img src={slides[index]} 
-            className='w-screen h-96 md:h-[75vh] md:mt-0 transition-transform ease-out duration-700'/>
+            className='h-96 md:h-[75vh] md:mt-0 duration-700'/>
 
             <div className='relative inset-0 -top-60 flex items-center justify-between p-4'>
               <IoIosArrowBack size={40} 

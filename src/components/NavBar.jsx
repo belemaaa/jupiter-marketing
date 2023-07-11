@@ -81,10 +81,10 @@ const NavBar = () => {
             </div>
             {nav && (
                 <div className=''>
-                    <ul className='md:hidden absolute left-0 top-20 ml-3 bg-black w-60 rounded-t-lg shadow-2xl'>
+                    <ul className='md:hidden absolute left-0 top-20 ml-3 bg-black w-60 rounded-t-lg shadow-2xl z-10'>
                         {navLinks1.map(({id, link, href}) => (
                             <li key={id}
-                            className='text-white py-2 cursor-pointer hover:text-blue-700'>
+                            className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
                                 <Link to={href}>
                                     {link}
                                 </Link>
@@ -92,23 +92,23 @@ const NavBar = () => {
                         ))}
                     </ul>
 
-                    <ul className='md:hidden absolute left-0 top-48 pl-9 ml-3 bg-black w-[240px]'>
+                    <ul className='md:hidden absolute left-0 top-48 pl-9 ml-3 bg-black w-[240px] z-10'>
                         {navServices.map(({id, link, href}) => (
                             <li 
                             key={id}
                             className='text-white underline cursor-pointer hover:text-blue-700'>
                                 <Link to={href} className='flex flex-row'>
-                                    <BsCircle size={7} className='text-black mr-3 mt-2'/>
+                                    <BsCircle size={7} className='text-white mr-3 mt-2'/>
                                     {link}
                                 </Link>
                             </li>
                         ))}
                     </ul>
 
-                    <ul className='md:hidden absolute left-0 top-60 mt-6 ml-3 bg-black w-60 rounded-b-lg'>
+                    <ul className='md:hidden absolute left-0 top-60 mt-6 ml-3 bg-black w-60 rounded-b-lg z-10'>
                         {navLinks2.map(({id, link, href}) => (
                             <li key={id}
-                            className='text-white py-2 cursor-pointer hover:text-blue-700'>
+                            className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
                                 <Link to={href}>
                                     {link}
                                 </Link>
