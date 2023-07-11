@@ -55,57 +55,41 @@ const Form = () => {
                 </div>
                 <div className='mt-6 mx-8 md:mx-0'>
                     <form ref={form} onSubmit={sendEmail}>
-                        <label className='text-gray-700 font-semibold'>
-                            First Name:
-                        </label> 
-                        <br/>
                         <input 
                         type="text" 
                         name="f_name"  
-                        className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
+                        placeholder='First Name'
+                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 mr-4 pl-1' 
                         required/>
-                        <br/>
 
-                        <label className='text-gray-700 font-semibold'>
-                            Last Name:
-                        </label> 
-                        <br/>
                         <input 
                         type="text" 
                         name="f_name"  
-                        className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
+                        placeholder='Last Name'
+                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 pl-1' 
                         required/>
                         <br/>
 
-                        <label className='text-gray-700 font-semibold'>
-                            Email:
-                        </label> 
-                        <br/>
                         <input 
                         type="email" 
                         name="email"  
-                        className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
+                        placeholder='Email'
+                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 mr-4 pl-1' 
                         required/>
-                        <br/>
 
-                        <label className='text-gray-700 font-semibold'>
-                            Contact Number:
-                        </label> 
-                        <br/>
                         <input 
                         type="phone" 
                         name="phone"  
-                        className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 text-black mb-6' 
+                        placeholder='Contact Number'
+                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 pl-1' 
                         required/>
-                        <br/> 
-
-                        <label className='text-gray-700 font-semibold'>
-                            Leave A Message:
-                        </label> 
+                        <br/>
+ 
                         <br/>
                         <textarea
                         name="message" 
-                        className='border border-black pl-5 placeholder:font-bold rounded-sm py-2 w-80 md:w-96 h-44 text-black mb-6' 
+                        placeholder='Your message here...'
+                        className='border border-black pl-1 py-2 w-80 md:w-96 h-44 text-black mb-4' 
                         required/>
                         <br/>
 
@@ -113,8 +97,8 @@ const Form = () => {
                         type="submit" 
                         value="Send" 
                         // onClick={sendBtn}
-                        className='flex mx-32 md:mx-40 bg-gray-700 
-                        hover:bg-black text-white font-semibold py-2 px-4 mb-3'
+                        className='flex bg-gray-200 border border-black
+                        hover:bg-gray-400 text-black py-1 px-3 mb-3'
                         />
                     </form>
                 </div>
