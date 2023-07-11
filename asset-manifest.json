@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jupiter-marketing/static/css/main.18e18c13.css",
-    "main.js": "/jupiter-marketing/static/js/main.259016ff.js",
+    "main.js": "/jupiter-marketing/static/js/main.1980d79a.js",
     "static/js/787.df9473cc.chunk.js": "/jupiter-marketing/static/js/787.df9473cc.chunk.js",
     "static/media/ourTeam6.jpg": "/jupiter-marketing/static/media/ourTeam6.4697669b938ee5188277.jpg",
     "static/media/creativeProject2.jpg": "/jupiter-marketing/static/media/creativeProject2.a6382c7e455a4a4123f5.jpg",
@@ -35,11 +35,11 @@
     "static/media/digitalProject.jpg": "/jupiter-marketing/static/media/digitalProject.5a3f1cdc1c50fe1727b6.jpg",
     "index.html": "/jupiter-marketing/index.html",
     "main.18e18c13.css.map": "/jupiter-marketing/static/css/main.18e18c13.css.map",
-    "main.259016ff.js.map": "/jupiter-marketing/static/js/main.259016ff.js.map",
+    "main.1980d79a.js.map": "/jupiter-marketing/static/js/main.1980d79a.js.map",
     "787.df9473cc.chunk.js.map": "/jupiter-marketing/static/js/787.df9473cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18e18c13.css",
-    "static/js/main.259016ff.js"
+    "static/js/main.1980d79a.js"
   ]
 }
