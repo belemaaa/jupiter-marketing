@@ -14,7 +14,7 @@ const NavBar = () => {
             id:1, link:'Home', href:'/jupiter-marketing'
         },
         {
-            id:2, link:'About Us', href:'/about'
+            id:2, link:'About Us', href:'/aboutUs'
         },
         {
             id:3, link:'Services', href:'/services'
