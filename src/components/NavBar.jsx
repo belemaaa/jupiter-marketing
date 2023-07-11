@@ -43,7 +43,7 @@ const NavBar = () => {
         }
     ]
   return (
-    <div className='flex flex-col overflow-hidden'>
+    <div className='flex flex-col overflow-hidden bg-gray-200'>
         <div className='hidden md:flex items-end justify-end flex-row'>
             <ul className='flex items-end justify-end mt-5'>
                 {navLinks1.map(({id, link, href}) => (
@@ -70,7 +70,7 @@ const NavBar = () => {
         </div>
 
         <div className='flex flex-row'>
-            <div className='mt-4 md:mt-0 ml-4 md:ml-20'>
+            <div className='mt-4 md:mt-0 ml-4 md:ml-6'>
                 <p className='text-5xl '>JUPITER</p>
                 {/* <img src={logo} className='w-60 md:w-full'/> */}
             </div>
@@ -118,7 +118,7 @@ const NavBar = () => {
                 </>
             )}
 
-            <div className='hidden md:flex ml-72 items-end justify-end mt-2'>
+            <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
                 <ul className='ml-96'>
                     {navServices.map(({id, link, href}) => (
                         <li 
