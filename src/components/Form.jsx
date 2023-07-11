@@ -49,7 +49,7 @@ const Form = () => {
 
             <div className='m-3'>
                 <div className=''>
-                    <p className='text-black font-semibold text-2xl'>
+                    <p className='text-black font-semibold text-xl md:text-2xl'>
                         Want to Know More?? Drop Us A Mail
                     </p>
                 </div>
