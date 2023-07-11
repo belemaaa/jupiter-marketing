@@ -59,7 +59,7 @@ const Index = () => {
         <div className='relative flex flex-col'>
           <div className=''>
             <img src={slides[index]} 
-            className='h-96 md:h-[75vh] md:mt-0 duration-700'/>
+            className='w-screen h-96 md:h-[75vh] md:mt-0 transition-opacity duration-700 ease-in'/>
 
             <div className='relative inset-0 -top-60 flex items-center justify-between p-4'>
               <IoIosArrowBack size={40} 
@@ -129,13 +129,13 @@ const Index = () => {
 
                 <div>
                   <p className='text-xl md:text-2xl pb-3 pt-2 md:pt-1'>Best Digital Agency In The World</p>
-                  <p className='text-base md:text-sm max-w-xl md:text-justify'>
+                  <p className='text-base md:text-sm max-w-xl md:text-justify' style={{ lineHeight: "1.5" }}>
                   We provide marketing services to startups and small businesses to looking 
                   for a partner of their digital media, design & development, lead generation 
                   and communications requirents. We work with you, not for you. 
                   We have great resources that can help scale your business.
                   </p>
-                  <p className='text-base md:text-sm max-w-xl md:text-justify pt-4 pb-5 md:pb-8'>
+                  <p className='text-base md:text-sm max-w-xl md:text-justify pt-4 pb-5 md:pb-8' style={{ lineHeight: "1.5" }}>
                   We are an experienced and talented team of passionate consultants who live
                   and breathe search engine marketing. We are an experienced and talented team of consultants
                   who are here to bear the burdens of your business.
