@@ -9,7 +9,7 @@ import GoogleMap from './GoogleMap'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col overflow-hidden'>
         <div className='flex flex-col md:flex-row ml-3 md:mx-24 text-black pt-12 pb-8'>
             <div className='flex flex-col mr-8'>
                 <p className='text-2xl pb-2'>Quick Links</p>
@@ -130,7 +130,7 @@ const Footer = () => {
             <div className='flex items-start justify-start ml-3 md:ml-24'>
                 <p className='text-black flex flex-row py-3 text-sm'>
                     <LiaCopyright size={15} className='text-black mr-1 mt-0.5'/>
-                    Jupiter Marketing Services. All Rights Reserved, 2023
+                    Jupiter Marketing Services. All Rights Reserved, 2021.
                 </p>
             </div>
 

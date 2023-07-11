@@ -16,79 +16,78 @@ import webProject2 from '../assets/projects/webProject2.jpg'
 const Projects = () => {
   return (
     <div className='flex flex-col'>
-        <ContactNav/>
         <NavBar/>
 
-        <div className='flex flex-col bg-black bg-opacity-5 pt-6 pb-12'>
-            <div className='mt-12 md:mt-16'>
-                <p className='text-orange-700 text-3xl md:text-5xl font-bold mb-2 text-center'>
-                    Our Completed <br className='md:hidden'/> Projects
+        <div className='flex flex-col pt-6 pb-12'>
+            <div className='mt-12 md:mt-8'>
+                <p className='text-orange-600 text-3xl md:text-4xl font-bold m-3'>
+                    OUR COMPLETED <br className='md:hidden'/> PROJECTS
                 </p>
-                <p className='text-gray-700 font-bold text-center'>
-                    Have a look at some of our recent projects:
+                <p className='text-black font-semibold text-3xl m-3'>
+                    Recent Projects
                 </p>
             </div>
 
             <div className='flex flex-col md:flex-row items-center justify-center mt-10 md:my-10'>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
+                <div className='mx-12 w-80 mb-6 md:mb-0'>
                     <a href=''>
-                        <img src={creativeProject1} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>INSURANCE</p>
+                        <img src={creativeProject1} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Web Development</p>
                     </a>
 
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
+                <div className='mx-12 w-80 mb-6 md:mb-0'>
                     <a href=''>
-                        <img src={creativeProject2} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>BEE</p>
+                        <img src={creativeProject2} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Creative Solution</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-0'>
+                <div className='mx-12 w-80 mb-6 md:mb-0'>
                     <a href=''>
-                        <img src={digitalProject2} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>INDUSTRIAL SERVICE</p>
+                        <img src={digitalProject2} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Web Development</p>
                     </a>
                 </div>
             </div>
 
             <div className='flex flex-col md:flex-row items-center justify-center md:my-10'>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700 mb-6 md:mb-6'>
+                <div className='mx-12 w-80 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={digitalProject1} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>ARCHITECT DIGITAL STUDIO</p>
+                        <img src={digitalProject1} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Creative Solution</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700  mb-6 md:mb-6'>
+                <div className='mx-12 w-80 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={ourProject1} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>S E O</p>
+                        <img src={ourProject1} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Digital Branding</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700  mb-6 md:mb-6'>
+                <div className='mx-12 w-80 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={ourProject2} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>DIGITAL CREATE</p>
+                        <img src={ourProject2} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Digital Branding</p>
                     </a>
                 </div>
             </div>
 
             <div className='flex flex-col md:flex-row items-center justify-center'>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700  mb-6 md:mb-6'>
+                <div className='mx-12 w-80 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={ourProject3} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>CONTENT CREATOR</p>
+                        <img src={ourProject3} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Creative Solution</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700  mb-6 md:mb-6'>
+                <div className='mx-12 w-96 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={webProject1} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>SELLING.</p>
+                        <img src={webProject1} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Digital Branding</p>
                     </a>
                 </div>
-                <div className='mx-8 w-96 md:hover:scale-110 duration-700  mb-6 md:mb-6'>
+                <div className='mx-12 w-80 mb-6 md:mb-6'>
                     <a href=''>
-                        <img src={webProject2} className='shadow-xl rounded-2xl'/>
-                        <p className='text-center text-gray-500 font-bold text-lg mt-4'>RELIEF</p>
+                        <img src={webProject2} className='shadow-xl md:hover:scale-105 duration-700'/>
+                        <p className='text-center text-black font-bold text-xl mt-5'>Digital Branding</p>
                     </a>
                 </div>
             </div>

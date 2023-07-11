@@ -64,7 +64,7 @@ const Index = () => {
         <div className='relative flex flex-col'>
           <div className=''>
             <img src={slides[index]} 
-            className='w-screen h-96 md:h-[75vh] mt-2 md:mt-0 transition-transform ease-out duration-700'/>
+            className='w-screen h-96 md:h-[75vh] md:mt-0 transition-transform ease-out duration-700'/>
 
             <div className='relative inset-0 -top-60 flex items-center justify-between p-4'>
               <IoIosArrowBack size={40} 
