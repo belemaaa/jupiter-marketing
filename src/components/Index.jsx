@@ -240,17 +240,17 @@ const Index = () => {
                 </p>
               </div>
             
-            <div className='flex flex-col md:flex-row '>
-              <div className='border-b-4 mr-80 m-3 w-12 border-pink-200'></div>
-              <div className='md:ml-96 m-3'>
-                  <Link to='' 
+              <div className='flex flex-col md:flex-row m-3'>
+                <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
+                <div className='md:ml-96 mt-4 md:mt-0'>
+                  <Link to='/team' 
                   className='md:ml-96 underline px-2 inline-block
                   text-blue-600 hover:text-blue-800 border border-black
                   bg-black bg-opacity-5 py-1 font-semibold'>
-                    All Projects
+                    View All
                   </Link>
+                </div>
               </div>
-            </div>
             </div>
 
             <div className='flex flex-col md:flex-row items-center justify-center'>
@@ -299,7 +299,7 @@ const Index = () => {
               <div className='flex flex-col md:flex-row m-3'>
                 <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
                 <div className='md:ml-96 mt-4 md:mt-0'>
-                    <Link to='' 
+                    <Link to='/team' 
                     className='md:ml-96 underline px-2 inline-block
                     text-blue-600 hover:text-blue-800 border border-black
                     bg-black bg-opacity-5 py-1 font-semibold'>
