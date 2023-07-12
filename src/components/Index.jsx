@@ -148,19 +148,26 @@ const Index = () => {
                   and talented team of passionate.
                   </p>
                 </div>
-                <Link to='/aboutUs' className='text-white bg-[#E5442A] px-2 py-3 border-none'>
-                  Read More
-                </Link>
+                <div>
+                  <Link to='/aboutUs' className='text-white bg-[#ff4800] px-2 py-3 
+                  border-none hover:text-blue-700'>
+                    Read More
+                  </Link>
+                </div>
+                
               </div>
 
               <img src={aboutUsImage} className='md:w-1/2 mx-3 md:mx-8 mt-10'/>
             </div>
           </div>
 
-          <div className='flex flex-col mt-16 relative'>
+          <div className='flex flex-col mt-16 relative bg-[#3c3c3c]'>
             <div className='flex items-start justify-start m-3'>
-              <p className='text-orange-700 text-3xl md:text-4xl font-extrabold mb-2'>
+              <p className='text-[#E5442A] text-3xl md:text-5xl font-extrabold p-5'>
                 WHAT WE DO
+              </p>
+              <p>
+                Our Services
               </p>
             </div>
 
