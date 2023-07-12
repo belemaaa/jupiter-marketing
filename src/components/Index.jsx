@@ -87,7 +87,7 @@ const Index = () => {
           </div>
 
           <div className='bg-[#3c3c3c] -mt-28'>
-            <div className=' flex flex-col md:flex-row items-center justify-center my-16 mx-10'>
+            <div className=' flex flex-col md:flex-row items-center justify-center my-16 mx-10 md:my-0 md:mx-0'>
               <div className='flex flex-col md:my-16 md:w-[400px] bg-black text-white p-12'>
                 <p className='text-3xl mb-2 font-bold'>Email Marketing</p>
                 <div className='w-16 border-b-4 border-orange-700'></div>
@@ -162,85 +162,108 @@ const Index = () => {
           </div>
 
           <div className='flex flex-col mt-16 relative bg-[#3c3c3c]'>
-            <div className='flex items-start justify-start m-3'>
-              <p className='text-[#E5442A] text-3xl md:text-5xl font-extrabold p-5'>
-                WHAT WE DO
-              </p>
-              <p>
-                Our Services
-              </p>
+            <div className='py-16 mx-12'>
+              <div className='flex flex-col'>
+                <p className='text-[#E5442A] text-3xl md:text-5xl font-bold md:pl-10'>
+                  WHAT WE DO
+                </p>
+                <p className='text-white font-semibold text-3xl md:pl-10 pt-7'>
+                  Our Services
+                </p>
+              </div>
+
+              <div className='border-b-2 md:ml-10 mt-4 w-12 border-b-[#E5442A] border-opacity-50'></div>
+
+              <div className='flex flex-col -mt-3'>
+                <div className='flex flex-col md:flex-row md:mx-10 mt-10'>
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Digital Branding
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Creative Solution
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full mb-4 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Web Solution
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div>                   
+                </div>
+
+                <div className='flex flex-col md:flex-row md:mx-10 mt-10'>
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Marketing
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Paid Media
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full mb-4 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Data Science
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div>                   
+                </div>
+
+                <div className='flex flex-col md:flex-row md:mx-10 mt-10'>
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Management
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full md:mr-5 mb-6 md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      Social Media
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div> 
+
+                  <div className='bg-black bg-opacity-70 rounded-full md:mb-0'>
+                    <Link to='' 
+                    className='flex flex-row text-xl text-[#d9d6d6] pl-6 py-7 w-96 hover:text-blue-800
+                    font-semibold duration-500'>
+                      UI & UX Design
+                      <IoIosArrowForward className='mt-1 ml-20'/>
+                    </Link>
+                  </div>                   
+                </div>
+              </div>
             </div>
-
-            <div className='border-2 m-4 w-12 border-pink-300'></div>
-
-            <div className='flex flex-col -mt-3'>
-              <div className='flex flex-col md:flex-row'>
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800
-                font-semibold'>
-                  Digital Branding
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
-                md:ml-[200px] font-semibold'>
-                  Creative Solution
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
-                md:ml-[202px] font-semibold'>
-                  Web Solution
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link>                   
-              </div>
-
-              <div className='flex flex-col md:flex-row mt-6 md:mt-0'>
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 font-semibold'>
-                  Marketing
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
-                md:ml-[260px] font-semibold'>
-                  Paid Media
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 
-                md:ml-[260px] font-semibold'>
-                  Data Science
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link>                   
-              </div>
-
-              <div className='flex flex-col md:flex-row  mt-6 md:mt-0'>
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline hover:text-blue-800 font-semibold'>
-                  Management
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline 
-                hover:text-blue-800 md:ml-[225px] font-semibold'>
-                  Social Media
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link> 
-
-                <Link to='' 
-                className='flex flex-row text-xl text-blue-600 ml-3 md:m-4 underline 
-                hover:text-blue-800 md:ml-[245px] font-semibold'>
-                  UI & UX Design
-                  <IoIosArrowForward className='mt-1 ml-1'/>
-                </Link>                   
-              </div>
-            </div>
+            
           </div>
 
           <div>
