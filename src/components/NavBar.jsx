@@ -16,7 +16,7 @@ const NavBar = () => {
     const closeDropDown = () => {
         setTimeout(() => {
             setNavServices(false)
-        }, 2000)
+        }, 1500)
     }
 
     const [nav, setNav] = useState(false)
@@ -56,6 +56,7 @@ const NavBar = () => {
         <div className='my-4 ml-8 md:ml-24'>
                 <img src={logo} className='w-52 '/>
         </div>
+
         <div className='hidden md:flex items-end justify-end flex-row ml-80 -mt-3 mb-4'>
             <ul className='flex items-end justify-end'>
                 {navLinks1.map(({id, link, href}) => (
@@ -108,36 +109,64 @@ const NavBar = () => {
         className='md:hidden ml-28 mt-8 text-white'>
             { nav ? <FaTimes size={25}/> : <FaBars size={25}/> }
         </div>
+
         {nav && (
             <ul className='md:hidden absolute left-0 top-20 bg-[#E62E64] w-full z-10'>
                 <li className='text-white pl-12 py-2 cursor-pointer'>
-                    <Link to='/jupiter-marketing'>
+                    <Link to='/jupiter-marketing'
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
                         Home
                     </Link>
                 </li>
 
                 <li className='text-white pl-12 py-2 cursor-pointer'>
-                    <Link to='/aboutUs'>
+                    <Link to='/aboutUs'
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
                         About Us
                     </Link>
                 </li>
 
                 <li className='text-white pl-12 py-2 cursor-pointer'>
-                    <p>
+                    <span onMouseEnter={toggleDropDown} onMouseLeave={closeDropDown}
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
                         Services
-                    </p>
+                    </span>
+                    {navServices && (
+                        <div className='w-full bg-[#E62E64]'>
+                            <ul className='z-10 mt-2 cursor-pointer ml-0 bg-[#E62E64] duration-500 shadow-2xl'>
+                                {services.map(({id, link, href}) => (
+                                    <li key={id} className='block text-lg text-white font-bold'>
+                                        <Link to={href} className='px-5' style={{ lineHeight: "2.5" }}>
+                                            {link}
+                                        </Link>
+                                    </li>
+                                ))}
+                                </ul>
+                        </div>
+                    )}
+                </li>
+
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <Link to='/projects'
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
+                        Projects
+                    </Link>
+                </li>
+
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <Link to='/team'
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
+                        Team
+                    </Link>
+                </li>
+
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <Link to='/aboutUs'
+                    className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
+                        Contact Us
+                    </Link>
                 </li>
             </ul>
-            // {/* <ul className='md:hidden absolute left-0 top-20 bg-[#E62E64] w-full z-10'>
-            //     {navLinks1.map(({id, link, href}) => (
-            //         <li key={id}
-            //         className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
-            //             <Link to={href}>
-            //                 {link}
-            //             </Link>
-            //         </li>
-            //     ))}
-            // </ul> */}
         )}
 
         {/* <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
