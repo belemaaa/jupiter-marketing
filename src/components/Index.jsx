@@ -86,33 +86,36 @@ const Index = () => {
             
           </div>
 
-          <div className='bg-[#3c3c3c] -mt-28 px-24 flex flex-col md:flex-row'>
-            <div className='flex flex-col my-10 w-[390px] bg-black text-white p-10'>
-              <p className='text-3xl mb-2 font-bold'>Email Marketing</p>
-              <div className='w-12 border-b-4 border-orange-700'></div>
-              <p className='mt-4'>
-              Risus commodo maecenas accumsan lacus vel facilisis. 
-              Lorem ipsum dolor consectetur adipiscing elit.
-              </p>
-            </div>
+          <div className='bg-[#3c3c3c] -mt-28'>
+            <div className=' flex flex-col md:flex-row items-center justify-center my-16 mx-10'>
+              <div className='flex flex-col md:my-16 md:w-[400px] bg-black text-white p-12'>
+                <p className='text-3xl mb-2 font-bold'>Email Marketing</p>
+                <div className='w-16 border-b-4 border-orange-700'></div>
+                <p className='mt-4'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+                </p>
+              </div>
 
-            <div className='flex flex-col my-10 w-[390] bg-orange-700 text-white p-10'>
-              <p className='text-3xl mb-2 font-bold'>Market Analysis</p>
-              <div className='w-12 border-b-4 border-white'></div>
-              <p className='mt-4'>
-              Risus commodo maecenas accumsan lacus vel facilisis. 
-              Lorem ipsum dolor consectetur adipiscing elit.
-              </p>
-            </div>
+              <div className='flex flex-col md:my-10 md:w-[400px] bg-[#E8432D] text-white p-12'>
+                <p className='text-3xl mb-2 font-bold'>Market Analysis</p>
+                <div className='w-16 border-b-4 border-white'></div>
+                <p className='mt-4'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+                </p>
+              </div>
 
-            <div className='flex flex-col my-10 w-96 bg-black text-white p-10'>
-              <p className='text-3xl mb-2 font-bold'>Keyword Research</p>
-              <div className='w-12 border-b-4 border-orange-700'></div>
-              <p className='mt-4'>
-              Risus commodo maecenas accumsan lacus vel facilisis. 
-              Lorem ipsum dolor consectetur adipiscing elit.
-              </p>
+              <div className='flex flex-col md"my-10 md:w-[400px] bg-black text-white p-12'>
+                <p className='text-3xl mb-2 font-bold'>Keyword Research</p>
+                <div className='w-16 border-b-4 border-orange-700'></div>
+                <p className='mt-4'>
+                Risus commodo maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor consectetur adipiscing elit.
+                </p>
+              </div>
             </div>
+            
           </div>
 
           <div className=''>
