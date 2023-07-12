@@ -11,6 +11,15 @@ import ourTeam1 from '../assets/team/ourTeam1.jpg'
 import ourTeam2 from '../assets/team/ourTeam2.jpg'
 import ourTeam3 from '../assets/team/ourTeam3.jpg'
 import ourTeam4 from '../assets/team/ourTeam4.jpg'
+import ourTeam5 from '../assets/team/ourTeam5.jpg'
+import ourTeam6 from '../assets/team/ourTeam6.jpg'
+import ourTeam7 from '../assets/team/ourTeam7.jpg'
+import ourTeam8 from '../assets/team/ourTeam8.jpg'
+import ourTeam9 from '../assets/team/ourTeam9.jpg'
+import ourTeam10 from '../assets/team/ourTeam10.jpg'
+import ourTeam11 from '../assets/team/ourTeam11.jpg'
+import ourTeam12 from '../assets/team/ourTeam12.jpg'
+import ourTeam13 from '../assets/team/ourTeam13.jpg'
 import aboutUsImage from '../assets/aboutUsImage.jpg'
 import {IoIosArrowForward} from 'react-icons/io'
 import {IoIosArrowBack} from 'react-icons/io'
@@ -287,9 +296,9 @@ const Index = () => {
                 <div className='md:ml-96 mt-16 md:mt-0'>
                   <Link to='/projects' 
                   className='md:ml-72 inline-block font-semibold
-                  text-[#d9d6d6] bg-[#E5442A] px-28 py-2 md:px-4 md:py-2 
+                  text-[#d9d6d6] bg-[#E5442A] px-28 py-1 md:px-4 md:py-3 
                   border-none hover:text-white'>
-                    All Projetcs
+                    All Projects
                   </Link>
                 </div>
               </div>
@@ -330,52 +339,54 @@ const Index = () => {
 
 
                   {/* meet our team */}
-          <div>
-            <div className='pt-12 pb-6'>
-              <div>
-                  <p className='text-orange-700 text-3xl md:text-5xl font-semibold m-3'>
-                      MEET OUR TEAM
-                  </p>
-              </div>
-              
-              <div className='flex flex-col'>
-                  <p className='text-3xl font-bold mt-2 ml-3 md:m-3'>Our Experts</p>
-              </div>
+          <div className='mx-10'>
+            <div className='flex flex-col'>
+              <p className='text-[#E5442A] text-3xl md:text-4xl font-semibold mb-2 mt-12 ml-3'>
+                MEET OUR TEAM
+              </p>
 
-              <div className='flex flex-col md:flex-row m-3'>
-                <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
-                <div className='md:ml-96 mt-4 md:mt-0'>
-                    <Link to='/team' 
-                    className='md:ml-96 underline px-2 inline-block
-                    text-blue-600 hover:text-blue-800 border border-black
-                    bg-black bg-opacity-5 py-1 font-semibold'>
-                      View All
-                    </Link>
+              <div className='mt-4'>
+                <p className='text-black text-3xl font-semibold ml-3'>
+                  Our Experts
+                </p>
+              </div>
+            
+              <div className='flex flex-col md:flex-row ml-3 mb-4 md:-mt-4'>
+                <div className='border-b-4 mr-72 ml-8 mt-3 md:mt-0 w-12 border-pink-200'></div>
+                <div className='md:ml-96 mt-16 md:mt-0'>
+                  <Link to='/team' 
+                  className='md:ml-72 inline-block font-semibold
+                  text-[#d9d6d6] bg-[#E5442A] px-[120px] py-1 md:px-5 md:py-3 
+                  border-none hover:text-white'>
+                    View All
+                  </Link>
                 </div>
               </div>
+            </div>
 
-              <div className='flex flex-col md:flex-row md:mx-3 mt-8 items-center justify-center'>
-                  <div className='md:mr-6 mb-4 md:mb-0'>
-                      <img src={ourTeam4} className='w-96 md:w-80'/>
-                      <p className='text-xl text-center mt-2 font-semibold'>Architecture</p>
-                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+            <div className='mt-8 bg-[#F9F9F9]'>
+              <div className='flex flex-col md:flex-row items-center justify-center px-10 py-10'>
+                <div className='md:mr-9 mb-16 md:mb-0'>
+                    <img src={ourTeam4} className='w-96 md:w-60'/>
+                    <p className='text-sm mt-3'>Architecture</p>
+                    <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
-                  <div className='text-xl md:mr-6 mb-4 md:mb-0'>
-                      <img src={ourTeam1}  className='w-96 md:w-80'/>
-                      <p className='text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                  <div className='text-xl md:mx-9 mb-16 md:mb-0'>
+                      <img src={ourTeam1}  className='w-96 md:w-60'/>
+                      <p className='text-sm mt-3'>Development</p>
+                      <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
-                  <div className='text-xl md:mr-6 mb-4 md:mb-0'>
-                      <img src={ourTeam2}  className='w-96 md:w-80'/>
-                      <p className='text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                  <div className='text-xl md:mx-9 mb-16 md:mb-0'>
+                      <img src={ourTeam2}  className='w-96 md:w-60'/>
+                      <p className='text-sm mt-3'>Development</p>
+                      <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
                   <div>
-                      <img src={ourTeam3}  className='w-96 md:w-80'/>
-                      <p className='text-xl text-center mt-2 font-semibold'>Development</p>
-                      <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                      <img src={ourTeam6} className='w-96 md:w-60 md:ml-9'/>
+                      <p className='text-sm mt-3'>Development</p>
+                      <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
-              </div>
+                </div>
             </div>
           </div>
         </div>
