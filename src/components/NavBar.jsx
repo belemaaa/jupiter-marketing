@@ -168,21 +168,6 @@ const NavBar = () => {
                 </li>
             </ul>
         )}
-
-        {/* <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
-            <ul className='ml-96'>
-                {navServices.map(({id, link, href}) => (
-                    <li 
-                    key={id}
-                    className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
-                        <Link to={href} className='flex flex-row'>
-                            <BsCircle size={7} className='text-black mr-3 mt-2'/>
-                            {link}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </div> */}
     </div>
   )
 }

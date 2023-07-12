@@ -14,6 +14,8 @@ import ourTeam4 from '../assets/team/ourTeam4.jpg'
 import aboutUsImage from '../assets/aboutUsImage.jpg'
 import {IoIosArrowForward} from 'react-icons/io'
 import {IoIosArrowBack} from 'react-icons/io'
+import {MdOutlineArrowForwardIos} from 'react-icons/md'
+import {MdOutlineArrowBackIos} from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 
@@ -59,23 +61,23 @@ const Index = () => {
         <div className='relative flex flex-col'>
           <div className=''>
             <img src={slides[index]} 
-            className='w-screen h-96 md:h-[75vh] md:mt-0 transition-opacity duration-700 ease-in'/>
+            className='w-screen h-[390px] md:h-[75vh] md:mt-0 transition-opacity duration-700 ease-in'/>
 
-            <div className='relative inset-0 -top-60 flex items-center justify-between p-4'>
-              <IoIosArrowBack size={40} 
+            <div className='relative inset-0 -top-64 flex items-center justify-between p-8'>
+              <MdOutlineArrowBackIos size={45} 
               onClick={prevImage}
-              className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
+              className=' text-white text-opacity-50'/>
 
-              <IoIosArrowForward size={40} 
+              <MdOutlineArrowForwardIos size={45} 
               onClick={nextImage}
-              className='bg-white bg-opacity-20 hover:bg-white rounded-full px-2 py-2'/>
+              className=' text-white text-opacity-50'/>
             </div>
 
-            <div className='absolute md:bottom-96 top-[350px] md:top-[400px] right-0 left-0'>
-              <div className='flex items-center justify-center gap-2'>
+            <div className='absolute md:bottom-96 top-[350px] md:top-[450px] right-0 left-0'>
+              <div className='flex items-center justify-center gap-4'>
                 {slides.map((_, i) => (
                   <div onClick={slidesDots}
-                  className={'transition-all w-3 h-3 bg-white rounded-full'}>       
+                  className={'transition-all w-6 h-1 bg-white bg-opacity-50 rounded-xl'}>       
                   </div>
                 ))}
 
