@@ -9,116 +9,104 @@ import GoogleMap from './GoogleMap'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col overflow-hidden'>
-        <div className='flex flex-col md:flex-row ml-3 md:mx-24 text-black pt-12 pb-8'>
-            <div className='flex flex-col mr-8'>
+    <div className='flex flex-col overflow-hidden bg-black mt-20'>
+        <div className='flex flex-col md:flex-row ml-3 md:mx-24 text-white pt-12 pb-8'>
+            <div className='flex flex-col mr-20'>
                 <p className='text-2xl pb-2'>Quick Links</p>
-                <div className='border border-gray-300 w-60'></div>
-                <ul className='mt-4 text-blue-500'>
-                    <li className=''>
-                        <Link to='/' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                <div className='border-2 border-opacity-40 border-[#E5442A] w-12'></div>
+                <ul className='mt-4 text-white'>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='/jupiter-marketing' className='flex flex-row font-light'>
                             Home
                         </Link>
                     </li>
-                    <li className=''>
-                        <Link to='/aboutUs' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='/aboutUs' className='flex flex-row font-light'>
                             About Us
                         </Link>
                     </li>
-                    <li className=''>
-                        <Link to='/projects' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='/projects' className='flex flex-row font-light'>
                             Project
                         </Link>
                     </li>
-                    <li className=''>
-                        <Link to='/team' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='/team' className='flex flex-row font-light'>
                             Team
                         </Link>
                     </li>
-                    <li className='pb-2'>
-                        <Link to='/contact' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='/contact' className='flex flex-row font-light'>
                             Contact Us
                         </Link>
                     </li>
                 </ul>
             </div>
 
-            <div className='flex flex-col md:mx-8 my-6 md:my-0'>
+            <div className='flex flex-col md:mx-20 my-6 md:my-0'>
                 <p className='text-2xl pb-2'>Our Services</p>
-                <div className='border border-gray-300 w-60'></div>
-                <ul className='mt-4 text-blue-500'>
-                    <li className=''>
-                        <Link to='' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                <div className='border-2 border-opacity-40 border-[#E5442A] w-12'></div>
+                <ul className='mt-4 text-white'>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='' className='flex flex-row font-light'>
                             Digital Branding
                         </Link>
                     </li>
-                    <li className=''>
-                        <Link to='' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='' className='font-light'>
                             Creative Solution
                         </Link>
                     </li>
-                    <li className=''>
-                        <Link to='' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <Link to='' className='font-light'>
                             Web Solution
                         </Link>
                     </li>
                 </ul>
             </div>
 
-            <div className='flex flex-col md:mx-8 mb-6 md:mb-0'>
+            <div className='flex flex-col md:mx-20 mb-6 md:mb-0'>
                 <p className='text-2xl pb-2'>Social Links</p>
-                <div className='border border-gray-300 w-60'></div>
-                <ul className='mt-4 text-blue-500'>
-                    <li>
-                        <a href="#" className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-1 mt-0.5'/>
-                            <FaFacebookF size={15} className='text-blue-600 mr-1 mt-1'/>
+                <div className='border-2 border-opacity-40 border-[#E5442A] w-12'></div>
+                <ul className='mt-4 text-white'>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <a href="#" className='flex flex-row'>
+                            <FaFacebookF size={15} className='text-white mr-1 mt-1
+                             hover:text-[#E5442A]'/>
                             Facebook 
                         </a>
                     </li>
-                    <li>
-                        <a href="#" className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-1 mt-0.5'/>
-                            <IoLogoTwitter size={15} className='text-blue-600 mr-1 mt-1'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <a href="#" className='flex flex-row  hover:text-[#E5442A]'>
+                            <IoLogoTwitter size={15} className='text-white mr-1 mt-1
+                             hover:text-[#E5442A]'/>
                             Twitter
                         </a>
                     </li>
-                    <li>
-                        <a href='#' className='flex flex-row underline'>
-                            <RxDotFilled size={20} className='text-black mr-1 mt-0.5'/>
-                            <FaLinkedinIn size={15} className='text-blue-600 mr-1 mt-1'/>
+                    <li className='py-2 hover:text-[#E5442A]'>
+                        <a href='#' className='flex flex-row'>
+                            <FaLinkedinIn size={15} className='text-white mr-1 mt-1
+                             hover:text-[#E5442A]'/>
                             LinkedIn
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div className='flex flex-col md:mx-8'>
-                <p className='text-2xl pb-2'>Location</p>
-                <div className='border border-gray-300 w-60'></div>
-                <ul className='mt-4 text-black'>
-                    <li className='flex flex-row'>
-                        <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+            <div className='flex flex-col md:ml-20'>
+            <p className='text-2xl pb-2'>Location</p>
+                <div className='border-2 border-opacity-40 border-[#E5442A] w-12'></div>
+                <ul className='mt-4 text-white'>
+                    <li className='flex flex-row py-2'>
                         352/71 Second Street
                     </li>
-                    <li className='flex flex-row'>
-                        <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='flex flex-row py-2'>
                         King Street
                     </li>
-                    <li className='flex flex-row'>
-                        <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='flex flex-row py-2'>
                         Kingston
                     </li>
-                    <li className='flex flex-row'>
-                        <RxDotFilled size={20} className='text-black mr-3 mt-0.5'/>
+                    <li className='flex flex-row py-2'>
                         United Kingdom
                     </li>
                 </ul>

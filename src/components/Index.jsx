@@ -381,8 +381,8 @@ const Index = () => {
                       <p className='text-sm mt-3'>Development</p>
                       <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
-                  <div>
-                      <img src={ourTeam6} className='w-96 md:w-60 md:ml-9'/>
+                  <div className='md:ml-9'>
+                      <img src={ourTeam6} className='w-96 md:w-60'/>
                       <p className='text-sm mt-3'>Development</p>
                       <p className='text-sm mt-2 font-bold'>Product Designer</p>
                   </div>
