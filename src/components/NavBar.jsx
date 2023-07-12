@@ -8,6 +8,17 @@ import { FaTimes, FaBars } from 'react-icons/fa'
 
 
 const NavBar = () => {
+    const [navServices, setNavServices] = useState(false)
+    
+    const toggleDropDown = () =>{
+        setNavServices(true)
+    }
+    const closeDropDown = () => {
+        setTimeout(() => {
+            setNavServices(false)
+        }, 2000)
+    }
+
     const [nav, setNav] = useState(false)
     const navLinks1 = [
         {
@@ -40,43 +51,37 @@ const NavBar = () => {
         }
     ]
 
-   const [navServices, setNavServices] = useState(false)
-   const toggleDropDown = () =>{
-    setNavServices(true)
-   }
-   const closeDropDown = () => {
-    setNavServices(false)
-   }
-
   return (
     <div className='flex flex-row overflow-hidden bg-[#E62E64]'>
-        <div className='mt-4 ml-24'>
-                <img src={logo} className='w-52 md:w-full'/>
+        <div className='my-4 ml-8 md:ml-24'>
+                <img src={logo} className='w-52 '/>
         </div>
-        <div className='hidden md:flex items-end justify-end flex-row ml-96'>
-            <ul className='flex items-end justify-end mt-5'>
+        <div className='hidden md:flex items-end justify-end flex-row ml-80 -mt-3 mb-4'>
+            <ul className='flex items-end justify-end'>
                 {navLinks1.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-white font-bold cursor-pointer hover:'>
-                        <Link to={href}>
+                     className='px-4 text-white text-lg font-bold cursor-pointer'>
+                        <Link to={href} className='hover:bg-[#f88bc1] hover:bg-opacity-50
+                        px-2 py-3 duration-500 visited:bg-[#f72a90]'>
                             {link}
                         </Link>
                     </li>
                 ))}
             </ul>
 
-            <div className='mt-6 cursor-pointer'>
+            <div className='cursor-pointer'>
                 <span onMouseEnter={toggleDropDown} onMouseLeave={closeDropDown}
-                className='text-white font-bold'>
+                className='text-white font-bold text-lg hover:bg-[#f88bc1] hover:bg-opacity-50 active:bg-[#f72a90]
+                px-2 py-3 duration-500'>
                     Services
                 </span>
 
                 {navServices && (
-                    <ul className='z-10 absolute mt-2 cursor-pointer ml-0 bg-[#E62E64]'>
+                    <ul className='z-10 absolute mt-4 cursor-pointer ml-0 bg-[#E62E64] duration-500'>
                         {services.map(({id, link, href}) => (
-                            <li key={id} className='block'>
-                                <Link to={href}>
+                            <li key={id} className='block text-lg text-white font-bold'>
+                                <Link to={href} className='px-5' style={{ lineHeight: "2.5" }}>
                                     {link}
                                 </Link>
                             </li>
@@ -85,12 +90,13 @@ const NavBar = () => {
                 )}
             </div>
 
-            <ul className='flex items-end justify-end mt-5'>
+            <ul className='flex items-end justify-end'>
                 {navLinks2.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-white font-bold cursor-pointer hover:'>
-                        <Link to={href}>
+                     className='px-4 text-white font-bold text-lg cursor-pointer'>
+                        <Link to={href} className='hover:bg-[#f88bc1] hover:bg-opacity-50 active:bg-[#f72a90]
+                        px-2 py-3 duration-500'>
                             {link}
                         </Link>
                     </li>
@@ -98,67 +104,56 @@ const NavBar = () => {
             </ul>
         </div>
 
-        <div className='flex flex-row'>
-            
-
-            <div onClick={() => setNav(!nav)} 
-            className='md:hidden ml-40 mt-6'>
-                { nav ? <FaTimes size={30}/> : <FaBars size={30}/> }
-            </div>
-            {nav && (
-                <div className=''>
-                    <ul className='md:hidden absolute left-0 top-20 ml-3 bg-black w-60 rounded-t-lg shadow-2xl z-10'>
-                        {navLinks1.map(({id, link, href}) => (
-                            <li key={id}
-                            className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
-                                <Link to={href}>
-                                    {link}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-
-                    {/* <ul className='md:hidden absolute left-0 top-48 pl-9 ml-3 bg-black w-[240px] z-10'>
-                        {navServices.map(({id, link, href}) => (
-                            <li 
-                            key={id}
-                            className='text-white underline cursor-pointer hover:text-blue-700'>
-                                <Link to={href} className='flex flex-row'>
-                                    <BsCircle size={7} className='text-white mr-3 mt-2'/>
-                                    {link}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul> */}
-
-                    <ul className='md:hidden absolute left-0 top-60 mt-6 ml-3 bg-black w-60 rounded-b-lg z-10'>
-                        {navLinks2.map(({id, link, href}) => (
-                            <li key={id}
-                            className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
-                                <Link to={href}>
-                                    {link}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
-
-            {/* <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
-                <ul className='ml-96'>
-                    {navServices.map(({id, link, href}) => (
-                        <li 
-                        key={id}
-                        className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
-                            <Link to={href} className='flex flex-row'>
-                                <BsCircle size={7} className='text-black mr-3 mt-2'/>
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div> */}
+        <div onClick={() => setNav(!nav)} 
+        className='md:hidden ml-28 mt-8 text-white'>
+            { nav ? <FaTimes size={25}/> : <FaBars size={25}/> }
         </div>
+        {nav && (
+            <ul className='md:hidden absolute left-0 top-20 bg-[#E62E64] w-full z-10'>
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <Link to='/jupiter-marketing'>
+                        Home
+                    </Link>
+                </li>
+
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <Link to='/aboutUs'>
+                        About Us
+                    </Link>
+                </li>
+
+                <li className='text-white pl-12 py-2 cursor-pointer'>
+                    <p>
+                        Services
+                    </p>
+                </li>
+            </ul>
+            // {/* <ul className='md:hidden absolute left-0 top-20 bg-[#E62E64] w-full z-10'>
+            //     {navLinks1.map(({id, link, href}) => (
+            //         <li key={id}
+            //         className='text-white pl-3 py-2 cursor-pointer hover:text-blue-700'>
+            //             <Link to={href}>
+            //                 {link}
+            //             </Link>
+            //         </li>
+            //     ))}
+            // </ul> */}
+        )}
+
+        {/* <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
+            <ul className='ml-96'>
+                {navServices.map(({id, link, href}) => (
+                    <li 
+                    key={id}
+                    className='text-blue-500 underline cursor-pointer hover:text-blue-700'>
+                        <Link to={href} className='flex flex-row'>
+                            <BsCircle size={7} className='text-black mr-3 mt-2'/>
+                            {link}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div> */}
     </div>
   )
 }
