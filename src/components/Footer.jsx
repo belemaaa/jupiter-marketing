@@ -114,15 +114,15 @@ const Footer = () => {
         </div>
 
         <div className='border-b border-white border-opacity-50 md:mx-24'></div>
-        <div className='flex flex-col md:flex-row mx-24 my-4'>
-            <div className='flex items-start justify-start'>
+        <div className='flex flex-col md:flex-row md:mx-24 my-4'>
+            <div className='flex items-start justify-start ml-3 md:ml-0'>
                 <p className='text-white flex flex-row py-3 text-sm font-light'>
                     <LiaCopyright size={15} className='text-white mr-1 mt-0.5'/>
                     Jupiter Marketing Services. All Rights Reserved, 2021.
                 </p>
             </div>
 
-            <div className='md:flex ml-3 md:ml-[710px] my-1'>
+            <div className='md:flex ml-80 md:ml-[710px] my-1'>
                 <Link to='/contact' className=' text-white 
                 hover:text-blue-700 duration-500 font-light'>
                     Sitemap
