@@ -53,7 +53,7 @@ const NavBar = () => {
 
   return (
     <div className='flex flex-row overflow-hidden bg-[#E62E64]'>
-        <div className='my-4 ml-8 md:ml-24'>
+        <div className='my-3 ml-8 md:ml-24'>
                 <img src={logo} className='w-52 '/>
         </div>
 
@@ -106,12 +106,12 @@ const NavBar = () => {
         </div>
 
         <div onClick={() => setNav(!nav)} 
-        className='md:hidden ml-28 mt-8 text-white'>
+        className='md:hidden ml-28 mt-6 text-white'>
             { nav ? <FaTimes size={25}/> : <FaBars size={25}/> }
         </div>
 
         {nav && (
-            <ul className='md:hidden absolute left-0 top-20 bg-[#E62E64] w-full z-10'>
+            <ul className='md:hidden absolute left-0 top-16 bg-[#E62E64] w-full z-10'>
                 <li className='text-white pl-12 py-2 cursor-pointer'>
                     <Link to='/jupiter-marketing'
                     className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>

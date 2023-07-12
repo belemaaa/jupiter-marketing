@@ -64,11 +64,11 @@ const Index = () => {
             className='w-screen h-[390px] md:h-[75vh] md:mt-0 transition-opacity duration-700 ease-in'/>
 
             <div className='relative inset-0 -top-64 flex items-center justify-between p-8'>
-              <MdOutlineArrowBackIos size={45} 
+              <MdOutlineArrowBackIos size={40} 
               onClick={prevImage}
               className=' text-white text-opacity-50'/>
 
-              <MdOutlineArrowForwardIos size={45} 
+              <MdOutlineArrowForwardIos size={40} 
               onClick={nextImage}
               className=' text-white text-opacity-50'/>
             </div>
@@ -86,6 +86,7 @@ const Index = () => {
             
           </div>
 
+                  {/* body */}
           <div className='bg-[#3c3c3c] -mt-28'>
             <div className=' flex flex-col md:flex-row items-center justify-center my-16 mx-10 md:my-0 md:mx-0'>
               <div className='flex flex-col md:my-16 md:w-[400px] bg-black text-white p-12'>
@@ -118,6 +119,7 @@ const Index = () => {
             
           </div>
 
+                  {/* about us */}
           <div className=''>
             <div className='flex mt-4 flex-col md:flex-row'>
               <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-16 md:mt-12'>
@@ -161,6 +163,8 @@ const Index = () => {
             </div>
           </div>
 
+
+                  {/* what we do */}
           <div className='flex flex-col mt-16 relative bg-[#3c3c3c]'>
             <div className='py-16 mx-12'>
               <div className='flex flex-col'>
@@ -262,31 +266,30 @@ const Index = () => {
                   </div>                   
                 </div>
               </div>
-            </div>
-            
+            </div>   
           </div>
 
-          <div>
+                  {/* our completed projects */}
+          <div className='mx-10'>
             <div className='flex flex-col'>
-              <p className='text-orange-700 text-2xl md:text-4xl font-extrabold mb-2 mt-10
-              ml-3'>
+              <p className='text-[#E5442A] text-3xl md:text-4xl font-semibold mb-2 mt-28 ml-3'>
                 OUR COMPLETED PROJECTS
               </p>
 
-              <div className='mt-3'>
-                <p className='text-black text-4xl font-bold ml-3'>
+              <div className='mt-4'>
+                <p className='text-black text-3xl font-semibold ml-3'>
                   Recent Projects
                 </p>
               </div>
             
-              <div className='flex flex-col md:flex-row m-3'>
-                <div className='border-b-4 mr-80 w-12 border-pink-200'></div>
-                <div className='md:ml-96 mt-4 md:mt-0'>
+              <div className='flex flex-col md:flex-row ml-3 mb-4 md:-mt-4'>
+                <div className='border-b-4 mr-72 ml-8 mt-3 md:mt-0 w-12 border-pink-200'></div>
+                <div className='md:ml-96 mt-16 md:mt-0'>
                   <Link to='/projects' 
-                  className='md:ml-96 underline px-2 inline-block
-                  text-blue-600 hover:text-blue-800 border border-black
-                  bg-black bg-opacity-5 py-1 font-semibold'>
-                    View All
+                  className='md:ml-72 inline-block font-semibold
+                  text-[#d9d6d6] bg-[#E5442A] px-28 py-2 md:px-4 md:py-2 
+                  border-none hover:text-white'>
+                    All Projetcs
                   </Link>
                 </div>
               </div>
@@ -294,35 +297,39 @@ const Index = () => {
 
             <div className='flex flex-col md:flex-row items-center justify-center'>
                 <div className='m-3'>
-                  <img src={recentProject1} className='w-96 md:w-80 shadow-lg'/>
-                  <p className='text-center font-semibold text-2xl mt-2'>
+                  <img src={recentProject1} className='w-96 md:w-80'/>
+                  <p className='font-semibold text-lg mt-2'>
                     Architecture
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject2} className='w-96 md:w-80 shadow-lg'/>
-                  <p className='text-center font-semibold text-2xl mt-2'>
+                  <img src={recentProject2} className='w-96 md:w-80'/>
+                  <p className='font-semibold text-lg mt-2'>
                     Development
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={recentProject3} className='w-96 md:w-80 shadow-lg'/>
-                  <p className='text-center font-semibold text-2xl mt-2'>
+                  <img src={recentProject1} className='w-96 md:w-80'/>
+                  <p className='font-semibold text-lg mt-2'>
                     Architecture
                   </p>
                 </div>
 
                 <div className='m-3'>
-                  <img src={creativeProject1} className='h-52 w-96 md:w-80 shadow-xl'/>
-                  <p className='text-center font-semibold text-2xl mt-2'>
+                  <img src={recentProject3} className='w-96 md:w-80'/>
+                  <p className='font-semibold text-lg mt-2'>
                     Development
                   </p>
                 </div>
             </div>
           </div>
 
+          <div className='border-b-2 border-b-[#d9dde1] my-6 mx-2'></div>
+
+
+                  {/* meet our team */}
           <div>
             <div className='pt-12 pb-6'>
               <div>
