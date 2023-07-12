@@ -16,9 +16,6 @@ const NavBar = () => {
         {
             id:2, link:'About Us', href:'/aboutUs'
         },
-        {
-            id:3, link:'Services', href:'#'
-        },
     ]
     const navLinks2 = [
         {
@@ -31,7 +28,7 @@ const NavBar = () => {
             id:3, link:'Contact Us', href:'/contact'
         }
     ]
-    const navServices = [
+    const services = [
         {
             id:1, link:'Digital Branding', href:'#'
         },
@@ -42,25 +39,57 @@ const NavBar = () => {
             id:3, link:'Creative Solution', href:'#'
         }
     ]
+
+   const [navServices, setNavServices] = useState(false)
+   const toggleDropDown = () =>{
+    setNavServices(true)
+   }
+   const closeDropDown = () => {
+    setNavServices(false)
+   }
+
   return (
-    <div className='flex flex-col overflow-hidden'>
-        <div className='hidden md:flex items-end justify-end flex-row'>
+    <div className='flex flex-row overflow-hidden bg-[#E62E64]'>
+        <div className='mt-4 ml-24'>
+                <img src={logo} className='w-52 md:w-full'/>
+        </div>
+        <div className='hidden md:flex items-end justify-end flex-row ml-96'>
             <ul className='flex items-end justify-end mt-5'>
                 {navLinks1.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-blue-500 cursor-pointer hover:text-blue-700'>
+                     className='px-4 text-white font-bold cursor-pointer hover:'>
                         <Link to={href}>
                             {link}
                         </Link>
                     </li>
                 ))}
             </ul>
-            <ul className='flex items-end justify-end mt-5 ml-16'>
+
+            <div className='mt-6 cursor-pointer'>
+                <span onMouseEnter={toggleDropDown} onMouseLeave={closeDropDown}
+                className='text-white font-bold'>
+                    Services
+                </span>
+
+                {navServices && (
+                    <ul className='z-10 absolute mt-2 cursor-pointer ml-0 bg-[#E62E64]'>
+                        {services.map(({id, link, href}) => (
+                            <li key={id} className='block'>
+                                <Link to={href}>
+                                    {link}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+
+            <ul className='flex items-end justify-end mt-5'>
                 {navLinks2.map(({id, link, href}) => (
                     <li
                      key={id}
-                     className='px-4 text-blue-500 cursor-pointer hover:text-blue-700'>
+                     className='px-4 text-white font-bold cursor-pointer hover:'>
                         <Link to={href}>
                             {link}
                         </Link>
@@ -70,10 +99,7 @@ const NavBar = () => {
         </div>
 
         <div className='flex flex-row'>
-            <div className='mt-4 md:mt-0 ml-4 md:ml-6'>
-                <p className='text-5xl '>JUPITER</p>
-                {/* <img src={logo} className='w-60 md:w-full'/> */}
-            </div>
+            
 
             <div onClick={() => setNav(!nav)} 
             className='md:hidden ml-40 mt-6'>
@@ -92,7 +118,7 @@ const NavBar = () => {
                         ))}
                     </ul>
 
-                    <ul className='md:hidden absolute left-0 top-48 pl-9 ml-3 bg-black w-[240px] z-10'>
+                    {/* <ul className='md:hidden absolute left-0 top-48 pl-9 ml-3 bg-black w-[240px] z-10'>
                         {navServices.map(({id, link, href}) => (
                             <li 
                             key={id}
@@ -103,7 +129,7 @@ const NavBar = () => {
                                 </Link>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
 
                     <ul className='md:hidden absolute left-0 top-60 mt-6 ml-3 bg-black w-60 rounded-b-lg z-10'>
                         {navLinks2.map(({id, link, href}) => (
@@ -118,7 +144,7 @@ const NavBar = () => {
                 </div>
             )}
 
-            <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
+            {/* <div className='hidden md:flex ml-80 items-end justify-end mt-2'>
                 <ul className='ml-96'>
                     {navServices.map(({id, link, href}) => (
                         <li 
@@ -131,7 +157,7 @@ const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </div> */}
         </div>
     </div>
   )
