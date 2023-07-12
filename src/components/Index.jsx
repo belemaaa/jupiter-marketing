@@ -120,13 +120,13 @@ const Index = () => {
 
           <div className=''>
             <div className='flex mt-4 flex-col md:flex-row'>
-              <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-10 md:mt-12'>
+              <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-16 md:mt-12'>
                 <div>
-                  <p className='text-2xl md:text-5xl pb-3 text-orange-700 
+                  <p className='text-2xl md:text-5xl pb-3 text-[#E5442A] 
                   font-extrabold md:font-bold'>
                     ABOUT US
                   </p>
-                  <p className='text-black text-4xl mt-2 md:mt-0
+                  <p className='text-black text-3xl mt-2 md:mt-0
                    md:text-3xl font-semibold'>
                     Leading The Way In Creative <br className='hidden md:flex'/> 
                     Digital <br className='md:hidden'/> Agency
@@ -138,18 +138,19 @@ const Index = () => {
                 <div>
                   <p className='text-xl md:text-2xl pb-3 pt-2 md:pt-1'>Best Digital Agency In The World</p>
                   <p className='text-base md:text-sm max-w-xl md:text-justify' style={{ lineHeight: "1.5" }}>
-                  We provide marketing services to startups and small businesses to looking 
-                  for a partner of their digital media, design & development, lead generation 
-                  and communications requirents. We work with you, not for you. 
-                  We have great resources that can help scale your business.
+                  We provide marketing services to startups and small businesses to looking for 
+                  a partner of their digital media, design & development, lead generation and 
+                  communications requirents. We work with you, not for you. Although we have a great resources.
                   </p>
                   <p className='text-base md:text-sm max-w-xl md:text-justify pt-4 pb-5 md:pb-8' style={{ lineHeight: "1.5" }}>
-                  We are an experienced and talented team of passionate consultants who live
-                  and breathe search engine marketing. We are an experienced and talented team of consultants
-                  who are here to bear the burdens of your business.
+                  We are an experienced and talented team of passionate consultants who 
+                  live and breathe search engine marketing. We are an experienced 
+                  and talented team of passionate.
                   </p>
                 </div>
-                <Link to='/aboutUs' className='text-blue-600 underline'>Read More</Link>
+                <Link to='/aboutUs' className='text-white bg-[#E5442A] px-2 py-3 border-none'>
+                  Read More
+                </Link>
               </div>
 
               <img src={aboutUsImage} className='md:w-1/2 mx-3 md:mx-8 mt-10'/>
