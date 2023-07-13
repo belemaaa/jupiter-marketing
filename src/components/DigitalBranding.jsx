@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 import digitalBranding from '../assets/digitalMarketing.jpg'
 
-const AboutUs = () => {
+const DigitalBranding = () => {
   return (
     <div>
         <NavBar/>
@@ -46,4 +46,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default DigitalBranding

@@ -47,7 +47,7 @@ const NavBar = () => {
             id:2, link:'Web Solution', href:'/web-solution'
         },
         {
-            id:3, link:'Creative Solution', href:'#'
+            id:3, link:'Creative Solution', href:'/creative-solution'
         }
     ]
 

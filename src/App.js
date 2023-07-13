@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Team from './components/Team';
 import DigitalBranding from './components/DigitalBranding';
 import WebSolution from './components/WebSolution'
+import CreativeSolution from './components/CreativeSolution';
 import {
   BrowserRouter as Router,
   Route,
@@ -21,6 +22,7 @@ function App() {
         <Route path='/aboutUs' element={<AboutUs/>} />
         <Route path='/digital-branding' element={<DigitalBranding/>} />
         <Route path='/web-solution' element={<WebSolution/>} />
+        <Route path='/creative-solution' element={<CreativeSolution/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} />

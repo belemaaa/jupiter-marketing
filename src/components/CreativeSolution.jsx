@@ -1,9 +1,9 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import webSolution from '../assets/webSolution.jpg'
+import creativeSolution from '../assets/creativeSolutions.jpg'
 
-const WebSolution = () => {
+const CreativeSolution = () => {
   return (
     <div>
         <NavBar/>
@@ -11,7 +11,7 @@ const WebSolution = () => {
           <div className='flex flex-col md:flex-row '>
             <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-6 md:mt-12'>
               <div>
-                  <p className='text-4xl pb-3 text-black font-semibold'>Web Solution</p>
+                  <p className='text-4xl pb-3 text-black font-semibold'>Creative Solution</p>
                   <p className='text-black text-lg font-bold md:text-lg'>
                     Leading The Way in Creative <br/> Digital Agency
                   </p>
@@ -38,7 +38,7 @@ const WebSolution = () => {
                 </p>
               </div>
             </div>
-            <img src={webSolution} className='md:w-1/2 md:h-96 mx-3 md:mx-8 mt-1 md:mt-24'/>
+            <img src={creativeSolution} className='md:w-1/2 md:h-96 mx-3 md:mx-8 mt-1 md:mt-24'/>
           </div>
         </div>
         <Footer/>
@@ -46,4 +46,4 @@ const WebSolution = () => {
   )
 }
 
-export default WebSolution
+export default CreativeSolution
