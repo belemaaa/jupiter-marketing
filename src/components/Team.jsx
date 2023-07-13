@@ -22,7 +22,7 @@ const Team = () => {
     <div className='flex flex-col'>
         <NavBar/>
 
-        <div className='flex flex-col pt-6 pb-12'>
+        <div className='flex flex-col mx-20 my-16'>
             <div className='mt-1 md:mt-4'>
                 <p className='text-orange-600 text-5xl md:text-5xl font-bold m-3'>
                     OUR TEAM
@@ -32,98 +32,104 @@ const Team = () => {
                 </p>
             </div>
 
-            <div className='flex flex-col md:flex-row items-center 
-            justify-center mt-10 md:my-10'>
-                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-0'>
-                    <a href=''>
-                        <img src={ourTeam4} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Architecture
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
-                    </a>
+            <div>
+                <div>
+                    <div className='flex flex-col md:flex-row items-center 
+                    justify-center mt-10 md:my-10'>
+                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-0'>
+                        <a href=''>
+                            <img src={ourTeam4} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Architecture
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
+                        </a>
 
+                    </div>
+                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-0'>
+                        <a href=''>
+                            <img src={ourTeam1} className='shadow-xl '/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Development
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                        </a>
+                    </div>
+                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-0'>
+                        <a href=''>
+                            <img src={ourTeam2} className='shadow-xl '/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Management
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>CTO</p>
+                        </a>
+                    </div>
                 </div>
-                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-0'>
-                    <a href=''>
-                        <img src={ourTeam1} className='shadow-xl '/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Development
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
-                    </a>
+
+                <div className='flex flex-col md:flex-row items-center 
+                justify-center md:my-10'>
+                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam3} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Architecture
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
+                        </a>
+                    </div>
+                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam5} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Development
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                        </a>
+                    </div>
+                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam6} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Development
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
+                        </a>
+                    </div>
                 </div>
-                <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-0'>
-                    <a href=''>
-                        <img src={ourTeam2} className='shadow-xl '/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Management
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>CTO</p>
-                    </a>
+
+                <div className='flex flex-col md:flex-row items-center justify-center'>
+                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam7} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Management
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>CEO</p>
+                        </a>
+                    </div>
+                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam11} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Development
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Software Engineer</p>
+                        </a>
+                    </div>
+                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 md:mb-6'>
+                        <a href=''>
+                            <img src={ourTeam12} className='shadow-xl'/>
+                            <p className='text-center text-black font-bold text-xl mt-5'>
+                                Development
+                            </p>
+                            <p className='text-sm text-center mt-2 font-semibold'>Digital Marketer</p>
+                        </a>
+                    </div>
+                    </div>
+                        
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row items-center 
-            justify-center md:my-10'>
-                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam3} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Architecture
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Data Analyst</p>
-                    </a>
-                </div>
-                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam5} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Development
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
-                    </a>
-                </div>
-                <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam6} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Development
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Product Designer</p>
-                    </a>
-                </div>
-            </div>
-
-            <div className='flex flex-col md:flex-row items-center justify-center'>
-                <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam7} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Management
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>CEO</p>
-                    </a>
-                </div>
-                <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam11} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Development
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Software Engineer</p>
-                    </a>
-                </div>
-                <div className='md:ml-8 md:mr-3 w-96 md:w-96 md:mb-6'>
-                    <a href=''>
-                        <img src={ourTeam12} className='shadow-xl'/>
-                        <p className='text-center text-black font-bold text-xl mt-5'>
-                            Development
-                        </p>
-                        <p className='text-sm text-center mt-2 font-semibold'>Digital Marketer</p>
-                    </a>
-                </div>
-            </div>
         </div>
 
         <Footer/>
