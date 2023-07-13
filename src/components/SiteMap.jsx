@@ -9,7 +9,7 @@ const SiteMap = () => {
     <div>
         <NavBar/>
 
-        <div className='ml-4 my-16'>
+        <div className='ml-4 lg:ml-24 my-16'>
             <div>
                 <p className='text-4xl text-[#E5442A] font-bold'>
                     Site Map
