@@ -53,20 +53,23 @@ const Form = () => {
                         Want to Know More?? Drop Us A Mail
                     </p>
                 </div>
+                <div className='border-b border-b-[#d9dde1] my-4'></div>
                 <div className='mt-6'>
                     <form ref={form} onSubmit={sendEmail}>
                         <input 
                         type="text" 
                         name="f_name"  
-                        placeholder='First Name'
-                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 mr-4 pl-1' 
+                        placeholder='FirstName'
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
+                        placeholder:text-black placeholder:text-opacity-50' 
                         required/>
 
                         <input 
                         type="text" 
                         name="f_name"  
-                        placeholder='Last Name'
-                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 pl-1' 
+                        placeholder='LastName'
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
+                        placeholder:text-black placeholder:text-opacity-50' 
                         required/>
                         <br/>
 
@@ -74,17 +77,18 @@ const Form = () => {
                         type="email" 
                         name="email"  
                         placeholder='Email'
-                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 mr-4 pl-1' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
+                        placeholder:text-black placeholder:text-opacity-50' 
                         required/>
 
                         <input 
                         type="phone" 
                         name="phone"  
                         placeholder='Contact Number'
-                        className='border border-black py-1 w-80 md:w-44 text-black mb-4 pl-1' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
+                        placeholder:text-black placeholder:text-opacity-50' 
                         required/>
                         <br/>
- 
                         <br/>
                         <textarea
                         name="message" 
