@@ -29,27 +29,27 @@ const Form = () => {
 
     return (
         <div className='flex flex-col overflow-hidden'>
-            <div className='flex flex-col'> 
-                <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
+            <div className='flex flex-col font-light'> 
+                <p className='m-3 flex flex-row' style={{ lineHeight: '1.5' }}>
                 352/71 Second Street, King Street, Kingston, United Kingdom
                 </p>
 
-                <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
-                Phone : +44 123456789
+                <p className='m-3 flex flex-row' style={{ lineHeight: '1.5' }}>
+                <span className='text-[#a2a2a2]'>Phone: </span>  <span className='ml-4'>+44 123456789</span>
                 </p>
 
-                <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
-                Email : me@jupiter.com
+                <p className='m-3 flex flex-row' style={{ lineHeight: '1.5' }}>
+                <span className='text-[#a2a2a2]'>Email: </span>  <span className='ml-4'>me@jupiter.com</span>
                 </p>
 
-                <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
-                Fax : +44 123456789
+                <p className='m-3 flex flex-row' style={{ lineHeight: '1.5' }}>
+                <span className='text-[#a2a2a2]'>Fax: </span>  <span className='ml-4'>+44 123456789</span>
                 </p>
             </div>
 
-            <div className='m-3'>
-                <div className=''>
-                    <p className='text-black font-semibold text-xl md:text-2xl'>
+            <div className='ml-3'>
+                <div className='mt-6'>
+                    <p className='text-[#E5442A] text-xl md:text-4xl' style={{ lineHeight: "1.3" }}>
                         Want to Know More?? Drop Us A Mail
                     </p>
                 </div>
