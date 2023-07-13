@@ -41,7 +41,7 @@ const NavBar = () => {
     ]
     const services = [
         {
-            id:1, link:'Digital Branding', href:'#'
+            id:1, link:'Digital Branding', href:'/digital-branding'
         },
         {
             id:2, link:'Web Solution', href:'#'
@@ -82,7 +82,8 @@ const NavBar = () => {
                     <ul className='z-10 absolute mt-4 cursor-pointer ml-0 bg-[#E62E64] duration-500'>
                         {services.map(({id, link, href}) => (
                             <li key={id} className='block text-lg text-white font-bold'>
-                                <Link to={href} className='px-5' style={{ lineHeight: "2.5" }}>
+                                <Link to={href} className='mx-5 my-2 hover:bg-[#f88bc1] hover:bg-opacity-50 px-3 py-1 duration-500' 
+                                style={{ lineHeight: "2.5" }}>
                                     {link}
                                 </Link>
                             </li>

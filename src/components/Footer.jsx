@@ -113,7 +113,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='border-b border-white border-opacity-50 md:mx-24'></div>
+        <div className='border-b border-white border-opacity-50 md:mx-24 mt-4'></div>
         <div className='flex flex-col md:flex-row md:mx-24 my-4'>
             <div className='flex items-start justify-start ml-3 md:ml-0'>
                 <p className='text-white flex flex-row py-3 text-sm font-light'>
