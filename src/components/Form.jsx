@@ -60,16 +60,16 @@ const Form = () => {
                         type="text" 
                         name="f_name"  
                         placeholder='FirstName'
-                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
-                        placeholder:text-black placeholder:text-opacity-60' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black text-sm mb-4 mr-4 
+                        placeholder:text-black placeholder:text-opacity-60 placeholder:text-base' 
                         required/>
 
                         <input 
                         type="text" 
                         name="f_name"  
                         placeholder='LastName'
-                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
-                        placeholder:text-black placeholder:text-opacity-60' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black text-sm mb-4 
+                        placeholder:text-black placeholder:text-opacity-60 placeholder:text-base' 
                         required/>
                         <br/>
 
@@ -77,24 +77,24 @@ const Form = () => {
                         type="email" 
                         name="email"  
                         placeholder='Email'
-                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
-                        placeholder:text-black placeholder:text-opacity-60' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black text-sm mb-4 mr-4 
+                        placeholder:text-black placeholder:text-opacity-60 placeholder:text-base' 
                         required/>
 
                         <input 
                         type="phone" 
                         name="phone"  
                         placeholder='Contact Number'
-                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
-                        placeholder:text-black placeholder:text-opacity-60' 
+                        className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black text-sm mb-4 
+                        placeholder:text-black placeholder:text-opacity-60 placeholder:text-base' 
                         required/>
                         <br/>
                         
                         <textarea
                         name="message" 
                         placeholder='Your message here...'
-                        className='bg-[#EDEDED] pl-3 py-4 w-80 md:w-[488px] h-52 text-black mb-3
-                        placeholder:text-black placeholder:text-opacity-70' 
+                        className='bg-[#EDEDED] pl-3 py-4 w-80 md:w-[488px] h-52 text-black text-sm mb-3
+                        placeholder:text-black placeholder:text-opacity-70 placeholder:text-base' 
                         required/>
                         <br/>
 
@@ -102,7 +102,8 @@ const Form = () => {
                         type="submit" 
                         value="SEND" 
                         // onClick={sendBtn}
-                        className='flex bg-[#E5442A] border text-white py-4 px-10 mb-3'
+                        className='flex bg-[#E5442A] border text-white py-4 px-10 mb-3
+                        font-semibold'
                         />
                     </form>
                 </div>
