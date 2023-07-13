@@ -9,6 +9,7 @@ import DigitalBranding from './components/DigitalBranding';
 import WebSolution from './components/WebSolution'
 import CreativeSolution from './components/CreativeSolution';
 import SiteMap from './components/SiteMap';
+import ScrollToTop from 'react-router-scroll-top';
 import {
   BrowserRouter as Router,
   Route,
