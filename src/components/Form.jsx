@@ -93,17 +93,16 @@ const Form = () => {
                         <textarea
                         name="message" 
                         placeholder='Your message here...'
-                        className='bg-[#EDEDED] pl-3 py-4 w-80 md:w-[488px] h-52 text-black mb-4
+                        className='bg-[#EDEDED] pl-3 py-4 w-80 md:w-[488px] h-52 text-black mb-3
                         placeholder:text-black placeholder:text-opacity-70' 
                         required/>
                         <br/>
 
                         <input 
                         type="submit" 
-                        value="Send" 
+                        value="SEND" 
                         // onClick={sendBtn}
-                        className='flex bg-gray-200 border border-black
-                        hover:bg-gray-400 text-black py-1 px-3 mb-3'
+                        className='flex bg-[#E5442A] border text-white py-4 px-10 mb-3'
                         />
                     </form>
                 </div>
