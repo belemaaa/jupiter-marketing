@@ -38,7 +38,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <img src={digitalBranding} className='md:w-1/2 md:h-96 mx-3 md:mx-8 mt-1 md:mt-32'/>
+            <img src={digitalBranding} className='md:w-1/2 md:h-96 mx-3 md:mx-8 mt-1 md:mt-24'/>
           </div>
         </div>
         <Footer/>

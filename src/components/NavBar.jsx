@@ -44,7 +44,7 @@ const NavBar = () => {
             id:1, link:'Digital Branding', href:'/digital-branding'
         },
         {
-            id:2, link:'Web Solution', href:'#'
+            id:2, link:'Web Solution', href:'/web-solution'
         },
         {
             id:3, link:'Creative Solution', href:'#'

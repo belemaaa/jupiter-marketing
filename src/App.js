@@ -5,7 +5,8 @@ import GoogleMap from './components/GoogleMap';
 import Index from './components/Index';
 import Projects from './components/Projects';
 import Team from './components/Team';
-import DigitalBranding from './components/DigitalBranding'
+import DigitalBranding from './components/DigitalBranding';
+import WebSolution from './components/WebSolution'
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +20,7 @@ function App() {
         <Route path='/jupiter-marketing' exact element={<Index/>} />
         <Route path='/aboutUs' element={<AboutUs/>} />
         <Route path='/digital-branding' element={<DigitalBranding/>} />
+        <Route path='/web-solution' element={<WebSolution/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} />
