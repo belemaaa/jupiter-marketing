@@ -61,7 +61,7 @@ const Form = () => {
                         name="f_name"  
                         placeholder='FirstName'
                         className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
-                        placeholder:text-black placeholder:text-opacity-50' 
+                        placeholder:text-black placeholder:text-opacity-60' 
                         required/>
 
                         <input 
@@ -69,7 +69,7 @@ const Form = () => {
                         name="f_name"  
                         placeholder='LastName'
                         className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
-                        placeholder:text-black placeholder:text-opacity-50' 
+                        placeholder:text-black placeholder:text-opacity-60' 
                         required/>
                         <br/>
 
@@ -78,7 +78,7 @@ const Form = () => {
                         name="email"  
                         placeholder='Email'
                         className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 mr-4 
-                        placeholder:text-black placeholder:text-opacity-50' 
+                        placeholder:text-black placeholder:text-opacity-60' 
                         required/>
 
                         <input 
@@ -86,14 +86,15 @@ const Form = () => {
                         name="phone"  
                         placeholder='Contact Number'
                         className='bg-[#EDEDED] py-4 pl-3 w-80 md:w-[236px] text-black mb-4 
-                        placeholder:text-black placeholder:text-opacity-50' 
+                        placeholder:text-black placeholder:text-opacity-60' 
                         required/>
                         <br/>
-                        <br/>
+                        
                         <textarea
                         name="message" 
                         placeholder='Your message here...'
-                        className='border border-black pl-1 py-2 w-80 md:w-96 h-44 text-black mb-4' 
+                        className='bg-[#EDEDED] pl-3 py-4 w-80 md:w-[488px] h-52 text-black mb-4
+                        placeholder:text-black placeholder:text-opacity-70' 
                         required/>
                         <br/>
 
