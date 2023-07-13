@@ -123,7 +123,7 @@ const Footer = () => {
             </div>
 
             <div className='md:flex ml-80 md:ml-[710px] my-1'>
-                <Link to='/contact' className=' text-white 
+                <Link to='/site-map' className=' text-white 
                 hover:text-blue-700 duration-500 font-light'>
                     Sitemap
                 </Link>

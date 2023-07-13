@@ -162,7 +162,7 @@ const NavBar = () => {
                 </li>
 
                 <li className='text-white pl-12 py-2 cursor-pointer'>
-                    <Link to='/aboutUs'
+                    <Link to='/contact'
                     className='py-2 pl-2 pr-60 hover:bg-[#f88bc1] hover:bg-opacity-50'>
                         Contact Us
                     </Link>

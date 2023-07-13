@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className='flex flex-col md:flex-row '>
             <div className='md:w-1/2 md:justify-start mx-3 md:ml-24 mt-6 md:mt-12'>
               <div>
-                  <p className='text-3xl pb-3 text-orange-700 font-bold'>About Us</p>
+                  <p className='text-3xl pb-3 text-[#E5442A] font-bold'>About Us</p>
                   <p className='text-black text-2xl md:text-3xl font-semibold'>
                     Leading The Way in Creative <br/> Digital Agency
                   </p>

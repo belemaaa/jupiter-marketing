@@ -8,6 +8,7 @@ import Team from './components/Team';
 import DigitalBranding from './components/DigitalBranding';
 import WebSolution from './components/WebSolution'
 import CreativeSolution from './components/CreativeSolution';
+import SiteMap from './components/SiteMap';
 import {
   BrowserRouter as Router,
   Route,
@@ -26,7 +27,7 @@ function App() {
         <Route path='/projects' element={<Projects/>} />
         <Route path='/team' element={<Team/>} />
         <Route path='/contact' element={<Contact/>} />
-        <Route path='/map' element={<GoogleMap/>} />
+        <Route path='/site-map' element={<SiteMap/>} />
       </Routes>
 
     </Router>
