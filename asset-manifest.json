@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/jupiter-marketing/static/css/main.22d97fd3.css",
-    "main.js": "/jupiter-marketing/static/js/main.8b1993d0.js",
+    "main.css": "/jupiter-marketing/static/css/main.586faa7b.css",
+    "main.js": "/jupiter-marketing/static/js/main.c4191604.js",
     "static/js/787.df9473cc.chunk.js": "/jupiter-marketing/static/js/787.df9473cc.chunk.js",
     "static/media/ourTeam6.jpg": "/jupiter-marketing/static/media/ourTeam6.4697669b938ee5188277.jpg",
     "static/media/creativeProject2.jpg": "/jupiter-marketing/static/media/creativeProject2.a6382c7e455a4a4123f5.jpg",
     "static/media/ourTeam9.jpg": "/jupiter-marketing/static/media/ourTeam9.28fee91eaef05b89fbcf.jpg",
+    "static/media/webSolution.jpg": "/jupiter-marketing/static/media/webSolution.cf9de54f31a525e08a21.jpg",
+    "static/media/digitalMarketing.jpg": "/jupiter-marketing/static/media/digitalMarketing.2326fbd3eef812d0f653.jpg",
+    "static/media/creativeSolutions.jpg": "/jupiter-marketing/static/media/creativeSolutions.4efc3ea2c06f56b4396e.jpg",
     "static/media/ourTeam5.jpg": "/jupiter-marketing/static/media/ourTeam5.70809b537efc1eab9203.jpg",
     "static/media/aboutUsImage.jpg": "/jupiter-marketing/static/media/aboutUsImage.b862a03d25fa4414cd74.jpg",
+    "static/media/aboutUs2.jpg": "/jupiter-marketing/static/media/aboutUs2.5b7bac41e3e522d9070e.jpg",
     "static/media/ourProject1.png": "/jupiter-marketing/static/media/ourProject1.f5003d36a07da4e2eabd.png",
     "static/media/recent-image3.jpg": "/jupiter-marketing/static/media/recent-image3.9dd42465a4d942dcdead.jpg",
     "static/media/ourTeam12.jpg": "/jupiter-marketing/static/media/ourTeam12.aef848ef1e454437e9ce.jpg",
@@ -34,12 +38,12 @@
     "static/media/ourProject3.jpg": "/jupiter-marketing/static/media/ourProject3.d85d875d33227c3864cb.jpg",
     "static/media/digitalProject.jpg": "/jupiter-marketing/static/media/digitalProject.5a3f1cdc1c50fe1727b6.jpg",
     "index.html": "/jupiter-marketing/index.html",
-    "main.22d97fd3.css.map": "/jupiter-marketing/static/css/main.22d97fd3.css.map",
-    "main.8b1993d0.js.map": "/jupiter-marketing/static/js/main.8b1993d0.js.map",
+    "main.586faa7b.css.map": "/jupiter-marketing/static/css/main.586faa7b.css.map",
+    "main.c4191604.js.map": "/jupiter-marketing/static/js/main.c4191604.js.map",
     "787.df9473cc.chunk.js.map": "/jupiter-marketing/static/js/787.df9473cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22d97fd3.css",
-    "static/js/main.8b1993d0.js"
+    "static/css/main.586faa7b.css",
+    "static/js/main.c4191604.js"
   ]
 }
