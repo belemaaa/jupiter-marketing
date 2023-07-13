@@ -22,7 +22,7 @@ const Team = () => {
     <div className='flex flex-col'>
         <NavBar/>
 
-        <div className='flex flex-col mx-16 my-12'>
+        <div className='flex flex-col mx-12 md:mx-16 my-12'>
             <div className='mt-1 md:mt-4'>
                 <p className='text-orange-600 text-5xl md:text-5xl font-bold'>
                     OUR TEAM
@@ -36,7 +36,7 @@ const Team = () => {
                 <div className='px-10 py-6'>
                     <div className='flex flex-col md:flex-row items-center 
                     justify-center mt-10 md:my-10'>
-                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-0'>
+                    <div className='md:ml-3 md:mr-8 w-60 md:w-96 mb-12 md:mb-0'>
                         <a href=''>
                             <img src={ourTeam4} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>
@@ -46,7 +46,7 @@ const Team = () => {
                         </a>
 
                     </div>
-                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-0'>
+                    <div className='md:mx-8 w-60 md:w-96 mb-12 md:mb-0'>
                         <a href=''>
                             <img src={ourTeam1} className='shadow-xl '/>
                             <p className=' text-black text-xl mt-5'>
@@ -55,7 +55,7 @@ const Team = () => {
                             <p className='text-sm mt-2 font-bold'>Product Designer</p>
                         </a>
                     </div>
-                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-0'>
+                    <div className='md:ml-8 md:mr-3 w-60 md:w-96 mb-12 md:mb-0'>
                         <a href=''>
                             <img src={ourTeam2} className='shadow-xl '/>
                             <p className=' text-black text-xl mt-5'>
@@ -68,7 +68,7 @@ const Team = () => {
 
                 <div className='flex flex-col md:flex-row items-center 
                 justify-center md:my-10'>
-                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <div className='md:ml-3 md:mr-8 w-60 md:w-96 mb-12 md:mb-6'>
                         <a href=''>
                             <img src={ourTeam5} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>
@@ -77,16 +77,16 @@ const Team = () => {
                             <p className='text-sm mt-2 font-bold'>Data Analyst</p>
                         </a>
                     </div>
-                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <div className='md:mx-8 w-60 md:w-96 mb-12 md:mb-6'>
                         <a href=''>
-                            <img src={ourTeam9} className='shadow-xl h-56 w-96'/>
+                            <img src={ourTeam9} className='shadow-xl md:h-56 w-96'/>
                             <p className=' text-black text-xl mt-5'>
                                 Development
                             </p>
                             <p className='text-sm mt-2 font-bold'>Product Designer</p>
                         </a>
                     </div>
-                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 mb-6 md:mb-6'>
+                    <div className='md:ml-8 md:mr-3 w-60 md:w-96 mb-12 md:mb-6'>
                         <a href=''>
                             <img src={ourTeam6} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>
@@ -98,7 +98,7 @@ const Team = () => {
                 </div>
 
                 <div className='flex flex-col md:flex-row items-center justify-center'>
-                    <div className='md:ml-3 md:mr-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <div className='md:ml-3 md:mr-8 w-60 md:w-96 mb-12 md:mb-6'>
                         <a href=''>
                             <img src={ourTeam12} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>
@@ -107,7 +107,7 @@ const Team = () => {
                             <p className='text-sm mt-2 font-bold'>CEO</p>
                         </a>
                     </div>
-                    <div className='md:mx-8 w-96 md:w-96 mb-6 md:mb-6'>
+                    <div className='md:mx-8 w-60 md:w-96 mb-12 md:mb-6'>
                         <a href=''>
                             <img src={ourTeam11} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>
@@ -116,7 +116,7 @@ const Team = () => {
                             <p className='text-sm mt-2 font-bold'>Software Engineer</p>
                         </a>
                     </div>
-                    <div className='md:ml-8 md:mr-3 w-96 md:w-96 md:mb-6'>
+                    <div className='md:ml-8 md:mr-3 w-60 md:w-96 md:mb-6'>
                         <a href=''>
                             <img src={ourTeam7} className='shadow-xl'/>
                             <p className=' text-black text-xl mt-5'>

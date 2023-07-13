@@ -31,7 +31,7 @@ const Form = () => {
         <div className='flex flex-col overflow-hidden'>
             <div className='flex flex-col'> 
                 <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
-                352/71 Second Street, King Street, <br className='md:hidden'/> Kingston, United Kingdom
+                352/71 Second Street, King Street, Kingston, United Kingdom
                 </p>
 
                 <p className='m-3 flex flex-row' style={{ lineHeight: '1' }}>
@@ -53,7 +53,7 @@ const Form = () => {
                         Want to Know More?? Drop Us A Mail
                     </p>
                 </div>
-                <div className='mt-6 mx-8 md:mx-0'>
+                <div className='mt-6'>
                     <form ref={form} onSubmit={sendEmail}>
                         <input 
                         type="text" 

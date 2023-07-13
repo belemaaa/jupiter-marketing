@@ -121,6 +121,7 @@ const Projects = () => {
                 </div>
             </div>
         </div>
+        <div className='border-b-2 border-b-[#d9dde1] mx-2'></div>
 
         <Footer/>
         {/* comment */}
