@@ -7,20 +7,20 @@ import GoogleMap from './GoogleMap'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <NavBar/>
 
         <div className='my-16'>
           <div className=''>
-            <p className='text-[#E5442A] text-4xl md:text-4xl font-semibold text-center'>Contact Us</p>
+            <p className='text-[#E5442A] text-3xl md:text-4xl font-semibold text-center'>Contact Us</p>
           </div>
 
-          <div className='flex flex-row mx-24 my-6'>
-            <div className='mr-10'>
+          <div className='flex flex-col md:flex-row lg:mx-24 my-6'>
+            <div className='md:mr-10'>
               <GoogleMap/>
             </div>
         
-            <div className='ml-4'>
+            <div className='md:ml-4'>
             <Form/>
             </div>
           </div>
