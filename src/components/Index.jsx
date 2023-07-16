@@ -87,11 +87,11 @@ const Index = () => {
 
             <div className='absolute top-[350px] md:top-[450px] right-0 left-0'>
               <div className='flex items-center justify-center gap-4'>
-                {slides.map((_, i) => (
+                {/* {slides.map((_, i) => (
                   <div onClick={slidesDots}
                   className={'transition-all w-6 h-1 bg-white bg-opacity-50 rounded-xl'}>       
                   </div>
-                ))}
+                ))} */}
 
               </div>
             </div>
