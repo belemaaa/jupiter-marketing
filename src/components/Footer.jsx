@@ -48,17 +48,17 @@ const Footer = () => {
                 <div className='border-2 border-opacity-40 border-[#E5442A] w-12'></div>
                 <ul className='mt-4 text-white'>
                     <li className='py-2 hover:text-[#E5442A]'>
-                        <Link to='' className='flex flex-row font-light'>
+                        <Link to='/digital-branding' className='flex flex-row font-light'>
                             Digital Branding
                         </Link>
                     </li>
                     <li className='py-2 hover:text-[#E5442A]'>
-                        <Link to='' className='font-light'>
+                        <Link to='/creative-solution' className='font-light'>
                             Creative Solution
                         </Link>
                     </li>
                     <li className='py-2 hover:text-[#E5442A]'>
-                        <Link to='' className='font-light'>
+                        <Link to='/web-solution' className='font-light'>
                             Web Solution
                         </Link>
                     </li>
