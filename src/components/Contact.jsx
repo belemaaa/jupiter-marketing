@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import Form from './Form'
 import GoogleMap from './GoogleMap'
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className='overflow-hidden'>
         <NavBar/>

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import webSolution from '../assets/webSolution.jpg'
 
 const WebSolution = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
         <NavBar/>

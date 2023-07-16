@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/jupiter-marketing' exact element={<Index/>} />
-        <Route path='/aboutUs' element={<AboutUs/>} />
+        <Route path='/aboutUs' element={<AboutUs/>} pathname='aboutUs'/>
         <Route path='/digital-branding' element={<DigitalBranding/>} />
         <Route path='/web-solution' element={<WebSolution/>} />
         <Route path='/creative-solution' element={<CreativeSolution/>} />
@@ -29,7 +29,6 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/site-map' element={<SiteMap/>} />
       </Routes>
-
     </Router>
   );
 }

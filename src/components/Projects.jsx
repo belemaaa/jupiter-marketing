@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ContactNav from './ContactNav'
 import NavBar from './NavBar'
 import Footer from './Footer'
@@ -14,6 +14,10 @@ import webProject2 from '../assets/projects/webProject2.jpg'
 
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <div className='flex flex-col'>
         <NavBar/>

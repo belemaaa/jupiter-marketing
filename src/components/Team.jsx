@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ContactNav from './ContactNav'
 import NavBar from './NavBar'
 import Footer from './Footer'
@@ -18,6 +18,10 @@ import ourTeam13 from '../assets/team/ourTeam13.jpg'
 
 
 const Team = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
   return (
     <div className='flex flex-col'>
         <NavBar/>

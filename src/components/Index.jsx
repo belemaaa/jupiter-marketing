@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import NavBar from './NavBar'
 import banner1 from '../assets/banner-images/banner1.jpg'
 import banner3 from '../assets/banner-images/banner3.jpg'
@@ -31,6 +31,9 @@ import Footer from './Footer'
 
 
 const Index = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const slides = [
     banner5,

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import AboutFull from './AboutFull'
 import aboutUs2 from '../assets/aboutUs2.jpg'
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
         <NavBar/>
