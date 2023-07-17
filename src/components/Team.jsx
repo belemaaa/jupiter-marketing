@@ -36,7 +36,7 @@ const Team = () => {
                 </p>
             </div>
 
-            <div className='my-6 bg-[#F9F9F9]'>
+            <div className='my-6 bg-[#efeeee]'>
                 <div className='px-10 py-6'>
                     <div className='flex flex-col md:flex-row items-center 
                     justify-center mt-10 md:my-10'>

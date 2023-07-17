@@ -367,7 +367,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className='mt-8 bg-[#F9F9F9]'>
+            <div className='mt-8 bg-[#efeeee]'>
               <div className='flex flex-col md:flex-row items-center justify-center px-10 py-10'>
                 <div className='md:mr-9 mb-16 md:mb-0'>
                     <img src={ourTeam4} className='w-96 md:w-60'/>
